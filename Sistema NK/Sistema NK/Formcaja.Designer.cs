@@ -49,42 +49,42 @@
             txtFecha = new TextBox();
             label1 = new Label();
             groupBox2 = new GroupBox();
+            CBtipo = new ComboBox();
+            txtReferencia = new TextBox();
+            txtMonto = new TextBox();
+            txtConcepto = new TextBox();
             lblreferencia = new Label();
             lblmonto = new Label();
             lblconcepto = new Label();
             lbltipo = new Label();
-            txtConcepto = new TextBox();
-            txtMonto = new TextBox();
-            txtReferencia = new TextBox();
-            CBtipo = new ComboBox();
             btnGuardarmovimiento = new Button();
             btnCerrarcaja = new Button();
             groupBox1 = new GroupBox();
-            dataGridView1 = new DataGridView();
-            Monto = new DataGridViewTextBoxColumn();
-            Conepto = new DataGridViewTextBoxColumn();
-            groupBoxnuevoproducto = new GroupBox();
+            groupBox3 = new GroupBox();
+            txtSaldoinicial = new TextBox();
+            txtSaldofinal = new TextBox();
+            txtTotalingresos = new TextBox();
+            txtTotalegresos = new TextBox();
+            label6 = new Label();
+            label5 = new Label();
+            label4 = new Label();
+            label3 = new Label();
             dataGridView2 = new DataGridView();
             Column1 = new DataGridViewTextBoxColumn();
             Column2 = new DataGridViewTextBoxColumn();
             Column3 = new DataGridViewTextBoxColumn();
-            groupBox3 = new GroupBox();
-            label3 = new Label();
-            label4 = new Label();
-            label5 = new Label();
-            label6 = new Label();
-            txtTotalegresos = new TextBox();
-            txtTotalingresos = new TextBox();
-            txtSaldofinal = new TextBox();
-            txtSaldoinicial = new TextBox();
+            dataGridView1 = new DataGridView();
+            Conepto = new DataGridViewTextBoxColumn();
+            Monto = new DataGridViewTextBoxColumn();
+            groupBoxnuevoproducto = new GroupBox();
             panel4.SuspendLayout();
             groupBoxdatos.SuspendLayout();
             groupBox2.SuspendLayout();
             groupBox1.SuspendLayout();
+            groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             groupBoxnuevoproducto.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
-            groupBox3.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -251,7 +251,7 @@
             btnReporte.Name = "btnReporte";
             btnReporte.Size = new Size(117, 38);
             btnReporte.TabIndex = 95;
-            btnReporte.Text = "Reporte";
+            btnReporte.Text = "Devoluciones";
             btnReporte.UseVisualStyleBackColor = false;
             // 
             // btnMantenimiento
@@ -268,7 +268,7 @@
             btnMantenimiento.Name = "btnMantenimiento";
             btnMantenimiento.Size = new Size(133, 38);
             btnMantenimiento.TabIndex = 94;
-            btnMantenimiento.Text = "Mantenimiento";
+            btnMantenimiento.Text = "Caja";
             btnMantenimiento.UseVisualStyleBackColor = false;
             // 
             // btnAcercade
@@ -368,6 +368,35 @@
             groupBox2.TabStop = false;
             groupBox2.Text = "Registrar movimiento ";
             // 
+            // CBtipo
+            // 
+            CBtipo.FormattingEnabled = true;
+            CBtipo.Location = new Point(73, 26);
+            CBtipo.Name = "CBtipo";
+            CBtipo.Size = new Size(197, 33);
+            CBtipo.TabIndex = 86;
+            // 
+            // txtReferencia
+            // 
+            txtReferencia.Location = new Point(111, 155);
+            txtReferencia.Name = "txtReferencia";
+            txtReferencia.Size = new Size(159, 31);
+            txtReferencia.TabIndex = 6;
+            // 
+            // txtMonto
+            // 
+            txtMonto.Location = new Point(88, 111);
+            txtMonto.Name = "txtMonto";
+            txtMonto.Size = new Size(182, 31);
+            txtMonto.TabIndex = 5;
+            // 
+            // txtConcepto
+            // 
+            txtConcepto.Location = new Point(111, 65);
+            txtConcepto.Name = "txtConcepto";
+            txtConcepto.Size = new Size(159, 31);
+            txtConcepto.TabIndex = 4;
+            // 
             // lblreferencia
             // 
             lblreferencia.AutoSize = true;
@@ -404,35 +433,6 @@
             lbltipo.TabIndex = 0;
             lbltipo.Text = "Tipo:";
             // 
-            // txtConcepto
-            // 
-            txtConcepto.Location = new Point(111, 65);
-            txtConcepto.Name = "txtConcepto";
-            txtConcepto.Size = new Size(159, 31);
-            txtConcepto.TabIndex = 4;
-            // 
-            // txtMonto
-            // 
-            txtMonto.Location = new Point(88, 111);
-            txtMonto.Name = "txtMonto";
-            txtMonto.Size = new Size(182, 31);
-            txtMonto.TabIndex = 5;
-            // 
-            // txtReferencia
-            // 
-            txtReferencia.Location = new Point(111, 155);
-            txtReferencia.Name = "txtReferencia";
-            txtReferencia.Size = new Size(159, 31);
-            txtReferencia.TabIndex = 6;
-            // 
-            // CBtipo
-            // 
-            CBtipo.FormattingEnabled = true;
-            CBtipo.Location = new Point(73, 26);
-            CBtipo.Name = "CBtipo";
-            CBtipo.Size = new Size(197, 33);
-            CBtipo.TabIndex = 86;
-            // 
             // btnGuardarmovimiento
             // 
             btnGuardarmovimiento.Location = new Point(778, 605);
@@ -461,39 +461,85 @@
             groupBox1.TabIndex = 107;
             groupBox1.TabStop = false;
             // 
-            // dataGridView1
+            // groupBox3
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Conepto, Monto });
-            dataGridView1.Location = new Point(16, 30);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 62;
-            dataGridView1.Size = new Size(416, 70);
-            dataGridView1.TabIndex = 0;
+            groupBox3.Controls.Add(txtSaldoinicial);
+            groupBox3.Controls.Add(txtSaldofinal);
+            groupBox3.Controls.Add(txtTotalingresos);
+            groupBox3.Controls.Add(txtTotalegresos);
+            groupBox3.Controls.Add(label6);
+            groupBox3.Controls.Add(label5);
+            groupBox3.Controls.Add(label4);
+            groupBox3.Controls.Add(label3);
+            groupBox3.Location = new Point(6, 111);
+            groupBox3.Name = "groupBox3";
+            groupBox3.Size = new Size(428, 206);
+            groupBox3.TabIndex = 108;
+            groupBox3.TabStop = false;
             // 
-            // Monto
+            // txtSaldoinicial
             // 
-            Monto.HeaderText = "Monto";
-            Monto.MinimumWidth = 8;
-            Monto.Name = "Monto";
-            Monto.Width = 150;
+            txtSaldoinicial.Location = new Point(165, 21);
+            txtSaldoinicial.Name = "txtSaldoinicial";
+            txtSaldoinicial.Size = new Size(150, 31);
+            txtSaldoinicial.TabIndex = 10;
             // 
-            // Conepto
+            // txtSaldofinal
             // 
-            Conepto.HeaderText = "Concepto";
-            Conepto.MinimumWidth = 8;
-            Conepto.Name = "Conepto";
-            Conepto.Width = 200;
+            txtSaldofinal.Location = new Point(165, 155);
+            txtSaldofinal.Name = "txtSaldofinal";
+            txtSaldofinal.Size = new Size(150, 31);
+            txtSaldofinal.TabIndex = 9;
             // 
-            // groupBoxnuevoproducto
+            // txtTotalingresos
             // 
-            groupBoxnuevoproducto.Controls.Add(dataGridView1);
-            groupBoxnuevoproducto.Location = new Point(741, 418);
-            groupBoxnuevoproducto.Name = "groupBoxnuevoproducto";
-            groupBoxnuevoproducto.Size = new Size(447, 140);
-            groupBoxnuevoproducto.TabIndex = 103;
-            groupBoxnuevoproducto.TabStop = false;
-            groupBoxnuevoproducto.Text = "Tipos de caja";
+            txtTotalingresos.Location = new Point(165, 63);
+            txtTotalingresos.Name = "txtTotalingresos";
+            txtTotalingresos.Size = new Size(150, 31);
+            txtTotalingresos.TabIndex = 8;
+            // 
+            // txtTotalegresos
+            // 
+            txtTotalegresos.Location = new Point(165, 110);
+            txtTotalegresos.Name = "txtTotalegresos";
+            txtTotalegresos.Size = new Size(150, 31);
+            txtTotalegresos.TabIndex = 7;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(6, 69);
+            label6.Name = "label6";
+            label6.Size = new Size(117, 25);
+            label6.TabIndex = 6;
+            label6.Text = "Total ingreso:";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(6, 116);
+            label5.Name = "label5";
+            label5.Size = new Size(120, 25);
+            label5.TabIndex = 5;
+            label5.Text = "Total egresos:";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(6, 161);
+            label4.Name = "label4";
+            label4.Size = new Size(99, 25);
+            label4.TabIndex = 4;
+            label4.Text = "Saldo final:";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(6, 27);
+            label3.Name = "label3";
+            label3.Size = new Size(109, 25);
+            label3.TabIndex = 3;
+            label3.Text = "Saldo inicial:";
             // 
             // dataGridView2
             // 
@@ -526,85 +572,39 @@
             Column3.Name = "Column3";
             Column3.Width = 150;
             // 
-            // groupBox3
+            // dataGridView1
             // 
-            groupBox3.Controls.Add(txtSaldoinicial);
-            groupBox3.Controls.Add(txtSaldofinal);
-            groupBox3.Controls.Add(txtTotalingresos);
-            groupBox3.Controls.Add(txtTotalegresos);
-            groupBox3.Controls.Add(label6);
-            groupBox3.Controls.Add(label5);
-            groupBox3.Controls.Add(label4);
-            groupBox3.Controls.Add(label3);
-            groupBox3.Location = new Point(6, 111);
-            groupBox3.Name = "groupBox3";
-            groupBox3.Size = new Size(428, 206);
-            groupBox3.TabIndex = 108;
-            groupBox3.TabStop = false;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Conepto, Monto });
+            dataGridView1.Location = new Point(16, 30);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersWidth = 62;
+            dataGridView1.Size = new Size(416, 70);
+            dataGridView1.TabIndex = 0;
             // 
-            // label3
+            // Conepto
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(6, 27);
-            label3.Name = "label3";
-            label3.Size = new Size(109, 25);
-            label3.TabIndex = 3;
-            label3.Text = "Saldo inicial:";
+            Conepto.HeaderText = "Concepto";
+            Conepto.MinimumWidth = 8;
+            Conepto.Name = "Conepto";
+            Conepto.Width = 200;
             // 
-            // label4
+            // Monto
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(6, 161);
-            label4.Name = "label4";
-            label4.Size = new Size(99, 25);
-            label4.TabIndex = 4;
-            label4.Text = "Saldo final:";
+            Monto.HeaderText = "Monto";
+            Monto.MinimumWidth = 8;
+            Monto.Name = "Monto";
+            Monto.Width = 150;
             // 
-            // label5
+            // groupBoxnuevoproducto
             // 
-            label5.AutoSize = true;
-            label5.Location = new Point(6, 116);
-            label5.Name = "label5";
-            label5.Size = new Size(120, 25);
-            label5.TabIndex = 5;
-            label5.Text = "Total egresos:";
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Location = new Point(6, 69);
-            label6.Name = "label6";
-            label6.Size = new Size(117, 25);
-            label6.TabIndex = 6;
-            label6.Text = "Total ingreso:";
-            // 
-            // txtTotalegresos
-            // 
-            txtTotalegresos.Location = new Point(165, 110);
-            txtTotalegresos.Name = "txtTotalegresos";
-            txtTotalegresos.Size = new Size(150, 31);
-            txtTotalegresos.TabIndex = 7;
-            // 
-            // txtTotalingresos
-            // 
-            txtTotalingresos.Location = new Point(165, 63);
-            txtTotalingresos.Name = "txtTotalingresos";
-            txtTotalingresos.Size = new Size(150, 31);
-            txtTotalingresos.TabIndex = 8;
-            // 
-            // txtSaldofinal
-            // 
-            txtSaldofinal.Location = new Point(165, 155);
-            txtSaldofinal.Name = "txtSaldofinal";
-            txtSaldofinal.Size = new Size(150, 31);
-            txtSaldofinal.TabIndex = 9;
-            // 
-            // txtSaldoinicial
-            // 
-            txtSaldoinicial.Location = new Point(165, 21);
-            txtSaldoinicial.Name = "txtSaldoinicial";
-            txtSaldoinicial.Size = new Size(150, 31);
-            txtSaldoinicial.TabIndex = 10;
+            groupBoxnuevoproducto.Controls.Add(dataGridView1);
+            groupBoxnuevoproducto.Location = new Point(741, 418);
+            groupBoxnuevoproducto.Name = "groupBoxnuevoproducto";
+            groupBoxnuevoproducto.Size = new Size(447, 140);
+            groupBoxnuevoproducto.TabIndex = 103;
+            groupBoxnuevoproducto.TabStop = false;
+            groupBoxnuevoproducto.Text = "Tipos de caja";
             // 
             // Formcaja
             // 
@@ -639,11 +639,11 @@
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
             groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
-            groupBoxnuevoproducto.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
             groupBox3.ResumeLayout(false);
             groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            groupBoxnuevoproducto.ResumeLayout(false);
             ResumeLayout(false);
         }
 
