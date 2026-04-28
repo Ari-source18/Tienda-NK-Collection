@@ -281,7 +281,7 @@
             button10.ForeColor = Color.White;
             button10.Image = (Image)resources.GetObject("button10.Image");
             button10.ImageAlign = ContentAlignment.MiddleRight;
-            button10.Location = new Point(503, 3);
+            button10.Location = new Point(647, 2);
             button10.Name = "button10";
             button10.Size = new Size(287, 54);
             button10.TabIndex = 10;
@@ -307,7 +307,7 @@
             label1.FlatStyle = FlatStyle.Flat;
             label1.Font = new Font("Pristina", 14F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.Transparent;
-            label1.Location = new Point(188, 619);
+            label1.Location = new Point(240, 625);
             label1.Name = "label1";
             label1.Size = new Size(446, 37);
             label1.TabIndex = 4;
@@ -320,7 +320,7 @@
             label3.FlatStyle = FlatStyle.Flat;
             label3.Font = new Font("Pristina", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.Black;
-            label3.Location = new Point(117, 313);
+            label3.Location = new Point(188, 313);
             label3.Name = "label3";
             label3.Size = new Size(578, 48);
             label3.TabIndex = 3;
@@ -329,7 +329,7 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(271, 25);
+            pictureBox1.Location = new Point(354, 39);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(254, 237);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
