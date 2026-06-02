@@ -327,7 +327,7 @@
             button7.BackColor = Color.Maroon;
             button7.Font = new Font("PMingLiU-ExtB", 10F);
             button7.ForeColor = SystemColors.ControlLightLight;
-            button7.Location = new Point(1165, 239);
+            button7.Location = new Point(1237, 284);
             button7.Name = "button7";
             button7.Size = new Size(112, 34);
             button7.TabIndex = 94;
@@ -338,6 +338,7 @@
             // 
             panel3.BackColor = Color.SeaShell;
             panel3.Controls.Add(textBox7);
+            panel3.Controls.Add(textBox12);
             panel3.Controls.Add(textBox10);
             panel3.Controls.Add(comboBox2);
             panel3.Controls.Add(label13);
@@ -546,7 +547,7 @@
             // textBox12
             // 
             textBox12.Font = new Font("PMingLiU-ExtB", 10F);
-            textBox12.Location = new Point(1155, 99);
+            textBox12.Location = new Point(97, 178);
             textBox12.Name = "textBox12";
             textBox12.Size = new Size(184, 31);
             textBox12.TabIndex = 44;
@@ -579,7 +580,7 @@
             button16.BackColor = Color.Maroon;
             button16.Font = new Font("PMingLiU-ExtB", 10F);
             button16.ForeColor = SystemColors.ControlLightLight;
-            button16.Location = new Point(1179, 155);
+            button16.Location = new Point(1117, 278);
             button16.Name = "button16";
             button16.Size = new Size(112, 34);
             button16.TabIndex = 93;
@@ -985,7 +986,6 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1363, 878);
             Controls.Add(dataGridView1);
-            Controls.Add(textBox12);
             Controls.Add(panel1);
             Controls.Add(dateTimePicker1);
             Controls.Add(label21);
