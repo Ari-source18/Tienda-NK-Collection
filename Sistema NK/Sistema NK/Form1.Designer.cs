@@ -65,12 +65,13 @@
             button2.FlatStyle = FlatStyle.Flat;
             button2.Font = new Font("Century Gothic", 11F, FontStyle.Italic, GraphicsUnit.Point, 0);
             button2.ForeColor = Color.White;
-            button2.Location = new Point(423, 439);
+            button2.Location = new Point(421, 489);
             button2.Name = "button2";
             button2.Size = new Size(395, 41);
             button2.TabIndex = 14;
-            button2.Text = "Recover Password";
+            button2.Text = "Recuperar Contraseña";
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // linkLabel1
             // 
@@ -79,12 +80,12 @@
             linkLabel1.Font = new Font("Century Gothic", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             linkLabel1.LinkBehavior = LinkBehavior.NeverUnderline;
             linkLabel1.LinkColor = Color.Gray;
-            linkLabel1.Location = new Point(535, 517);
+            linkLabel1.Location = new Point(516, 455);
             linkLabel1.Name = "linkLabel1";
-            linkLabel1.Size = new Size(146, 21);
+            linkLabel1.Size = new Size(218, 21);
             linkLabel1.TabIndex = 13;
             linkLabel1.TabStop = true;
-            linkLabel1.Text = "Forgot Password?";
+            linkLabel1.Text = "¿Olvidaste tu contraseña?";
             // 
             // button1
             // 
@@ -97,8 +98,9 @@
             button1.Name = "button1";
             button1.Size = new Size(395, 41);
             button1.TabIndex = 12;
-            button1.Text = "Login";
+            button1.Text = "Acceder";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // panel3
             // 
@@ -128,7 +130,7 @@
             label2.Name = "label2";
             label2.Size = new Size(392, 38);
             label2.TabIndex = 0;
-            label2.Text = "Password";
+            label2.Text = "Contraseña";
             // 
             // panel2
             // 
@@ -159,23 +161,23 @@
             Username.Name = "Username";
             Username.Size = new Size(392, 38);
             Username.TabIndex = 0;
-            Username.Text = "Username";
+            Username.Text = "Usuario";
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Century Gothic", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.FromArgb(64, 64, 64);
-            label1.Location = new Point(499, 179);
+            label1.Location = new Point(484, 187);
             label1.Name = "label1";
-            label1.Size = new Size(250, 25);
+            label1.Size = new Size(243, 25);
             label1.TabIndex = 9;
-            label1.Text = "Sign into your account";
+            label1.Text = "Bienvenido al sistema";
             // 
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(542, 25);
+            pictureBox2.Location = new Point(545, 39);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(139, 129);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;

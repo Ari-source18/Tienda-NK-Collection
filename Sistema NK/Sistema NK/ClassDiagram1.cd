@@ -1,25 +1,85 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="Sistema_NK.Usuario">
-    <Position X="5.25" Y="1" Width="1.5" />
+    <Position X="1.75" Y="0.75" Width="1.5" />
+    <AssociationLine Name="Cliente" Type="Sistema_NK.Cliente">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.078" Y="0.06" />
+      </MemberNameLabel>
+    </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAQABAACAAAAAABAAAAAAAAAAAgAAAAAAAIAAEEAAAE=</HashCode>
+      <HashCode>AAAAAAAAAAAAAIIEAACAgAAAAIAAAAAAAAAAEAAAAAg=</HashCode>
       <FileName>Usuario.cs</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Cliente" />
+    </ShowAsAssociation>
   </Class>
-  <Class Name="Sistema_NK.Empleado">
-    <Position X="7.25" Y="1" Width="1.5" />
+  <Class Name="Sistema_NK.Compra">
+    <Position X="4.25" Y="5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAABAAAAAAAAAQAAAAAAAAAIAgAAAAAAAAAAAIACIA=</HashCode>
-      <FileName>Empleado.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Sistema_NK.compra1">
-    <Position X="3.25" Y="1.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAIAAECMAQQAAAAAAAAAAAAIAAAAgkAAAAAAA=</HashCode>
       <FileName>compra1.cs</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Producto" />
+      <Property Name="Usuario" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Sistema_NK.Cliente">
+    <Position X="4.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAABAAAIEACAAgAAAAIAAAAAAAAAAAgAAAAg=</HashCode>
+      <FileName>Cliente.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sistema_NK.Proveedor">
+    <Position X="2" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIABAAAAAACAAgAAAAIAAAAAAAAAEAgAAAAo=</HashCode>
+      <FileName>Proveedor.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Compra" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Sistema_NK.Producto">
+    <Position X="6.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAQAAACAAAAgABAAAAAAACAAAAAgAACAg=</HashCode>
+      <FileName>Producto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sistema_NK.Venta">
+    <Position X="8.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>iAAAQEAAABAAAIAAAACAAAAAAAAAAAAAAAAmQAEAAAA=</HashCode>
+      <FileName>Venta.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Cliente" />
+      <Property Name="Crédito" />
+      <Property Name="Usuario" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Sistema_NK.Crédito">
+    <Position X="10.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAQAAAAABAAAAAAAAAAAAAQAAAgQAAAAAAAEAAACA=</HashCode>
+      <FileName>Crédito.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sistema_NK.Caja">
+    <Position X="7.25" Y="6.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>jAQgAAAAAAAACBEAAAAAAAAJAAAAAAAAIAAEIAAAAAA=</HashCode>
+      <FileName>Empleado.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Compra" />
+      <Property Name="Crédito" />
+      <Property Name="Venta" />
+    </ShowAsAssociation>
   </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>
