@@ -57,18 +57,21 @@
             textBox4 = new TextBox();
             label14 = new Label();
             label8 = new Label();
+            textBox9 = new TextBox();
             label17 = new Label();
             label18 = new Label();
+            label1 = new Label();
             panel4 = new Panel();
-            textBox12 = new TextBox();
+            textBox13 = new TextBox();
+            label24 = new Label();
+            label23 = new Label();
             textBox3 = new TextBox();
             label22 = new Label();
-            label21 = new Label();
-            textBox9 = new TextBox();
             textBox8 = new TextBox();
             label12 = new Label();
-            label1 = new Label();
             label4 = new Label();
+            textBox12 = new TextBox();
+            label21 = new Label();
             button6 = new Button();
             button16 = new Button();
             button5 = new Button();
@@ -101,9 +104,6 @@
             Column8 = new DataGridViewTextBoxColumn();
             Column9 = new DataGridViewTextBoxColumn();
             Column7 = new DataGridViewTextBoxColumn();
-            label23 = new Label();
-            textBox13 = new TextBox();
-            label24 = new Label();
             panel6.SuspendLayout();
             panel5.SuspendLayout();
             panel3.SuspendLayout();
@@ -417,6 +417,14 @@
             label8.TabIndex = 0;
             label8.Text = "Código:";
             // 
+            // textBox9
+            // 
+            textBox9.Font = new Font("PMingLiU-ExtB", 10F);
+            textBox9.Location = new Point(210, 12);
+            textBox9.Name = "textBox9";
+            textBox9.Size = new Size(131, 31);
+            textBox9.TabIndex = 40;
+            // 
             // label17
             // 
             label17.AutoSize = true;
@@ -435,6 +443,16 @@
             label18.TabIndex = 1;
             label18.Text = "Cantidad:";
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("PMingLiU-ExtB", 10F);
+            label1.Location = new Point(20, 15);
+            label1.Name = "label1";
+            label1.Size = new Size(110, 20);
+            label1.TabIndex = 37;
+            label1.Text = "N° de factura:";
+            // 
             // panel4
             // 
             panel4.BackColor = Color.SeaShell;
@@ -452,13 +470,34 @@
             panel4.Size = new Size(442, 159);
             panel4.TabIndex = 101;
             // 
-            // textBox12
+            // textBox13
             // 
-            textBox12.Font = new Font("PMingLiU-ExtB", 10F);
-            textBox12.Location = new Point(463, 295);
-            textBox12.Name = "textBox12";
-            textBox12.Size = new Size(184, 31);
-            textBox12.TabIndex = 44;
+            textBox13.Font = new Font("PMingLiU-ExtB", 10F);
+            textBox13.Location = new Point(132, 115);
+            textBox13.Name = "textBox13";
+            textBox13.Size = new Size(297, 31);
+            textBox13.TabIndex = 110;
+            // 
+            // label24
+            // 
+            label24.AutoSize = true;
+            label24.Font = new Font("PMingLiU-ExtB", 10F);
+            label24.Location = new Point(9, 120);
+            label24.Name = "label24";
+            label24.Size = new Size(86, 20);
+            label24.TabIndex = 109;
+            label24.Text = "Dirección:";
+            // 
+            // label23
+            // 
+            label23.AutoSize = true;
+            label23.Font = new Font("PMingLiU-ExtB", 10F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label23.ForeColor = Color.FromArgb(64, 0, 0);
+            label23.Location = new Point(13, 11);
+            label23.Name = "label23";
+            label23.Size = new Size(160, 20);
+            label23.TabIndex = 108;
+            label23.Text = "Datos del Cliente:";
             // 
             // textBox3
             // 
@@ -478,24 +517,6 @@
             label22.TabIndex = 42;
             label22.Text = "Teléfono:";
             // 
-            // label21
-            // 
-            label21.AutoSize = true;
-            label21.Font = new Font("PMingLiU-ExtB", 10F);
-            label21.Location = new Point(319, 300);
-            label21.Name = "label21";
-            label21.Size = new Size(138, 20);
-            label21.TabIndex = 41;
-            label21.Text = "Nombre Usuario:";
-            // 
-            // textBox9
-            // 
-            textBox9.Font = new Font("PMingLiU-ExtB", 10F);
-            textBox9.Location = new Point(210, 12);
-            textBox9.Name = "textBox9";
-            textBox9.Size = new Size(131, 31);
-            textBox9.TabIndex = 40;
-            // 
             // textBox8
             // 
             textBox8.Font = new Font("PMingLiU-ExtB", 10F);
@@ -514,16 +535,6 @@
             label12.TabIndex = 38;
             label12.Text = "Nombre Cliente:";
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("PMingLiU-ExtB", 10F);
-            label1.Location = new Point(20, 15);
-            label1.Name = "label1";
-            label1.Size = new Size(110, 20);
-            label1.TabIndex = 37;
-            label1.Text = "N° de factura:";
-            // 
             // label4
             // 
             label4.AutoSize = true;
@@ -531,6 +542,24 @@
             label4.Name = "label4";
             label4.Size = new Size(0, 25);
             label4.TabIndex = 2;
+            // 
+            // textBox12
+            // 
+            textBox12.Font = new Font("PMingLiU-ExtB", 10F);
+            textBox12.Location = new Point(1155, 99);
+            textBox12.Name = "textBox12";
+            textBox12.Size = new Size(184, 31);
+            textBox12.TabIndex = 44;
+            // 
+            // label21
+            // 
+            label21.AutoSize = true;
+            label21.Font = new Font("PMingLiU-ExtB", 10F);
+            label21.Location = new Point(319, 300);
+            label21.Name = "label21";
+            label21.Size = new Size(138, 20);
+            label21.TabIndex = 41;
+            label21.Text = "Nombre Usuario:";
             // 
             // button6
             // 
@@ -949,35 +978,6 @@
             Column7.MinimumWidth = 8;
             Column7.Name = "Column7";
             Column7.Width = 90;
-            // 
-            // label23
-            // 
-            label23.AutoSize = true;
-            label23.Font = new Font("PMingLiU-ExtB", 10F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label23.ForeColor = Color.FromArgb(64, 0, 0);
-            label23.Location = new Point(13, 11);
-            label23.Name = "label23";
-            label23.Size = new Size(160, 20);
-            label23.TabIndex = 108;
-            label23.Text = "Datos del Cliente:";
-            // 
-            // textBox13
-            // 
-            textBox13.Font = new Font("PMingLiU-ExtB", 10F);
-            textBox13.Location = new Point(132, 115);
-            textBox13.Name = "textBox13";
-            textBox13.Size = new Size(297, 31);
-            textBox13.TabIndex = 110;
-            // 
-            // label24
-            // 
-            label24.AutoSize = true;
-            label24.Font = new Font("PMingLiU-ExtB", 10F);
-            label24.Location = new Point(9, 120);
-            label24.Name = "label24";
-            label24.Size = new Size(86, 20);
-            label24.TabIndex = 109;
-            label24.Text = "Dirección:";
             // 
             // Formventas
             // 
