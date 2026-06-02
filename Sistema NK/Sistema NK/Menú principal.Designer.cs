@@ -330,40 +330,45 @@
             button1.Text = "NK Collection";
             button1.UseVisualStyleBackColor = false;
             // 
-            // label16
+            // panel2
             // 
-            label16.AutoSize = true;
-            label16.Font = new Font("PMingLiU-ExtB", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label16.ForeColor = SystemColors.ControlLightLight;
-            label16.Location = new Point(30, 46);
-            label16.Name = "label16";
-            label16.Size = new Size(285, 28);
-            label16.TabIndex = 46;
-            label16.Text = "_____________________";
+            panel2.BackColor = Color.DimGray;
+            panel2.Controls.Add(button10);
+            panel2.Dock = DockStyle.Top;
+            panel2.Location = new Point(299, 0);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(946, 56);
+            panel2.TabIndex = 2;
             // 
-            // panelP
+            // button10
             // 
-            panelP.BackgroundImage = (Image)resources.GetObject("panelP.BackgroundImage");
-            panelP.Controls.Add(pictureBox1);
-            panelP.Controls.Add(label1);
-            panelP.Controls.Add(label3);
-            panelP.Controls.Add(label2);
-            panelP.Dock = DockStyle.Fill;
-            panelP.Location = new Point(347, 0);
-            panelP.Name = "panelP";
-            panelP.Size = new Size(898, 877);
-            panelP.TabIndex = 6;
+            button10.BackColor = Color.Transparent;
+            button10.FlatAppearance.BorderSize = 0;
+            button10.FlatAppearance.MouseDownBackColor = Color.FromArgb(224, 224, 224);
+            button10.FlatAppearance.MouseOverBackColor = Color.Tan;
+            button10.FlatStyle = FlatStyle.Flat;
+            button10.Font = new Font("PMingLiU-ExtB", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button10.ForeColor = Color.White;
+            button10.Image = (Image)resources.GetObject("button10.Image");
+            button10.ImageAlign = ContentAlignment.MiddleRight;
+            button10.Location = new Point(647, 2);
+            button10.Name = "button10";
+            button10.Size = new Size(287, 54);
+            button10.TabIndex = 10;
+            button10.Text = "Ariana Gaitán";
+            button10.UseVisualStyleBackColor = false;
             // 
-            // pictureBox1
+            // panel3
             // 
-            pictureBox1.BackColor = Color.Transparent;
-            pictureBox1.Image = Properties.Resources.imagen_circular_recortada;
-            pictureBox1.Location = new Point(335, 306);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(247, 227);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 5;
-            pictureBox1.TabStop = false;
+            panel3.BackgroundImage = (Image)resources.GetObject("panel3.BackgroundImage");
+            panel3.Controls.Add(label1);
+            panel3.Controls.Add(label3);
+            panel3.Controls.Add(pictureBox1);
+            panel3.Dock = DockStyle.Fill;
+            panel3.Location = new Point(299, 56);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(946, 696);
+            panel3.TabIndex = 4;
             // 
             // label1
             // 
@@ -372,7 +377,7 @@
             label1.FlatStyle = FlatStyle.Flat;
             label1.Font = new Font("Pristina", 16F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.Transparent;
-            label1.Location = new Point(222, 823);
+            label1.Location = new Point(240, 625);
             label1.Name = "label1";
             label1.Size = new Size(497, 42);
             label1.TabIndex = 4;
@@ -385,7 +390,7 @@
             label3.FlatStyle = FlatStyle.Flat;
             label3.Font = new Font("Pristina", 24F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.Black;
-            label3.Location = new Point(61, 27);
+            label3.Location = new Point(188, 313);
             label3.Name = "label3";
             label3.Size = new Size(773, 63);
             label3.TabIndex = 3;
@@ -393,15 +398,13 @@
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.BackColor = Color.Transparent;
-            label2.Font = new Font("PMingLiU-ExtB", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.ForeColor = SystemColors.Desktop;
-            label2.Location = new Point(39, 77);
-            label2.Name = "label2";
-            label2.Size = new Size(831, 28);
-            label2.TabIndex = 47;
-            label2.Text = "_______________________________________________________________";
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(354, 39);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(254, 237);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
             // 
             // Menú_principal
             // 
