@@ -565,7 +565,7 @@
             button3.BackgroundImageLayout = ImageLayout.None;
             button3.Font = new Font("PMingLiU-ExtB", 10F);
             button3.ForeColor = Color.White;
-            button3.Location = new Point(175, 461);
+            button3.Location = new Point(194, 412);
             button3.Name = "button3";
             button3.Size = new Size(153, 43);
             button3.TabIndex = 45;
