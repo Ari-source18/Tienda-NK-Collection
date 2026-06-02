@@ -30,33 +30,22 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Formproductos));
             panel1 = new Panel();
-            panel3 = new Panel();
-            panel2 = new Panel();
-            btnmenuprincipal = new Button();
-            btnsalir = new Button();
+            btninventario = new Button();
+            btnnivelacioninventario = new Button();
+            btndevolucionventas = new Button();
+            btncredito = new Button();
+            btndevolucioncompra = new Button();
+            btncaja = new Button();
+            btnusuarios = new Button();
+            btncompras = new Button();
+            btnproductos = new Button();
+            btnproveedores = new Button();
+            btnventas = new Button();
+            btnclientes = new Button();
             label11 = new Label();
-            groupBox1 = new GroupBox();
-            textBox5 = new TextBox();
-            comboBox4 = new ComboBox();
-            label9 = new Label();
-            button6 = new Button();
-            comboBox3 = new ComboBox();
-            label4 = new Label();
-            comboBox2 = new ComboBox();
-            label2 = new Label();
-            textBox7 = new TextBox();
-            textBox4 = new TextBox();
-            label3 = new Label();
-            textBox3 = new TextBox();
-            label8 = new Label();
-            label5 = new Label();
-            textBox2 = new TextBox();
-            label10 = new Label();
-            label6 = new Label();
-            textBox1 = new TextBox();
-            comboBox1 = new ComboBox();
-            label7 = new Label();
-            button1 = new Button();
+            label15 = new Label();
+            label16 = new Label();
+            panel2 = new Panel();
             dataGridView1 = new DataGridView();
             Column1 = new DataGridViewTextBoxColumn();
             Column2 = new DataGridViewTextBoxColumn();
@@ -66,307 +55,334 @@
             Column6 = new DataGridViewTextBoxColumn();
             Column7 = new DataGridViewTextBoxColumn();
             Column9 = new DataGridViewTextBoxColumn();
-            Column8 = new DataGridViewTextBoxColumn();
-            button18 = new Button();
-            button17 = new Button();
-            button16 = new Button();
-            button15 = new Button();
-            button14 = new Button();
-            button13 = new Button();
-            button12 = new Button();
-            button11 = new Button();
+            groupBox1 = new GroupBox();
+            dateTimePicker1 = new DateTimePicker();
+            label13 = new Label();
+            textBox6 = new TextBox();
+            label7 = new Label();
+            textBox5 = new TextBox();
+            comboBox4 = new ComboBox();
+            label9 = new Label();
+            button3 = new Button();
+            comboBox3 = new ComboBox();
+            label4 = new Label();
+            label2 = new Label();
+            textBox7 = new TextBox();
+            textBox4 = new TextBox();
+            label3 = new Label();
+            textBox3 = new TextBox();
+            label8 = new Label();
+            label1 = new Label();
+            textBox2 = new TextBox();
+            label10 = new Label();
+            textBox1 = new TextBox();
+            comboBox1 = new ComboBox();
+            label12 = new Label();
+            button4 = new Button();
+            button6 = new Button();
+            button5 = new Button();
             pictureBox1 = new PictureBox();
-            button2 = new Button();
+            label5 = new Label();
+            label6 = new Label();
+            panel1.SuspendLayout();
             panel2.SuspendLayout();
-            groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(64, 0, 0);
+            panel1.Controls.Add(btninventario);
+            panel1.Controls.Add(btnnivelacioninventario);
+            panel1.Controls.Add(btndevolucionventas);
+            panel1.Controls.Add(btncredito);
+            panel1.Controls.Add(btndevolucioncompra);
+            panel1.Controls.Add(btncaja);
+            panel1.Controls.Add(btnusuarios);
+            panel1.Controls.Add(btncompras);
+            panel1.Controls.Add(btnproductos);
+            panel1.Controls.Add(btnproveedores);
+            panel1.Controls.Add(btnventas);
+            panel1.Controls.Add(btnclientes);
+            panel1.Controls.Add(label11);
+            panel1.Controls.Add(label15);
+            panel1.Controls.Add(label16);
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(52, 682);
-            panel1.TabIndex = 1;
+            panel1.Size = new Size(296, 872);
+            panel1.TabIndex = 5;
             // 
-            // panel3
+            // btninventario
             // 
-            panel3.BackColor = Color.FromArgb(64, 0, 0);
-            panel3.Dock = DockStyle.Right;
-            panel3.Location = new Point(1237, 0);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(43, 682);
-            panel3.TabIndex = 3;
+            btninventario.BackColor = Color.Transparent;
+            btninventario.FlatAppearance.BorderSize = 0;
+            btninventario.FlatAppearance.MouseDownBackColor = Color.FromArgb(224, 224, 224);
+            btninventario.FlatAppearance.MouseOverBackColor = Color.Tan;
+            btninventario.FlatStyle = FlatStyle.Flat;
+            btninventario.Font = new Font("PMingLiU-ExtB", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btninventario.ForeColor = Color.White;
+            btninventario.ImageAlign = ContentAlignment.MiddleLeft;
+            btninventario.Location = new Point(61, 812);
+            btninventario.Name = "btninventario";
+            btninventario.Size = new Size(167, 38);
+            btninventario.TabIndex = 76;
+            btninventario.Text = "Inventario";
+            btninventario.UseVisualStyleBackColor = false;
+            btninventario.Click += btninventario_Click;
             // 
-            // panel2
+            // btnnivelacioninventario
             // 
-            panel2.BackColor = Color.DimGray;
-            panel2.Controls.Add(btnmenuprincipal);
-            panel2.Controls.Add(btnsalir);
-            panel2.Controls.Add(label11);
-            panel2.Dock = DockStyle.Top;
-            panel2.Location = new Point(52, 0);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(1185, 55);
-            panel2.TabIndex = 4;
+            btnnivelacioninventario.BackColor = Color.Transparent;
+            btnnivelacioninventario.FlatAppearance.BorderSize = 0;
+            btnnivelacioninventario.FlatAppearance.MouseDownBackColor = Color.FromArgb(224, 224, 224);
+            btnnivelacioninventario.FlatAppearance.MouseOverBackColor = Color.Tan;
+            btnnivelacioninventario.FlatStyle = FlatStyle.Flat;
+            btnnivelacioninventario.Font = new Font("PMingLiU-ExtB", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnnivelacioninventario.ForeColor = Color.White;
+            btnnivelacioninventario.ImageAlign = ContentAlignment.MiddleLeft;
+            btnnivelacioninventario.Location = new Point(6, 752);
+            btnnivelacioninventario.Name = "btnnivelacioninventario";
+            btnnivelacioninventario.Size = new Size(290, 38);
+            btnnivelacioninventario.TabIndex = 75;
+            btnnivelacioninventario.Text = "Nivelación de inventario";
+            btnnivelacioninventario.UseVisualStyleBackColor = false;
+            btnnivelacioninventario.Click += btnnivelacioninventario_Click;
             // 
-            // btnmenuprincipal
+            // btndevolucionventas
             // 
-            btnmenuprincipal.BackColor = Color.Transparent;
-            btnmenuprincipal.FlatStyle = FlatStyle.Flat;
-            btnmenuprincipal.Font = new Font("PMingLiU-ExtB", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnmenuprincipal.Location = new Point(25, 12);
-            btnmenuprincipal.Name = "btnmenuprincipal";
-            btnmenuprincipal.Size = new Size(162, 34);
-            btnmenuprincipal.TabIndex = 42;
-            btnmenuprincipal.Text = "Menú principal";
-            btnmenuprincipal.UseVisualStyleBackColor = false;
+            btndevolucionventas.BackColor = Color.Transparent;
+            btndevolucionventas.FlatAppearance.BorderSize = 0;
+            btndevolucionventas.FlatAppearance.MouseDownBackColor = Color.FromArgb(224, 224, 224);
+            btndevolucionventas.FlatAppearance.MouseOverBackColor = Color.Tan;
+            btndevolucionventas.FlatStyle = FlatStyle.Flat;
+            btndevolucionventas.Font = new Font("PMingLiU-ExtB", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btndevolucionventas.ForeColor = Color.White;
+            btndevolucionventas.ImageAlign = ContentAlignment.MiddleLeft;
+            btndevolucionventas.Location = new Point(27, 566);
+            btndevolucionventas.Name = "btndevolucionventas";
+            btndevolucionventas.Size = new Size(257, 38);
+            btndevolucionventas.TabIndex = 74;
+            btndevolucionventas.Text = "Devolución Ventas";
+            btndevolucionventas.UseVisualStyleBackColor = false;
+            btndevolucionventas.Click += btndevolucionventas_Click;
             // 
-            // btnsalir
+            // btncredito
             // 
-            btnsalir.BackColor = Color.Transparent;
-            btnsalir.FlatStyle = FlatStyle.Flat;
-            btnsalir.Font = new Font("PMingLiU-ExtB", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnsalir.Location = new Point(1021, 12);
-            btnsalir.Name = "btnsalir";
-            btnsalir.Size = new Size(121, 34);
-            btnsalir.TabIndex = 41;
-            btnsalir.Text = "Cerrar Sesión";
-            btnsalir.UseVisualStyleBackColor = false;
+            btncredito.BackColor = Color.Transparent;
+            btncredito.FlatAppearance.BorderSize = 0;
+            btncredito.FlatAppearance.MouseDownBackColor = Color.FromArgb(224, 224, 224);
+            btncredito.FlatAppearance.MouseOverBackColor = Color.Tan;
+            btncredito.FlatStyle = FlatStyle.Flat;
+            btncredito.Font = new Font("PMingLiU-ExtB", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btncredito.ForeColor = Color.White;
+            btncredito.ImageAlign = ContentAlignment.MiddleLeft;
+            btncredito.Location = new Point(54, 501);
+            btncredito.Name = "btncredito";
+            btncredito.Size = new Size(167, 38);
+            btncredito.TabIndex = 73;
+            btncredito.Text = "Crédito";
+            btncredito.UseVisualStyleBackColor = false;
+            btncredito.Click += btncredito_Click;
+            // 
+            // btndevolucioncompra
+            // 
+            btndevolucioncompra.BackColor = Color.Transparent;
+            btndevolucioncompra.FlatAppearance.BorderSize = 0;
+            btndevolucioncompra.FlatAppearance.MouseDownBackColor = Color.FromArgb(224, 224, 224);
+            btndevolucioncompra.FlatAppearance.MouseOverBackColor = Color.Tan;
+            btndevolucioncompra.FlatStyle = FlatStyle.Flat;
+            btndevolucioncompra.Font = new Font("PMingLiU-ExtB", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btndevolucioncompra.ForeColor = Color.White;
+            btndevolucioncompra.ImageAlign = ContentAlignment.MiddleLeft;
+            btndevolucioncompra.Location = new Point(16, 628);
+            btndevolucioncompra.Name = "btndevolucioncompra";
+            btndevolucioncompra.Size = new Size(268, 38);
+            btndevolucioncompra.TabIndex = 72;
+            btndevolucioncompra.Text = "Devolución Compra";
+            btndevolucioncompra.UseVisualStyleBackColor = false;
+            btndevolucioncompra.Click += btndevolucioncompra_Click;
+            // 
+            // btncaja
+            // 
+            btncaja.BackColor = Color.Transparent;
+            btncaja.FlatAppearance.BorderSize = 0;
+            btncaja.FlatAppearance.MouseDownBackColor = Color.FromArgb(224, 224, 224);
+            btncaja.FlatAppearance.MouseOverBackColor = Color.Tan;
+            btncaja.FlatStyle = FlatStyle.Flat;
+            btncaja.Font = new Font("PMingLiU-ExtB", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btncaja.ForeColor = Color.White;
+            btncaja.ImageAlign = ContentAlignment.MiddleLeft;
+            btncaja.Location = new Point(54, 690);
+            btncaja.Name = "btncaja";
+            btncaja.Size = new Size(167, 38);
+            btncaja.TabIndex = 71;
+            btncaja.Text = "Caja";
+            btncaja.UseVisualStyleBackColor = false;
+            btncaja.Click += btncaja_Click;
+            // 
+            // btnusuarios
+            // 
+            btnusuarios.BackColor = Color.Transparent;
+            btnusuarios.FlatAppearance.BorderSize = 0;
+            btnusuarios.FlatAppearance.MouseDownBackColor = Color.FromArgb(224, 224, 224);
+            btnusuarios.FlatAppearance.MouseOverBackColor = Color.Tan;
+            btnusuarios.FlatStyle = FlatStyle.Flat;
+            btnusuarios.Font = new Font("PMingLiU-ExtB", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnusuarios.ForeColor = Color.White;
+            btnusuarios.ImageAlign = ContentAlignment.MiddleLeft;
+            btnusuarios.Location = new Point(54, 114);
+            btnusuarios.Name = "btnusuarios";
+            btnusuarios.Size = new Size(167, 38);
+            btnusuarios.TabIndex = 70;
+            btnusuarios.Text = "Usuarios";
+            btnusuarios.UseVisualStyleBackColor = false;
+            btnusuarios.Click += btnusuarios_Click;
+            // 
+            // btncompras
+            // 
+            btncompras.BackColor = Color.Transparent;
+            btncompras.FlatAppearance.BorderSize = 0;
+            btncompras.FlatAppearance.MouseDownBackColor = Color.FromArgb(224, 224, 224);
+            btncompras.FlatAppearance.MouseOverBackColor = Color.Tan;
+            btncompras.FlatStyle = FlatStyle.Flat;
+            btncompras.Font = new Font("PMingLiU-ExtB", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btncompras.ForeColor = Color.White;
+            btncompras.ImageAlign = ContentAlignment.MiddleLeft;
+            btncompras.Location = new Point(54, 251);
+            btncompras.Name = "btncompras";
+            btncompras.Size = new Size(167, 38);
+            btncompras.TabIndex = 69;
+            btncompras.Text = "Compras";
+            btncompras.UseVisualStyleBackColor = false;
+            btncompras.Click += btncompras_Click;
+            // 
+            // btnproductos
+            // 
+            btnproductos.BackColor = Color.DarkSalmon;
+            btnproductos.FlatAppearance.BorderSize = 0;
+            btnproductos.FlatAppearance.MouseDownBackColor = Color.FromArgb(224, 224, 224);
+            btnproductos.FlatAppearance.MouseOverBackColor = Color.Tan;
+            btnproductos.FlatStyle = FlatStyle.Flat;
+            btnproductos.Font = new Font("PMingLiU-ExtB", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnproductos.ForeColor = Color.White;
+            btnproductos.ImageAlign = ContentAlignment.MiddleLeft;
+            btnproductos.Location = new Point(54, 374);
+            btnproductos.Name = "btnproductos";
+            btnproductos.Size = new Size(167, 38);
+            btnproductos.TabIndex = 68;
+            btnproductos.Text = "Productos";
+            btnproductos.UseVisualStyleBackColor = false;
+            btnproductos.Click += btnproductos_Click;
+            // 
+            // btnproveedores
+            // 
+            btnproveedores.BackColor = Color.Transparent;
+            btnproveedores.FlatAppearance.BorderSize = 0;
+            btnproveedores.FlatAppearance.MouseDownBackColor = Color.FromArgb(224, 224, 224);
+            btnproveedores.FlatAppearance.MouseOverBackColor = Color.Tan;
+            btnproveedores.FlatStyle = FlatStyle.Flat;
+            btnproveedores.Font = new Font("PMingLiU-ExtB", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnproveedores.ForeColor = Color.White;
+            btnproveedores.ImageAlign = ContentAlignment.MiddleLeft;
+            btnproveedores.Location = new Point(54, 442);
+            btnproveedores.Name = "btnproveedores";
+            btnproveedores.Size = new Size(167, 38);
+            btnproveedores.TabIndex = 67;
+            btnproveedores.Text = "Proveedores";
+            btnproveedores.UseVisualStyleBackColor = false;
+            btnproveedores.Click += btnproveedores_Click;
+            // 
+            // btnventas
+            // 
+            btnventas.BackColor = Color.Transparent;
+            btnventas.FlatAppearance.BorderSize = 0;
+            btnventas.FlatAppearance.MouseDownBackColor = Color.FromArgb(224, 224, 224);
+            btnventas.FlatAppearance.MouseOverBackColor = Color.Tan;
+            btnventas.FlatStyle = FlatStyle.Flat;
+            btnventas.Font = new Font("PMingLiU-ExtB", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnventas.ForeColor = Color.White;
+            btnventas.ImageAlign = ContentAlignment.MiddleLeft;
+            btnventas.Location = new Point(54, 314);
+            btnventas.Name = "btnventas";
+            btnventas.Size = new Size(167, 38);
+            btnventas.TabIndex = 66;
+            btnventas.Text = "Ventas";
+            btnventas.UseVisualStyleBackColor = false;
+            btnventas.Click += btnventas_Click;
+            // 
+            // btnclientes
+            // 
+            btnclientes.BackColor = Color.Transparent;
+            btnclientes.FlatAppearance.BorderSize = 0;
+            btnclientes.FlatAppearance.MouseDownBackColor = Color.FromArgb(224, 224, 224);
+            btnclientes.FlatAppearance.MouseOverBackColor = Color.Tan;
+            btnclientes.FlatStyle = FlatStyle.Flat;
+            btnclientes.Font = new Font("PMingLiU-ExtB", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnclientes.ForeColor = Color.White;
+            btnclientes.ImageAlign = ContentAlignment.MiddleLeft;
+            btnclientes.Location = new Point(54, 183);
+            btnclientes.Name = "btnclientes";
+            btnclientes.Size = new Size(167, 38);
+            btnclientes.TabIndex = 65;
+            btnclientes.Text = "Clientes";
+            btnclientes.UseVisualStyleBackColor = false;
+            btnclientes.Click += btnclientes_Click;
             // 
             // label11
             // 
             label11.AutoSize = true;
-            label11.Font = new Font("Segoe Script", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label11.Location = new Point(357, 9);
+            label11.Font = new Font("Segoe Script", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label11.ForeColor = SystemColors.ControlLightLight;
+            label11.Location = new Point(12, 31);
             label11.Name = "label11";
-            label11.Size = new Size(440, 38);
-            label11.TabIndex = 37;
-            label11.Text = "NK Collection            Productos";
+            label11.Size = new Size(84, 57);
+            label11.TabIndex = 43;
+            label11.Text = "NK";
             // 
-            // groupBox1
+            // label15
             // 
-            groupBox1.Controls.Add(textBox5);
-            groupBox1.Controls.Add(comboBox4);
-            groupBox1.Controls.Add(label9);
-            groupBox1.Controls.Add(button6);
-            groupBox1.Controls.Add(comboBox3);
-            groupBox1.Controls.Add(label4);
-            groupBox1.Controls.Add(comboBox2);
-            groupBox1.Controls.Add(label2);
-            groupBox1.Controls.Add(textBox7);
-            groupBox1.Controls.Add(textBox4);
-            groupBox1.Controls.Add(label3);
-            groupBox1.Controls.Add(textBox3);
-            groupBox1.Controls.Add(label8);
-            groupBox1.Controls.Add(label5);
-            groupBox1.Controls.Add(textBox2);
-            groupBox1.Controls.Add(label10);
-            groupBox1.Controls.Add(label6);
-            groupBox1.Controls.Add(textBox1);
-            groupBox1.Controls.Add(comboBox1);
-            groupBox1.Controls.Add(label7);
-            groupBox1.Controls.Add(button1);
-            groupBox1.Font = new Font("PMingLiU-ExtB", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            groupBox1.Location = new Point(68, 105);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(1153, 268);
-            groupBox1.TabIndex = 45;
-            groupBox1.TabStop = false;
-            groupBox1.Text = "Nuevo Producto";
+            label15.AutoSize = true;
+            label15.Font = new Font("PMingLiU-ExtB", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label15.ForeColor = SystemColors.ControlLightLight;
+            label15.Location = new Point(91, 48);
+            label15.Name = "label15";
+            label15.Size = new Size(178, 28);
+            label15.TabIndex = 44;
+            label15.Text = "COLLECTION";
             // 
-            // textBox5
+            // label16
             // 
-            textBox5.Location = new Point(935, 182);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(156, 31);
-            textBox5.TabIndex = 45;
+            label16.AutoSize = true;
+            label16.Font = new Font("PMingLiU-ExtB", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label16.ForeColor = SystemColors.ControlLightLight;
+            label16.Location = new Point(3, 76);
+            label16.Name = "label16";
+            label16.Size = new Size(285, 28);
+            label16.TabIndex = 45;
+            label16.Text = "_____________________";
             // 
-            // comboBox4
+            // panel2
             // 
-            comboBox4.FormattingEnabled = true;
-            comboBox4.Location = new Point(778, 182);
-            comboBox4.Name = "comboBox4";
-            comboBox4.Size = new Size(142, 28);
-            comboBox4.TabIndex = 44;
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Location = new Point(672, 185);
-            label9.Name = "label9";
-            label9.Size = new Size(94, 20);
-            label9.TabIndex = 43;
-            label9.Text = "Buscar por:";
-            // 
-            // button6
-            // 
-            button6.BackColor = Color.SeaShell;
-            button6.BackgroundImage = (Image)resources.GetObject("button6.BackgroundImage");
-            button6.BackgroundImageLayout = ImageLayout.None;
-            button6.Location = new Point(935, 103);
-            button6.Name = "button6";
-            button6.Size = new Size(156, 43);
-            button6.TabIndex = 42;
-            button6.Text = "Cancelar";
-            button6.UseVisualStyleBackColor = false;
-            // 
-            // comboBox3
-            // 
-            comboBox3.FormattingEnabled = true;
-            comboBox3.Location = new Point(585, 115);
-            comboBox3.Name = "comboBox3";
-            comboBox3.Size = new Size(108, 28);
-            comboBox3.TabIndex = 41;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Location = new Point(208, 87);
-            label4.Name = "label4";
-            label4.Size = new Size(109, 20);
-            label4.TabIndex = 40;
-            label4.Text = "Stock Actual:";
-            // 
-            // comboBox2
-            // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(969, 28);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(122, 28);
-            comboBox2.TabIndex = 39;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(23, 36);
-            label2.Name = "label2";
-            label2.Size = new Size(68, 20);
-            label2.TabIndex = 0;
-            label2.Text = "Código:";
-            // 
-            // textBox7
-            // 
-            textBox7.Location = new Point(412, 115);
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(113, 31);
-            textBox7.TabIndex = 38;
-            // 
-            // textBox4
-            // 
-            textBox4.Location = new Point(104, 27);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(121, 31);
-            textBox4.TabIndex = 36;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(641, 30);
-            label3.Name = "label3";
-            label3.Size = new Size(85, 20);
-            label3.TabIndex = 1;
-            label3.Text = "Categoria:";
-            // 
-            // textBox3
-            // 
-            textBox3.Location = new Point(228, 115);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(118, 31);
-            textBox3.TabIndex = 9;
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Location = new Point(400, 87);
-            label8.Name = "label8";
-            label8.Size = new Size(109, 20);
-            label8.TabIndex = 33;
-            label8.Text = "Precio Venta:";
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Location = new Point(246, 33);
-            label5.Name = "label5";
-            label5.Size = new Size(168, 20);
-            label5.TabIndex = 3;
-            label5.Text = "Nombre del Articulo:";
-            // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(44, 117);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(110, 31);
-            textBox2.TabIndex = 8;
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.Location = new Point(29, 84);
-            label10.Name = "label10";
-            label10.Size = new Size(120, 20);
-            label10.TabIndex = 35;
-            label10.Text = "Stock Minimo:";
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Location = new Point(899, 33);
-            label6.Name = "label6";
-            label6.Size = new Size(61, 20);
-            label6.TabIndex = 4;
-            label6.Text = "Marca:";
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(429, 27);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(206, 31);
-            textBox1.TabIndex = 6;
-            // 
-            // comboBox1
-            // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(738, 27);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(142, 28);
-            comboBox1.TabIndex = 7;
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Location = new Point(564, 87);
-            label7.Name = "label7";
-            label7.Size = new Size(63, 20);
-            label7.TabIndex = 1;
-            label7.Text = "Estado:";
-            // 
-            // button1
-            // 
-            button1.BackColor = Color.SeaShell;
-            button1.BackgroundImage = (Image)resources.GetObject("button1.BackgroundImage");
-            button1.BackgroundImageLayout = ImageLayout.None;
-            button1.Location = new Point(766, 103);
-            button1.Name = "button1";
-            button1.Size = new Size(163, 43);
-            button1.TabIndex = 5;
-            button1.Text = "Guardar";
-            button1.UseVisualStyleBackColor = false;
+            panel2.Controls.Add(dataGridView1);
+            panel2.Location = new Point(303, 374);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(1053, 185);
+            panel2.TabIndex = 98;
             // 
             // dataGridView1
             // 
-            dataGridView1.BackgroundColor = Color.Snow;
+            dataGridView1.BackgroundColor = Color.SeaShell;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3, Column4, Column5, Column6, Column7, Column9, Column8 });
-            dataGridView1.Location = new Point(74, 383);
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3, Column4, Column5, Column6, Column7, Column9 });
+            dataGridView1.Dock = DockStyle.Fill;
+            dataGridView1.Location = new Point(0, 0);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 62;
-            dataGridView1.Size = new Size(1147, 193);
-            dataGridView1.TabIndex = 44;
+            dataGridView1.Size = new Size(1053, 185);
+            dataGridView1.TabIndex = 89;
             // 
             // Column1
             // 
@@ -425,238 +441,331 @@
             Column9.Name = "Column9";
             Column9.Width = 90;
             // 
-            // Column8
+            // groupBox1
             // 
-            Column8.HeaderText = "Editar";
-            Column8.MinimumWidth = 8;
-            Column8.Name = "Column8";
-            Column8.Width = 80;
+            groupBox1.BackColor = Color.SeaShell;
+            groupBox1.Controls.Add(dateTimePicker1);
+            groupBox1.Controls.Add(label13);
+            groupBox1.Controls.Add(textBox6);
+            groupBox1.Controls.Add(label7);
+            groupBox1.Controls.Add(textBox5);
+            groupBox1.Controls.Add(comboBox4);
+            groupBox1.Controls.Add(label9);
+            groupBox1.Controls.Add(button3);
+            groupBox1.Controls.Add(comboBox3);
+            groupBox1.Controls.Add(label4);
+            groupBox1.Controls.Add(label2);
+            groupBox1.Controls.Add(textBox7);
+            groupBox1.Controls.Add(textBox4);
+            groupBox1.Controls.Add(label3);
+            groupBox1.Controls.Add(textBox3);
+            groupBox1.Controls.Add(label8);
+            groupBox1.Controls.Add(label1);
+            groupBox1.Controls.Add(textBox2);
+            groupBox1.Controls.Add(label10);
+            groupBox1.Controls.Add(textBox1);
+            groupBox1.Controls.Add(comboBox1);
+            groupBox1.Controls.Add(label12);
+            groupBox1.Controls.Add(button4);
+            groupBox1.Font = new Font("PMingLiU-ExtB", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            groupBox1.ForeColor = Color.FromArgb(64, 0, 0);
+            groupBox1.Location = new Point(310, 114);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(1042, 254);
+            groupBox1.TabIndex = 97;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Nuevo Producto";
+            groupBox1.Enter += groupBox1_Enter;
             // 
-            // button18
+            // dateTimePicker1
             // 
-            button18.BackColor = Color.MistyRose;
-            button18.FlatAppearance.BorderSize = 0;
-            button18.FlatAppearance.MouseDownBackColor = Color.FromArgb(224, 224, 224);
-            button18.FlatAppearance.MouseOverBackColor = Color.Tan;
-            button18.FlatStyle = FlatStyle.Flat;
-            button18.Font = new Font("PMingLiU-ExtB", 10F);
-            button18.ForeColor = Color.Black;
-            button18.ImageAlign = ContentAlignment.MiddleLeft;
-            button18.Location = new Point(87, 61);
-            button18.Name = "button18";
-            button18.Size = new Size(117, 38);
-            button18.TabIndex = 43;
-            button18.Text = "Usuarios";
-            button18.UseVisualStyleBackColor = false;
+            dateTimePicker1.Font = new Font("PMingLiU-ExtB", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dateTimePicker1.Location = new Point(86, 27);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(316, 31);
+            dateTimePicker1.TabIndex = 100;
             // 
-            // button17
+            // label13
             // 
-            button17.BackColor = Color.MistyRose;
-            button17.FlatAppearance.BorderSize = 0;
-            button17.FlatAppearance.MouseDownBackColor = Color.FromArgb(224, 224, 224);
-            button17.FlatAppearance.MouseOverBackColor = Color.Tan;
-            button17.FlatStyle = FlatStyle.Flat;
-            button17.Font = new Font("PMingLiU-ExtB", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button17.ForeColor = Color.Black;
-            button17.ImageAlign = ContentAlignment.MiddleLeft;
-            button17.Location = new Point(333, 61);
-            button17.Name = "button17";
-            button17.Size = new Size(117, 38);
-            button17.TabIndex = 42;
-            button17.Text = "Compras";
-            button17.UseVisualStyleBackColor = false;
+            label13.AutoSize = true;
+            label13.Font = new Font("PMingLiU-ExtB", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label13.Location = new Point(14, 32);
+            label13.Name = "label13";
+            label13.Size = new Size(57, 20);
+            label13.TabIndex = 99;
+            label13.Text = "Fecha:";
             // 
-            // button16
+            // textBox6
             // 
-            button16.BackColor = Color.White;
-            button16.FlatAppearance.BorderSize = 0;
-            button16.FlatAppearance.MouseDownBackColor = Color.FromArgb(224, 224, 224);
-            button16.FlatAppearance.MouseOverBackColor = Color.Tan;
-            button16.FlatStyle = FlatStyle.Flat;
-            button16.Font = new Font("PMingLiU-ExtB", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button16.ForeColor = Color.Black;
-            button16.ImageAlign = ContentAlignment.MiddleLeft;
-            button16.Location = new Point(456, 61);
-            button16.Name = "button16";
-            button16.Size = new Size(117, 38);
-            button16.TabIndex = 41;
-            button16.Text = "Ventas";
-            button16.UseVisualStyleBackColor = false;
+            textBox6.Location = new Point(569, 154);
+            textBox6.Name = "textBox6";
+            textBox6.Size = new Size(113, 31);
+            textBox6.TabIndex = 47;
             // 
-            // button15
+            // label7
             // 
-            button15.BackColor = Color.MistyRose;
-            button15.FlatAppearance.BorderSize = 0;
-            button15.FlatAppearance.MouseDownBackColor = Color.FromArgb(224, 224, 224);
-            button15.FlatAppearance.MouseOverBackColor = Color.Tan;
-            button15.FlatStyle = FlatStyle.Flat;
-            button15.Font = new Font("PMingLiU-ExtB", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button15.ForeColor = Color.Black;
-            button15.ImageAlign = ContentAlignment.MiddleLeft;
-            button15.Location = new Point(579, 61);
-            button15.Name = "button15";
-            button15.Size = new Size(117, 38);
-            button15.TabIndex = 40;
-            button15.Text = "Productos";
-            button15.UseVisualStyleBackColor = false;
+            label7.AutoSize = true;
+            label7.Location = new Point(557, 126);
+            label7.Name = "label7";
+            label7.Size = new Size(109, 20);
+            label7.TabIndex = 46;
+            label7.Text = "Precio Venta:";
             // 
-            // button14
+            // textBox5
             // 
-            button14.BackColor = Color.White;
-            button14.FlatAppearance.BorderSize = 0;
-            button14.FlatAppearance.MouseDownBackColor = Color.FromArgb(224, 224, 224);
-            button14.FlatAppearance.MouseOverBackColor = Color.Tan;
-            button14.FlatStyle = FlatStyle.Flat;
-            button14.Font = new Font("PMingLiU-ExtB", 10F);
-            button14.ForeColor = Color.Black;
-            button14.ImageAlign = ContentAlignment.MiddleLeft;
-            button14.Location = new Point(702, 61);
-            button14.Name = "button14";
-            button14.Size = new Size(117, 38);
-            button14.TabIndex = 39;
-            button14.Text = "Proveedores";
-            button14.UseVisualStyleBackColor = false;
+            textBox5.Location = new Point(868, 203);
+            textBox5.Name = "textBox5";
+            textBox5.Size = new Size(156, 31);
+            textBox5.TabIndex = 45;
             // 
-            // button13
+            // comboBox4
             // 
-            button13.BackColor = Color.MistyRose;
-            button13.FlatAppearance.BorderSize = 0;
-            button13.FlatAppearance.MouseDownBackColor = Color.FromArgb(224, 224, 224);
-            button13.FlatAppearance.MouseOverBackColor = Color.Tan;
-            button13.FlatStyle = FlatStyle.Flat;
-            button13.Font = new Font("PMingLiU-ExtB", 10F);
-            button13.ForeColor = Color.Black;
-            button13.ImageAlign = ContentAlignment.MiddleLeft;
-            button13.Location = new Point(825, 61);
-            button13.Name = "button13";
-            button13.Size = new Size(117, 38);
-            button13.TabIndex = 38;
-            button13.Text = "Reporte";
-            button13.UseVisualStyleBackColor = false;
+            comboBox4.FormattingEnabled = true;
+            comboBox4.Location = new Point(711, 206);
+            comboBox4.Name = "comboBox4";
+            comboBox4.Size = new Size(142, 28);
+            comboBox4.TabIndex = 44;
             // 
-            // button12
+            // label9
             // 
-            button12.BackColor = Color.White;
-            button12.FlatAppearance.BorderSize = 0;
-            button12.FlatAppearance.MouseDownBackColor = Color.FromArgb(224, 224, 224);
-            button12.FlatAppearance.MouseOverBackColor = Color.Tan;
-            button12.FlatStyle = FlatStyle.Flat;
-            button12.Font = new Font("PMingLiU-ExtB", 10F);
-            button12.ForeColor = Color.Black;
-            button12.ImageAlign = ContentAlignment.MiddleLeft;
-            button12.Location = new Point(948, 61);
-            button12.Name = "button12";
-            button12.Size = new Size(133, 38);
-            button12.TabIndex = 37;
-            button12.Text = "Mantenimiento";
-            button12.UseVisualStyleBackColor = false;
+            label9.AutoSize = true;
+            label9.Location = new Point(599, 214);
+            label9.Name = "label9";
+            label9.Size = new Size(94, 20);
+            label9.TabIndex = 43;
+            label9.Text = "Buscar por:";
             // 
-            // button11
+            // button3
             // 
-            button11.BackColor = Color.MistyRose;
-            button11.FlatAppearance.BorderSize = 0;
-            button11.FlatAppearance.MouseDownBackColor = Color.FromArgb(224, 224, 224);
-            button11.FlatAppearance.MouseOverBackColor = Color.Tan;
-            button11.FlatStyle = FlatStyle.Flat;
-            button11.Font = new Font("PMingLiU-ExtB", 10F);
-            button11.ForeColor = Color.Black;
-            button11.ImageAlign = ContentAlignment.MiddleLeft;
-            button11.Location = new Point(1087, 61);
-            button11.Name = "button11";
-            button11.Size = new Size(117, 38);
-            button11.TabIndex = 36;
-            button11.Text = "Acerca de";
-            button11.UseVisualStyleBackColor = false;
+            button3.BackColor = Color.Maroon;
+            button3.BackgroundImage = (Image)resources.GetObject("button3.BackgroundImage");
+            button3.BackgroundImageLayout = ImageLayout.None;
+            button3.ForeColor = Color.White;
+            button3.Location = new Point(868, 135);
+            button3.Name = "button3";
+            button3.Size = new Size(163, 43);
+            button3.TabIndex = 42;
+            button3.Text = "Cancelar";
+            button3.UseVisualStyleBackColor = false;
+            // 
+            // comboBox3
+            // 
+            comboBox3.FormattingEnabled = true;
+            comboBox3.Location = new Point(731, 150);
+            comboBox3.Name = "comboBox3";
+            comboBox3.Size = new Size(108, 28);
+            comboBox3.TabIndex = 41;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(191, 126);
+            label4.Name = "label4";
+            label4.Size = new Size(109, 20);
+            label4.TabIndex = 40;
+            label4.Text = "Stock Actual:";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(3, 82);
+            label2.Name = "label2";
+            label2.Size = new Size(68, 20);
+            label2.TabIndex = 0;
+            label2.Text = "Código:";
+            // 
+            // textBox7
+            // 
+            textBox7.Location = new Point(395, 154);
+            textBox7.Name = "textBox7";
+            textBox7.Size = new Size(113, 31);
+            textBox7.TabIndex = 38;
+            // 
+            // textBox4
+            // 
+            textBox4.Location = new Point(77, 73);
+            textBox4.Name = "textBox4";
+            textBox4.Size = new Size(121, 31);
+            textBox4.TabIndex = 36;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(619, 77);
+            label3.Name = "label3";
+            label3.Size = new Size(85, 20);
+            label3.TabIndex = 1;
+            label3.Text = "Categoria:";
+            // 
+            // textBox3
+            // 
+            textBox3.Location = new Point(211, 154);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(118, 31);
+            textBox3.TabIndex = 9;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new Point(383, 126);
+            label8.Name = "label8";
+            label8.Size = new Size(125, 20);
+            label8.TabIndex = 33;
+            label8.Text = "Precio Compra:";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(222, 79);
+            label1.Name = "label1";
+            label1.Size = new Size(168, 20);
+            label1.TabIndex = 3;
+            label1.Text = "Nombre del Articulo:";
+            // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(27, 156);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(110, 31);
+            textBox2.TabIndex = 8;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Location = new Point(12, 123);
+            label10.Name = "label10";
+            label10.Size = new Size(120, 20);
+            label10.TabIndex = 35;
+            label10.Text = "Stock Minimo:";
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(396, 72);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(206, 31);
+            textBox1.TabIndex = 6;
+            // 
+            // comboBox1
+            // 
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new Point(710, 74);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(142, 28);
+            comboBox1.TabIndex = 7;
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Location = new Point(710, 122);
+            label12.Name = "label12";
+            label12.Size = new Size(63, 20);
+            label12.TabIndex = 1;
+            label12.Text = "Estado:";
+            // 
+            // button4
+            // 
+            button4.BackColor = Color.Maroon;
+            button4.BackgroundImage = (Image)resources.GetObject("button4.BackgroundImage");
+            button4.BackgroundImageLayout = ImageLayout.None;
+            button4.ForeColor = Color.White;
+            button4.Location = new Point(868, 86);
+            button4.Name = "button4";
+            button4.Size = new Size(163, 43);
+            button4.TabIndex = 5;
+            button4.Text = "Guardar";
+            button4.UseVisualStyleBackColor = false;
+            // 
+            // button6
+            // 
+            button6.BackColor = Color.FromArgb(64, 0, 0);
+            button6.Font = new Font("PMingLiU-ExtB", 9F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            button6.ForeColor = SystemColors.ControlLightLight;
+            button6.Location = new Point(310, 821);
+            button6.Name = "button6";
+            button6.Size = new Size(163, 38);
+            button6.TabIndex = 96;
+            button6.Text = "Menú principal";
+            button6.UseVisualStyleBackColor = false;
+            button6.Click += button6_Click;
+            // 
+            // button5
+            // 
+            button5.BackColor = Color.FromArgb(64, 0, 0);
+            button5.Font = new Font("PMingLiU-ExtB", 9F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            button5.ForeColor = SystemColors.ControlLightLight;
+            button5.Location = new Point(1224, 826);
+            button5.Name = "button5";
+            button5.Size = new Size(124, 34);
+            button5.TabIndex = 95;
+            button5.Text = "Cerrar Sesión ";
+            button5.UseVisualStyleBackColor = false;
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(1131, 592);
+            pictureBox1.BackColor = Color.Transparent;
+            pictureBox1.Image = Properties.Resources.imagen_circular_recortada;
+            pictureBox1.Location = new Point(1256, 8);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(90, 78);
+            pictureBox1.Size = new Size(92, 84);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 34;
+            pictureBox1.TabIndex = 94;
             pictureBox1.TabStop = false;
             // 
-            // button2
+            // label5
             // 
-            button2.BackColor = Color.White;
-            button2.FlatAppearance.BorderSize = 0;
-            button2.FlatAppearance.MouseDownBackColor = Color.FromArgb(224, 224, 224);
-            button2.FlatAppearance.MouseOverBackColor = Color.Tan;
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("PMingLiU-ExtB", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button2.ForeColor = Color.Black;
-            button2.ImageAlign = ContentAlignment.MiddleLeft;
-            button2.Location = new Point(210, 61);
-            button2.Name = "button2";
-            button2.Size = new Size(117, 38);
-            button2.TabIndex = 35;
-            button2.Text = "Clientes";
-            button2.UseVisualStyleBackColor = false;
+            label5.AutoSize = true;
+            label5.Font = new Font("PMingLiU-ExtB", 16F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label5.ForeColor = Color.FromArgb(64, 0, 0);
+            label5.Location = new Point(324, 44);
+            label5.Name = "label5";
+            label5.Size = new Size(291, 32);
+            label5.TabIndex = 93;
+            label5.Text = "Gestión de Productos";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("PMingLiU-ExtB", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.ForeColor = Color.FromArgb(64, 0, 0);
+            label6.Location = new Point(310, 68);
+            label6.Name = "label6";
+            label6.Size = new Size(942, 32);
+            label6.TabIndex = 92;
+            label6.Text = "__________________________________________________________";
             // 
             // Formproductos
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1280, 682);
-            Controls.Add(groupBox1);
-            Controls.Add(dataGridView1);
-            Controls.Add(button18);
-            Controls.Add(button17);
-            Controls.Add(button16);
-            Controls.Add(button15);
-            Controls.Add(button14);
-            Controls.Add(button13);
-            Controls.Add(button12);
-            Controls.Add(button11);
-            Controls.Add(pictureBox1);
-            Controls.Add(button2);
+            ClientSize = new Size(1371, 872);
             Controls.Add(panel2);
-            Controls.Add(panel3);
+            Controls.Add(groupBox1);
+            Controls.Add(button6);
+            Controls.Add(button5);
+            Controls.Add(pictureBox1);
+            Controls.Add(label5);
+            Controls.Add(label6);
             Controls.Add(panel1);
-            FormBorderStyle = FormBorderStyle.None;
+            FormBorderStyle = FormBorderStyle.SizableToolWindow;
             Name = "Formproductos";
-            Text = "Formproductos";
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             panel2.ResumeLayout(false);
-            panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private Panel panel1;
-        private Panel panel3;
-        private Panel panel2;
-        private Button btnmenuprincipal;
-        private Button btnsalir;
         private Label label11;
-        private GroupBox groupBox1;
-        private TextBox textBox5;
-        private ComboBox comboBox4;
-        private Label label9;
-        private Button button6;
-        private ComboBox comboBox3;
-        private Label label4;
-        private ComboBox comboBox2;
-        private Label label2;
-        private TextBox textBox7;
-        private TextBox textBox4;
-        private Label label3;
-        private TextBox textBox3;
-        private Label label8;
-        private Label label5;
-        private TextBox textBox2;
-        private Label label10;
-        private Label label6;
-        private TextBox textBox1;
-        private ComboBox comboBox1;
-        private Label label7;
-        private Button button1;
+        private Label label15;
+        private Label label16;
+        private Panel panel2;
         private DataGridView dataGridView1;
         private DataGridViewTextBoxColumn Column1;
         private DataGridViewTextBoxColumn Column2;
@@ -666,16 +775,46 @@
         private DataGridViewTextBoxColumn Column6;
         private DataGridViewTextBoxColumn Column7;
         private DataGridViewTextBoxColumn Column9;
-        private DataGridViewTextBoxColumn Column8;
-        private Button button18;
-        private Button button17;
-        private Button button16;
-        private Button button15;
-        private Button button14;
-        private Button button13;
-        private Button button12;
-        private Button button11;
+        private GroupBox groupBox1;
+        private TextBox textBox5;
+        private ComboBox comboBox4;
+        private Label label9;
+        private Button button3;
+        private ComboBox comboBox3;
+        private Label label4;
+        private Label label2;
+        private TextBox textBox7;
+        private TextBox textBox4;
+        private Label label3;
+        private TextBox textBox3;
+        private Label label8;
+        private Label label1;
+        private TextBox textBox2;
+        private Label label10;
+        private TextBox textBox1;
+        private ComboBox comboBox1;
+        private Label label12;
+        private Button button4;
+        private Button button6;
+        private Button button5;
         private PictureBox pictureBox1;
-        private Button button2;
+        private Label label5;
+        private Label label6;
+        private TextBox textBox6;
+        private Label label7;
+        private DateTimePicker dateTimePicker1;
+        private Label label13;
+        private Button btndevolucionventas;
+        private Button btncredito;
+        private Button btndevolucioncompra;
+        private Button btncaja;
+        private Button btnusuarios;
+        private Button btncompras;
+        private Button btnproductos;
+        private Button btnproveedores;
+        private Button btnventas;
+        private Button btnclientes;
+        private Button btninventario;
+        private Button btnnivelacioninventario;
     }
 }

@@ -9,14 +9,20 @@ namespace Sistema_NK
 {
     public class Usuario
     {
-        private string _cedula;
-        private string _nombreCompleto;
-        private string _direccion;
-        private string _estado;
-        private string _telefono;
-        private string _email;
-        private string _username;
-        private string _password;
-        private string _rol;
+        private string Id_usuario;
+        private string Id_rol;
+        private string Nombre;
+        private string Apellido;
+        private string Contrasena;
+        private string Correo;
+        private string Estado;
+
+        internal Cliente Cliente
+        {
+            get => default;
+            set
+            {
+            }
+        }
     }
 }
