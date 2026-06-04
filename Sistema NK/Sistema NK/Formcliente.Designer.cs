@@ -52,12 +52,20 @@
             comboBox3 = new ComboBox();
             button5 = new Button();
             dataGridView1 = new DataGridView();
+            Id_Cliente = new DataGridViewTextBoxColumn();
+            Nombre = new DataGridViewTextBoxColumn();
+            Column4 = new DataGridViewTextBoxColumn();
+            Column5 = new DataGridViewTextBoxColumn();
+            Column6 = new DataGridViewTextBoxColumn();
+            Editar = new DataGridViewTextBoxColumn();
             groupBox1 = new GroupBox();
             textBox6 = new TextBox();
             label12 = new Label();
             textBox3 = new TextBox();
             label8 = new Label();
+            textBox2 = new TextBox();
             textBox4 = new TextBox();
+            label4 = new Label();
             button3 = new Button();
             button4 = new Button();
             label2 = new Label();
@@ -72,14 +80,6 @@
             label1 = new Label();
             dateTimePicker1 = new DateTimePicker();
             label20 = new Label();
-            label4 = new Label();
-            textBox2 = new TextBox();
-            Id_Cliente = new DataGridViewTextBoxColumn();
-            Nombre = new DataGridViewTextBoxColumn();
-            Column4 = new DataGridViewTextBoxColumn();
-            Column5 = new DataGridViewTextBoxColumn();
-            Column6 = new DataGridViewTextBoxColumn();
-            Editar = new DataGridViewTextBoxColumn();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
@@ -459,6 +459,48 @@
             dataGridView1.Size = new Size(685, 203);
             dataGridView1.TabIndex = 91;
             // 
+            // Id_Cliente
+            // 
+            Id_Cliente.HeaderText = "Id Cliente";
+            Id_Cliente.MinimumWidth = 8;
+            Id_Cliente.Name = "Id_Cliente";
+            Id_Cliente.Width = 140;
+            // 
+            // Nombre
+            // 
+            Nombre.HeaderText = "Nombre";
+            Nombre.MinimumWidth = 8;
+            Nombre.Name = "Nombre";
+            Nombre.Width = 150;
+            // 
+            // Column4
+            // 
+            Column4.HeaderText = "Télefono";
+            Column4.MinimumWidth = 8;
+            Column4.Name = "Column4";
+            Column4.Width = 125;
+            // 
+            // Column5
+            // 
+            Column5.HeaderText = "Cédula";
+            Column5.MinimumWidth = 8;
+            Column5.Name = "Column5";
+            Column5.Width = 200;
+            // 
+            // Column6
+            // 
+            Column6.HeaderText = "Estado";
+            Column6.MinimumWidth = 8;
+            Column6.Name = "Column6";
+            Column6.Width = 125;
+            // 
+            // Editar
+            // 
+            Editar.HeaderText = "Editar";
+            Editar.MinimumWidth = 6;
+            Editar.Name = "Editar";
+            Editar.Width = 125;
+            // 
             // groupBox1
             // 
             groupBox1.BackColor = Color.SeaShell;
@@ -528,6 +570,15 @@
             label8.TabIndex = 58;
             label8.Text = "Correo electrónico:";
             // 
+            // textBox2
+            // 
+            textBox2.Font = new Font("PMingLiU-ExtB", 9F);
+            textBox2.Location = new Point(7, 55);
+            textBox2.Margin = new Padding(2);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(239, 25);
+            textBox2.TabIndex = 57;
+            // 
             // textBox4
             // 
             textBox4.Font = new Font("PMingLiU-ExtB", 10F);
@@ -537,9 +588,20 @@
             textBox4.Size = new Size(162, 27);
             textBox4.TabIndex = 55;
             // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("PMingLiU-ExtB", 10F);
+            label4.Location = new Point(7, 36);
+            label4.Margin = new Padding(2, 0, 2, 0);
+            label4.Name = "label4";
+            label4.Size = new Size(74, 17);
+            label4.TabIndex = 56;
+            label4.Text = "Id Cliente:";
+            // 
             // button3
             // 
-            button3.BackColor = Color.Maroon;
+            button3.BackColor = Color.FromArgb(64, 0, 0);
             button3.BackgroundImage = (Image)resources.GetObject("button3.BackgroundImage");
             button3.BackgroundImageLayout = ImageLayout.None;
             button3.Font = new Font("PMingLiU-ExtB", 10F);
@@ -554,7 +616,7 @@
             // 
             // button4
             // 
-            button4.BackColor = Color.Maroon;
+            button4.BackColor = Color.FromArgb(64, 0, 0);
             button4.BackgroundImage = (Image)resources.GetObject("button4.BackgroundImage");
             button4.BackgroundImageLayout = ImageLayout.None;
             button4.Font = new Font("PMingLiU-ExtB", 10F);
@@ -695,67 +757,6 @@
             label20.Size = new Size(50, 17);
             label20.TabIndex = 107;
             label20.Text = "Fecha:";
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("PMingLiU-ExtB", 10F);
-            label4.Location = new Point(7, 36);
-            label4.Margin = new Padding(2, 0, 2, 0);
-            label4.Name = "label4";
-            label4.Size = new Size(74, 17);
-            label4.TabIndex = 56;
-            label4.Text = "Id Cliente:";
-            // 
-            // textBox2
-            // 
-            textBox2.Font = new Font("PMingLiU-ExtB", 9F);
-            textBox2.Location = new Point(7, 55);
-            textBox2.Margin = new Padding(2);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(239, 25);
-            textBox2.TabIndex = 57;
-            // 
-            // Id_Cliente
-            // 
-            Id_Cliente.HeaderText = "Id Cliente";
-            Id_Cliente.MinimumWidth = 8;
-            Id_Cliente.Name = "Id_Cliente";
-            Id_Cliente.Width = 140;
-            // 
-            // Nombre
-            // 
-            Nombre.HeaderText = "Nombre";
-            Nombre.MinimumWidth = 8;
-            Nombre.Name = "Nombre";
-            Nombre.Width = 150;
-            // 
-            // Column4
-            // 
-            Column4.HeaderText = "Télefono";
-            Column4.MinimumWidth = 8;
-            Column4.Name = "Column4";
-            // 
-            // Column5
-            // 
-            Column5.HeaderText = "Cédula";
-            Column5.MinimumWidth = 8;
-            Column5.Name = "Column5";
-            Column5.Width = 200;
-            // 
-            // Column6
-            // 
-            Column6.HeaderText = "Estado";
-            Column6.MinimumWidth = 8;
-            Column6.Name = "Column6";
-            Column6.Width = 125;
-            // 
-            // Editar
-            // 
-            Editar.HeaderText = "Editar";
-            Editar.MinimumWidth = 6;
-            Editar.Name = "Editar";
-            Editar.Width = 125;
             // 
             // Formcliente
             // 
