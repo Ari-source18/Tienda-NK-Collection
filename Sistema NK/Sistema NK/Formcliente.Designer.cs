@@ -79,6 +79,7 @@
             Column5 = new DataGridViewTextBoxColumn();
             Column6 = new DataGridViewTextBoxColumn();
             Editar = new DataGridViewTextBoxColumn();
+            button1 = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             groupBox1.SuspendLayout();
@@ -470,7 +471,7 @@
             groupBox1.Margin = new Padding(2);
             groupBox1.Name = "groupBox1";
             groupBox1.Padding = new Padding(2);
-            groupBox1.Size = new Size(804, 208);
+            groupBox1.Size = new Size(864, 208);
             groupBox1.TabIndex = 89;
             groupBox1.TabStop = false;
             groupBox1.Text = "Nuevo Cliente";
@@ -482,7 +483,7 @@
             textBox6.Location = new Point(512, 102);
             textBox6.Margin = new Padding(2);
             textBox6.Name = "textBox6";
-            textBox6.Size = new Size(258, 27);
+            textBox6.Size = new Size(342, 27);
             textBox6.TabIndex = 61;
             // 
             // label12
@@ -502,7 +503,7 @@
             textBox3.Location = new Point(512, 55);
             textBox3.Margin = new Padding(2);
             textBox3.Name = "textBox3";
-            textBox3.Size = new Size(256, 27);
+            textBox3.Size = new Size(342, 27);
             textBox3.TabIndex = 59;
             // 
             // label8
@@ -557,7 +558,7 @@
             button3.Name = "button3";
             button3.Size = new Size(122, 34);
             button3.TabIndex = 45;
-            button3.Text = "Cancelar";
+            button3.Text = "Limpiar";
             button3.UseVisualStyleBackColor = false;
             // 
             // button4
@@ -749,12 +750,27 @@
             Editar.Name = "Editar";
             Editar.Width = 125;
             // 
+            // button1
+            // 
+            button1.BackColor = Color.FromArgb(64, 0, 0);
+            button1.BackgroundImageLayout = ImageLayout.None;
+            button1.Font = new Font("PMingLiU-ExtB", 10F);
+            button1.ForeColor = Color.White;
+            button1.Location = new Point(678, 392);
+            button1.Margin = new Padding(2);
+            button1.Name = "button1";
+            button1.Size = new Size(121, 34);
+            button1.TabIndex = 109;
+            button1.Text = "Buscar";
+            button1.UseVisualStyleBackColor = false;
+            // 
             // Formcliente
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1145, 717);
+            Controls.Add(button1);
             Controls.Add(dateTimePicker1);
             Controls.Add(label20);
             Controls.Add(label3);
@@ -833,5 +849,6 @@
         private DataGridViewTextBoxColumn Column5;
         private DataGridViewTextBoxColumn Column6;
         private DataGridViewTextBoxColumn Editar;
+        private Button button1;
     }
 }
