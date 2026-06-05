@@ -61,13 +61,13 @@
             label4 = new Label();
             button3 = new Button();
             button4 = new Button();
+            label7 = new Label();
             label2 = new Label();
             textBox1 = new TextBox();
             textBox5 = new TextBox();
+            comboBox2 = new ComboBox();
             label9 = new Label();
             label10 = new Label();
-            label7 = new Label();
-            comboBox2 = new ComboBox();
             label5 = new Label();
             label6 = new Label();
             dateTimePicker1 = new DateTimePicker();
@@ -443,6 +443,7 @@
             button5.TabIndex = 92;
             button5.Text = "Cerrar Sesión ";
             button5.UseVisualStyleBackColor = false;
+            button5.Click += button5_Click;
             // 
             // groupBox1
             // 
@@ -574,6 +575,17 @@
             button4.Text = "Guardar";
             button4.UseVisualStyleBackColor = false;
             // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("PMingLiU-ExtB", 10F);
+            label7.Location = new Point(10, 172);
+            label7.Margin = new Padding(2, 0, 2, 0);
+            label7.Name = "label7";
+            label7.Size = new Size(55, 17);
+            label7.TabIndex = 40;
+            label7.Text = "Estado:";
+            // 
             // label2
             // 
             label2.AutoSize = true;
@@ -603,6 +615,16 @@
             textBox5.Size = new Size(171, 25);
             textBox5.TabIndex = 44;
             // 
+            // comboBox2
+            // 
+            comboBox2.Font = new Font("PMingLiU-ExtB", 9F);
+            comboBox2.FormattingEnabled = true;
+            comboBox2.Location = new Point(87, 166);
+            comboBox2.Margin = new Padding(2);
+            comboBox2.Name = "comboBox2";
+            comboBox2.Size = new Size(109, 23);
+            comboBox2.TabIndex = 42;
+            // 
             // label9
             // 
             label9.AutoSize = true;
@@ -624,27 +646,6 @@
             label10.Size = new Size(126, 17);
             label10.TabIndex = 37;
             label10.Text = "Nombre completo:";
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Font = new Font("PMingLiU-ExtB", 10F);
-            label7.Location = new Point(10, 172);
-            label7.Margin = new Padding(2, 0, 2, 0);
-            label7.Name = "label7";
-            label7.Size = new Size(55, 17);
-            label7.TabIndex = 40;
-            label7.Text = "Estado:";
-            // 
-            // comboBox2
-            // 
-            comboBox2.Font = new Font("PMingLiU-ExtB", 9F);
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(87, 166);
-            comboBox2.Margin = new Padding(2);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(109, 23);
-            comboBox2.TabIndex = 42;
             // 
             // label5
             // 
@@ -711,6 +712,7 @@
             Id_Cliente.HeaderText = "Id Cliente";
             Id_Cliente.MinimumWidth = 8;
             Id_Cliente.Name = "Id_Cliente";
+            Id_Cliente.Width = 125;
             // 
             // Nombre
             // 
@@ -745,6 +747,7 @@
             Editar.HeaderText = "Editar";
             Editar.MinimumWidth = 6;
             Editar.Name = "Editar";
+            Editar.Width = 125;
             // 
             // Formcliente
             // 
