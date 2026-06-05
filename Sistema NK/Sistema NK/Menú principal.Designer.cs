@@ -45,13 +45,12 @@
             btnclientes = new Button();
             button1 = new Button();
             label16 = new Label();
-            panelP = new Panel();
             pictureBox1 = new PictureBox();
             label1 = new Label();
             label3 = new Label();
             label2 = new Label();
+            panelP = new Panel();
             panel1.SuspendLayout();
-            panelP.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -330,9 +329,21 @@
             button1.Text = "NK Collection";
             button1.UseVisualStyleBackColor = false;
             // 
-            // panel2
+            // label16
             // 
-           
+            label16.Location = new Point(0, 0);
+            label16.Name = "label16";
+            label16.Size = new Size(100, 23);
+            label16.TabIndex = 61;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Location = new Point(354, 39);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(254, 237);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
             // 
             // label1
             // 
@@ -362,13 +373,18 @@
             // 
             // label2
             // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(354, 39);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(254, 237);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
+            label2.Location = new Point(0, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(100, 23);
+            label2.TabIndex = 0;
+            // 
+            // panelP
+            // 
+            panelP.Dock = DockStyle.Fill;
+            panelP.Location = new Point(347, 0);
+            panelP.Name = "panelP";
+            panelP.Size = new Size(898, 877);
+            panelP.TabIndex = 0;
             // 
             // Menú_principal
             // 
@@ -381,9 +397,6 @@
             Name = "Menú_principal";
             Load += Menú_principal_Load;
             panel1.ResumeLayout(false);
-            panel1.PerformLayout();
-            panelP.ResumeLayout(false);
-            panelP.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
@@ -404,12 +417,12 @@
         private Button btnclientes;
         private Button button1;
         private Label label16;
-        private Panel panelP;
         private PictureBox pictureBox1;
         private Label label1;
         private Label label3;
         private Label label2;
         private Button btninventario;
         private Button btnnivelacioninventario;
+        private Panel panelP;
     }
 }
