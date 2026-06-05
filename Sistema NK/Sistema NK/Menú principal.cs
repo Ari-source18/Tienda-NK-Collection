@@ -106,16 +106,17 @@ namespace Sistema_NK
 
         private void AbrirForm(object formHijo)
         {
-            for (int i = panelP.Controls.Count; i > 0; i--)
+            // Revisar que quiren hacer
+            for (int i = panel13.Controls.Count; i > 0; i--)
             {
 
-                this.panelP.Controls.RemoveAt(0);
+                this.panel13.Controls.RemoveAt(0);
             }
             Form form = formHijo as Form;
             form.TopLevel = false;
             form.Dock = DockStyle.Fill;
-            this.panelP.Controls.Add(form);
-            this.panelP.Tag = form;
+            this.panel13.Controls.Add(form);
+            this.panel13.Tag = form;
             form.Show();
         }
         private void Menú_principal_Load(object sender, EventArgs e)

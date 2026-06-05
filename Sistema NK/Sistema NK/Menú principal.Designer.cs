@@ -45,14 +45,14 @@
             btnclientes = new Button();
             button1 = new Button();
             label16 = new Label();
-            panelP = new Panel();
             pictureBox1 = new PictureBox();
             label1 = new Label();
             label3 = new Label();
             label2 = new Label();
+            panel13 = new Panel();
             panel1.SuspendLayout();
-            panelP.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            panel13.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -330,45 +330,22 @@
             button1.Text = "NK Collection";
             button1.UseVisualStyleBackColor = false;
             // 
-            // panel2
+            // label16
             // 
-            panel2.BackColor = Color.DimGray;
-            panel2.Controls.Add(button10);
-            panel2.Dock = DockStyle.Top;
-            panel2.Location = new Point(299, 0);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(946, 56);
-            panel2.TabIndex = 2;
+            label16.Location = new Point(0, 0);
+            label16.Name = "label16";
+            label16.Size = new Size(100, 23);
+            label16.TabIndex = 61;
             // 
-            // button10
+            // pictureBox1
             // 
-            button10.BackColor = Color.Transparent;
-            button10.FlatAppearance.BorderSize = 0;
-            button10.FlatAppearance.MouseDownBackColor = Color.FromArgb(224, 224, 224);
-            button10.FlatAppearance.MouseOverBackColor = Color.Tan;
-            button10.FlatStyle = FlatStyle.Flat;
-            button10.Font = new Font("PMingLiU-ExtB", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button10.ForeColor = Color.White;
-            button10.Image = (Image)resources.GetObject("button10.Image");
-            button10.ImageAlign = ContentAlignment.MiddleRight;
-            button10.Location = new Point(647, 2);
-            button10.Name = "button10";
-            button10.Size = new Size(287, 54);
-            button10.TabIndex = 10;
-            button10.Text = "Ariana Gaitán";
-            button10.UseVisualStyleBackColor = false;
-            // 
-            // panel3
-            // 
-            panel3.BackgroundImage = (Image)resources.GetObject("panel3.BackgroundImage");
-            panel3.Controls.Add(label1);
-            panel3.Controls.Add(label3);
-            panel3.Controls.Add(pictureBox1);
-            panel3.Dock = DockStyle.Fill;
-            panel3.Location = new Point(299, 56);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(946, 696);
-            panel3.TabIndex = 4;
+            pictureBox1.Image = Properties.Resources.imagen_circular_recortada;
+            pictureBox1.Location = new Point(354, 39);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(254, 237);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
             // 
             // label1
             // 
@@ -390,7 +367,7 @@
             label3.FlatStyle = FlatStyle.Flat;
             label3.Font = new Font("Pristina", 24F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.Black;
-            label3.Location = new Point(188, 313);
+            label3.Location = new Point(68, 313);
             label3.Name = "label3";
             label3.Size = new Size(773, 63);
             label3.TabIndex = 3;
@@ -398,29 +375,36 @@
             // 
             // label2
             // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(354, 39);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(254, 237);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
+            label2.Location = new Point(0, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(100, 23);
+            label2.TabIndex = 0;
+            // 
+            // panel13
+            // 
+            panel13.Controls.Add(label1);
+            panel13.Controls.Add(label3);
+            panel13.Controls.Add(pictureBox1);
+            panel13.Dock = DockStyle.Fill;
+            panel13.Location = new Point(347, 0);
+            panel13.Name = "panel13";
+            panel13.Size = new Size(898, 877);
+            panel13.TabIndex = 4;
             // 
             // Menú_principal
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1245, 877);
-            Controls.Add(panelP);
+            Controls.Add(panel13);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.SizableToolWindow;
             Name = "Menú_principal";
             Load += Menú_principal_Load;
             panel1.ResumeLayout(false);
-            panel1.PerformLayout();
-            panelP.ResumeLayout(false);
-            panelP.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            panel13.ResumeLayout(false);
+            panel13.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -440,12 +424,12 @@
         private Button btnclientes;
         private Button button1;
         private Label label16;
-        private Panel panelP;
         private PictureBox pictureBox1;
         private Label label1;
         private Label label3;
         private Label label2;
         private Button btninventario;
         private Button btnnivelacioninventario;
+        private Panel panel13;
     }
 }

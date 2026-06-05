@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Sistema_NK
 {
-    public partial class ReporteVenta : Form
+    public partial class Categoría : Form
     {
-        public ReporteVenta()
+        public Categoría()
         {
             InitializeComponent();
         }

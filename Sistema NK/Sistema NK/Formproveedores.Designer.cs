@@ -721,6 +721,7 @@
             Controls.Add(label7);
             FormBorderStyle = FormBorderStyle.SizableToolWindow;
             Name = "Formproveedores";
+            Load += Formproveedores_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             groupBox1.ResumeLayout(false);
