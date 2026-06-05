@@ -64,26 +64,23 @@
             comboBox4 = new ComboBox();
             label9 = new Label();
             button3 = new Button();
-            comboBox3 = new ComboBox();
-            label4 = new Label();
             label2 = new Label();
             textBox7 = new TextBox();
             textBox4 = new TextBox();
             label3 = new Label();
-            textBox3 = new TextBox();
             label8 = new Label();
             label1 = new Label();
             textBox2 = new TextBox();
             label10 = new Label();
             textBox1 = new TextBox();
             comboBox1 = new ComboBox();
-            label12 = new Label();
             button4 = new Button();
             button6 = new Button();
             button5 = new Button();
             pictureBox1 = new PictureBox();
             label5 = new Label();
             label6 = new Label();
+            button7 = new Button();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
@@ -444,6 +441,7 @@
             // groupBox1
             // 
             groupBox1.BackColor = Color.SeaShell;
+            groupBox1.Controls.Add(button7);
             groupBox1.Controls.Add(dateTimePicker1);
             groupBox1.Controls.Add(label13);
             groupBox1.Controls.Add(textBox6);
@@ -452,20 +450,16 @@
             groupBox1.Controls.Add(comboBox4);
             groupBox1.Controls.Add(label9);
             groupBox1.Controls.Add(button3);
-            groupBox1.Controls.Add(comboBox3);
-            groupBox1.Controls.Add(label4);
             groupBox1.Controls.Add(label2);
             groupBox1.Controls.Add(textBox7);
             groupBox1.Controls.Add(textBox4);
             groupBox1.Controls.Add(label3);
-            groupBox1.Controls.Add(textBox3);
             groupBox1.Controls.Add(label8);
             groupBox1.Controls.Add(label1);
             groupBox1.Controls.Add(textBox2);
             groupBox1.Controls.Add(label10);
             groupBox1.Controls.Add(textBox1);
             groupBox1.Controls.Add(comboBox1);
-            groupBox1.Controls.Add(label12);
             groupBox1.Controls.Add(button4);
             groupBox1.Font = new Font("PMingLiU-ExtB", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
             groupBox1.ForeColor = Color.FromArgb(64, 0, 0);
@@ -497,7 +491,7 @@
             // 
             // textBox6
             // 
-            textBox6.Location = new Point(569, 154);
+            textBox6.Location = new Point(434, 156);
             textBox6.Name = "textBox6";
             textBox6.Size = new Size(113, 31);
             textBox6.TabIndex = 47;
@@ -505,7 +499,7 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(557, 126);
+            label7.Location = new Point(434, 126);
             label7.Name = "label7";
             label7.Size = new Size(109, 20);
             label7.TabIndex = 46;
@@ -513,7 +507,7 @@
             // 
             // textBox5
             // 
-            textBox5.Location = new Point(868, 203);
+            textBox5.Location = new Point(696, 211);
             textBox5.Name = "textBox5";
             textBox5.Size = new Size(156, 31);
             textBox5.TabIndex = 45;
@@ -521,7 +515,7 @@
             // comboBox4
             // 
             comboBox4.FormattingEnabled = true;
-            comboBox4.Location = new Point(711, 206);
+            comboBox4.Location = new Point(534, 214);
             comboBox4.Name = "comboBox4";
             comboBox4.Size = new Size(142, 28);
             comboBox4.TabIndex = 44;
@@ -529,7 +523,7 @@
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(599, 214);
+            label9.Location = new Point(434, 214);
             label9.Name = "label9";
             label9.Size = new Size(94, 20);
             label9.TabIndex = 43;
@@ -548,23 +542,6 @@
             button3.Text = "Cancelar";
             button3.UseVisualStyleBackColor = false;
             // 
-            // comboBox3
-            // 
-            comboBox3.FormattingEnabled = true;
-            comboBox3.Location = new Point(731, 150);
-            comboBox3.Name = "comboBox3";
-            comboBox3.Size = new Size(108, 28);
-            comboBox3.TabIndex = 41;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Location = new Point(191, 126);
-            label4.Name = "label4";
-            label4.Size = new Size(109, 20);
-            label4.TabIndex = 40;
-            label4.Text = "Stock Actual:";
-            // 
             // label2
             // 
             label2.AutoSize = true;
@@ -576,7 +553,7 @@
             // 
             // textBox7
             // 
-            textBox7.Location = new Point(395, 154);
+            textBox7.Location = new Point(222, 156);
             textBox7.Name = "textBox7";
             textBox7.Size = new Size(113, 31);
             textBox7.TabIndex = 38;
@@ -597,17 +574,10 @@
             label3.TabIndex = 1;
             label3.Text = "Categoria:";
             // 
-            // textBox3
-            // 
-            textBox3.Location = new Point(211, 154);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(118, 31);
-            textBox3.TabIndex = 9;
-            // 
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(383, 126);
+            label8.Location = new Point(222, 126);
             label8.Name = "label8";
             label8.Size = new Size(125, 20);
             label8.TabIndex = 33;
@@ -652,15 +622,6 @@
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(142, 28);
             comboBox1.TabIndex = 7;
-            // 
-            // label12
-            // 
-            label12.AutoSize = true;
-            label12.Location = new Point(710, 122);
-            label12.Name = "label12";
-            label12.Size = new Size(63, 20);
-            label12.TabIndex = 1;
-            label12.Text = "Estado:";
             // 
             // button4
             // 
@@ -733,6 +694,20 @@
             label6.TabIndex = 92;
             label6.Text = "__________________________________________________________";
             // 
+            // button7
+            // 
+            button7.BackColor = Color.Transparent;
+            button7.BackgroundImage = (Image)resources.GetObject("button7.BackgroundImage");
+            button7.Font = new Font("PMingLiU-ExtB", 9F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            button7.ForeColor = SystemColors.ControlLightLight;
+            button7.Location = new Point(868, 211);
+            button7.Margin = new Padding(2);
+            button7.Name = "button7";
+            button7.Size = new Size(30, 34);
+            button7.TabIndex = 121;
+            button7.Text = "Cerrar Sesión ";
+            button7.UseVisualStyleBackColor = false;
+            // 
             // Formproductos
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -780,20 +755,16 @@
         private ComboBox comboBox4;
         private Label label9;
         private Button button3;
-        private ComboBox comboBox3;
-        private Label label4;
         private Label label2;
         private TextBox textBox7;
         private TextBox textBox4;
         private Label label3;
-        private TextBox textBox3;
         private Label label8;
         private Label label1;
         private TextBox textBox2;
         private Label label10;
         private TextBox textBox1;
         private ComboBox comboBox1;
-        private Label label12;
         private Button button4;
         private Button button6;
         private Button button5;
@@ -816,5 +787,6 @@
         private Button btnclientes;
         private Button btninventario;
         private Button btnnivelacioninventario;
+        private Button button7;
     }
 }

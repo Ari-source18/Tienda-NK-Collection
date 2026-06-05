@@ -54,8 +54,6 @@
             textBox7 = new TextBox();
             label13 = new Label();
             label9 = new Label();
-            textBox5 = new TextBox();
-            label4 = new Label();
             textBox4 = new TextBox();
             label3 = new Label();
             textBox3 = new TextBox();
@@ -80,6 +78,8 @@
             pictureBox1 = new PictureBox();
             label5 = new Label();
             label6 = new Label();
+            label4 = new Label();
+            txtidproveedor = new TextBox();
             panel1.SuspendLayout();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
@@ -387,17 +387,19 @@
             // groupBox1
             // 
             groupBox1.BackColor = Color.SeaShell;
+            groupBox1.Controls.Add(txtidproveedor);
+            groupBox1.Controls.Add(label4);
             groupBox1.Controls.Add(dateTimePicker1);
             groupBox1.Controls.Add(textBox7);
             groupBox1.Controls.Add(label13);
             groupBox1.Controls.Add(label9);
-            groupBox1.Controls.Add(textBox5);
-            groupBox1.Controls.Add(label4);
             groupBox1.Controls.Add(textBox4);
             groupBox1.Controls.Add(label3);
             groupBox1.Controls.Add(textBox3);
             groupBox1.Controls.Add(comboBox1);
+            groupBox1.Controls.Add(comboBox2);
             groupBox1.Controls.Add(label1);
+            groupBox1.Controls.Add(label7);
             groupBox1.Controls.Add(textBox2);
             groupBox1.Controls.Add(label2);
             groupBox1.Controls.Add(button3);
@@ -450,24 +452,6 @@
             label9.Size = new Size(54, 20);
             label9.TabIndex = 57;
             label9.Text = "RUC:";
-            // 
-            // textBox5
-            // 
-            textBox5.Font = new Font("PMingLiU-ExtB", 10F);
-            textBox5.Location = new Point(392, 65);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(153, 31);
-            textBox5.TabIndex = 56;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("PMingLiU-ExtB", 10F);
-            label4.Location = new Point(391, 44);
-            label4.Name = "label4";
-            label4.Size = new Size(80, 20);
-            label4.TabIndex = 55;
-            label4.Text = "Teléfono:";
             // 
             // textBox4
             // 
@@ -600,7 +584,7 @@
             // 
             comboBox2.Font = new Font("PMingLiU-ExtB", 10F);
             comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(1163, 626);
+            comboBox2.Location = new Point(360, 216);
             comboBox2.Name = "comboBox2";
             comboBox2.Size = new Size(159, 28);
             comboBox2.TabIndex = 42;
@@ -609,7 +593,7 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("PMingLiU-ExtB", 10F);
-            label7.Location = new Point(1163, 605);
+            label7.Location = new Point(360, 176);
             label7.Name = "label7";
             label7.Size = new Size(63, 20);
             label7.TabIndex = 40;
@@ -704,6 +688,24 @@
             label6.TabIndex = 93;
             label6.Text = "__________________________________________________________";
             // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("PMingLiU-ExtB", 10F);
+            label4.Location = new Point(382, 44);
+            label4.Name = "label4";
+            label4.Size = new Size(29, 20);
+            label4.TabIndex = 103;
+            label4.Text = "Id:";
+            // 
+            // txtidproveedor
+            // 
+            txtidproveedor.Font = new Font("PMingLiU-ExtB", 10F);
+            txtidproveedor.Location = new Point(382, 69);
+            txtidproveedor.Name = "txtidproveedor";
+            txtidproveedor.Size = new Size(153, 31);
+            txtidproveedor.TabIndex = 104;
+            // 
             // Formproveedores
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -717,8 +719,6 @@
             Controls.Add(label5);
             Controls.Add(label6);
             Controls.Add(panel1);
-            Controls.Add(comboBox2);
-            Controls.Add(label7);
             FormBorderStyle = FormBorderStyle.SizableToolWindow;
             Name = "Formproveedores";
             Load += Formproveedores_Load;
@@ -765,8 +765,6 @@
         private Label label6;
         private TextBox textBox7;
         private Label label9;
-        private TextBox textBox5;
-        private Label label4;
         private TextBox textBox4;
         private Label label3;
         private DateTimePicker dateTimePicker1;
@@ -783,5 +781,7 @@
         private Button btnclientes;
         private Button btninventario;
         private Button btnnivelacioninventario;
+        private Label label4;
+        private TextBox txtidproveedor;
     }
 }

@@ -45,14 +45,14 @@
             btnclientes = new Button();
             button1 = new Button();
             label16 = new Label();
+            panelP = new Panel();
             pictureBox1 = new PictureBox();
             label1 = new Label();
             label3 = new Label();
             label2 = new Label();
-            panel13 = new Panel();
             panel1.SuspendLayout();
+            panelP.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            panel13.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -330,22 +330,9 @@
             button1.Text = "NK Collection";
             button1.UseVisualStyleBackColor = false;
             // 
-            // label16
+            // panel2
             // 
-            label16.Location = new Point(0, 0);
-            label16.Name = "label16";
-            label16.Size = new Size(100, 23);
-            label16.TabIndex = 61;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = Properties.Resources.imagen_circular_recortada;
-            pictureBox1.Location = new Point(354, 39);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(254, 237);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
+           
             // 
             // label1
             // 
@@ -367,7 +354,7 @@
             label3.FlatStyle = FlatStyle.Flat;
             label3.Font = new Font("Pristina", 24F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.Black;
-            label3.Location = new Point(68, 313);
+            label3.Location = new Point(188, 313);
             label3.Name = "label3";
             label3.Size = new Size(773, 63);
             label3.TabIndex = 3;
@@ -375,36 +362,29 @@
             // 
             // label2
             // 
-            label2.Location = new Point(0, 0);
-            label2.Name = "label2";
-            label2.Size = new Size(100, 23);
-            label2.TabIndex = 0;
-            // 
-            // panel13
-            // 
-            panel13.Controls.Add(label1);
-            panel13.Controls.Add(label3);
-            panel13.Controls.Add(pictureBox1);
-            panel13.Dock = DockStyle.Fill;
-            panel13.Location = new Point(347, 0);
-            panel13.Name = "panel13";
-            panel13.Size = new Size(898, 877);
-            panel13.TabIndex = 4;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(354, 39);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(254, 237);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
             // 
             // Menú_principal
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1245, 877);
-            Controls.Add(panel13);
+            Controls.Add(panelP);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.SizableToolWindow;
             Name = "Menú_principal";
             Load += Menú_principal_Load;
             panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            panelP.ResumeLayout(false);
+            panelP.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            panel13.ResumeLayout(false);
-            panel13.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -424,12 +404,12 @@
         private Button btnclientes;
         private Button button1;
         private Label label16;
+        private Panel panelP;
         private PictureBox pictureBox1;
         private Label label1;
         private Label label3;
         private Label label2;
         private Button btninventario;
         private Button btnnivelacioninventario;
-        private Panel panel13;
     }
 }
