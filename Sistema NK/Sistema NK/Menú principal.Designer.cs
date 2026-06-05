@@ -332,43 +332,7 @@
             // 
             // panel2
             // 
-            panel2.BackColor = Color.DimGray;
-            panel2.Controls.Add(button10);
-            panel2.Dock = DockStyle.Top;
-            panel2.Location = new Point(299, 0);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(946, 56);
-            panel2.TabIndex = 2;
-            // 
-            // button10
-            // 
-            button10.BackColor = Color.Transparent;
-            button10.FlatAppearance.BorderSize = 0;
-            button10.FlatAppearance.MouseDownBackColor = Color.FromArgb(224, 224, 224);
-            button10.FlatAppearance.MouseOverBackColor = Color.Tan;
-            button10.FlatStyle = FlatStyle.Flat;
-            button10.Font = new Font("PMingLiU-ExtB", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button10.ForeColor = Color.White;
-            button10.Image = (Image)resources.GetObject("button10.Image");
-            button10.ImageAlign = ContentAlignment.MiddleRight;
-            button10.Location = new Point(647, 2);
-            button10.Name = "button10";
-            button10.Size = new Size(287, 54);
-            button10.TabIndex = 10;
-            button10.Text = "Ariana Gaitán";
-            button10.UseVisualStyleBackColor = false;
-            // 
-            // panel3
-            // 
-            panel3.BackgroundImage = (Image)resources.GetObject("panel3.BackgroundImage");
-            panel3.Controls.Add(label1);
-            panel3.Controls.Add(label3);
-            panel3.Controls.Add(pictureBox1);
-            panel3.Dock = DockStyle.Fill;
-            panel3.Location = new Point(299, 56);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(946, 696);
-            panel3.TabIndex = 4;
+           
             // 
             // label1
             // 
