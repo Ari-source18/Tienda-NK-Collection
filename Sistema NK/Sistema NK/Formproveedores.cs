@@ -107,5 +107,10 @@ namespace Sistema_NK
             caja.Show();
             this.Hide();
         }
+
+        private void Formproveedores_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
