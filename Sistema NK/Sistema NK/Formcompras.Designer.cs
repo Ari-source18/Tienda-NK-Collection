@@ -56,7 +56,6 @@
             label6 = new Label();
             label9 = new Label();
             pictureBox1 = new PictureBox();
-            button6 = new Button();
             button7 = new Button();
             label5 = new Label();
             textBox4 = new TextBox();
@@ -64,20 +63,19 @@
             groupBox1 = new GroupBox();
             dateTimePicker1 = new DateTimePicker();
             label4 = new Label();
-            comboBox1 = new ComboBox();
             textBox1 = new TextBox();
             comboBox2 = new ComboBox();
-            label7 = new Label();
             label8 = new Label();
             label10 = new Label();
             dataGridView1 = new DataGridView();
-            Column6 = new DataGridViewTextBoxColumn();
+            button5 = new Button();
             Column1 = new DataGridViewTextBoxColumn();
             Column2 = new DataGridViewTextBoxColumn();
             Column3 = new DataGridViewTextBoxColumn();
             Column4 = new DataGridViewTextBoxColumn();
             Column5 = new DataGridViewTextBoxColumn();
-            button5 = new Button();
+            label7 = new Label();
+            textBox5 = new TextBox();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -361,6 +359,8 @@
             // panel2
             // 
             panel2.BackColor = Color.SeaShell;
+            panel2.Controls.Add(textBox5);
+            panel2.Controls.Add(label7);
             panel2.Controls.Add(button4);
             panel2.Controls.Add(textBox3);
             panel2.Controls.Add(textBox2);
@@ -370,7 +370,7 @@
             panel2.Controls.Add(label2);
             panel2.Location = new Point(846, 113);
             panel2.Name = "panel2";
-            panel2.Size = new Size(459, 219);
+            panel2.Size = new Size(459, 234);
             panel2.TabIndex = 100;
             // 
             // button4
@@ -380,7 +380,7 @@
             button4.BackgroundImageLayout = ImageLayout.None;
             button4.Font = new Font("PMingLiU-ExtB", 10F);
             button4.ForeColor = Color.White;
-            button4.Location = new Point(152, 159);
+            button4.Location = new Point(294, 187);
             button4.Name = "button4";
             button4.Size = new Size(153, 41);
             button4.TabIndex = 41;
@@ -390,7 +390,7 @@
             // textBox3
             // 
             textBox3.Font = new Font("PMingLiU-ExtB", 10F);
-            textBox3.Location = new Point(152, 100);
+            textBox3.Location = new Point(167, 100);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(153, 31);
             textBox3.TabIndex = 58;
@@ -398,7 +398,7 @@
             // textBox2
             // 
             textBox2.Font = new Font("PMingLiU-ExtB", 10F);
-            textBox2.Location = new Point(152, 60);
+            textBox2.Location = new Point(167, 58);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(153, 31);
             textBox2.TabIndex = 49;
@@ -418,7 +418,7 @@
             // 
             comboBox3.Font = new Font("PMingLiU-ExtB", 10F);
             comboBox3.FormattingEnabled = true;
-            comboBox3.Location = new Point(152, 24);
+            comboBox3.Location = new Point(166, 24);
             comboBox3.Name = "comboBox3";
             comboBox3.Size = new Size(281, 28);
             comboBox3.TabIndex = 54;
@@ -441,9 +441,9 @@
             label2.ForeColor = Color.FromArgb(64, 0, 0);
             label2.Location = new Point(33, 103);
             label2.Name = "label2";
-            label2.Size = new Size(60, 20);
+            label2.Size = new Size(120, 20);
             label2.TabIndex = 56;
-            label2.Text = "Precio:";
+            label2.Text = "Precio compra:";
             // 
             // label6
             // 
@@ -477,19 +477,6 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 97;
             pictureBox1.TabStop = false;
-            // 
-            // button6
-            // 
-            button6.BackColor = Color.FromArgb(64, 0, 0);
-            button6.Font = new Font("PMingLiU-ExtB", 9F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            button6.ForeColor = SystemColors.ControlLightLight;
-            button6.Location = new Point(306, 820);
-            button6.Name = "button6";
-            button6.Size = new Size(163, 38);
-            button6.TabIndex = 96;
-            button6.Text = "Menú principal";
-            button6.UseVisualStyleBackColor = false;
-            button6.Click += button6_Click;
             // 
             // button7
             // 
@@ -541,17 +528,15 @@
             groupBox1.BackColor = Color.SeaShell;
             groupBox1.Controls.Add(dateTimePicker1);
             groupBox1.Controls.Add(label4);
-            groupBox1.Controls.Add(comboBox1);
             groupBox1.Controls.Add(textBox1);
             groupBox1.Controls.Add(comboBox2);
-            groupBox1.Controls.Add(label7);
             groupBox1.Controls.Add(label8);
             groupBox1.Controls.Add(label10);
             groupBox1.Font = new Font("PMingLiU-ExtB", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
             groupBox1.ForeColor = Color.FromArgb(64, 0, 0);
             groupBox1.Location = new Point(329, 113);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(486, 219);
+            groupBox1.Size = new Size(486, 234);
             groupBox1.TabIndex = 91;
             groupBox1.TabStop = false;
             groupBox1.Text = "Registro de compra:";
@@ -574,15 +559,6 @@
             label4.TabIndex = 52;
             label4.Text = "N° de factura:";
             // 
-            // comboBox1
-            // 
-            comboBox1.Font = new Font("PMingLiU-ExtB", 10F);
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(143, 157);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(130, 28);
-            comboBox1.TabIndex = 48;
-            // 
             // textBox1
             // 
             textBox1.Font = new Font("PMingLiU-ExtB", 10F);
@@ -599,16 +575,6 @@
             comboBox2.Name = "comboBox2";
             comboBox2.Size = new Size(239, 28);
             comboBox2.TabIndex = 42;
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Font = new Font("PMingLiU-ExtB", 10F);
-            label7.Location = new Point(23, 157);
-            label7.Name = "label7";
-            label7.Size = new Size(63, 20);
-            label7.TabIndex = 40;
-            label7.Text = "Estado:";
             // 
             // label8
             // 
@@ -635,19 +601,26 @@
             dataGridView1.BackgroundColor = Color.SeaShell;
             dataGridView1.BorderStyle = BorderStyle.None;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column6, Column1, Column2, Column3, Column4, Column5 });
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3, Column4, Column5 });
             dataGridView1.Location = new Point(315, 362);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 62;
-            dataGridView1.Size = new Size(997, 201);
+            dataGridView1.Size = new Size(851, 201);
             dataGridView1.TabIndex = 90;
             // 
-            // Column6
+            // button5
             // 
-            Column6.HeaderText = "Proveedor";
-            Column6.MinimumWidth = 8;
-            Column6.Name = "Column6";
-            Column6.Width = 150;
+            button5.BackColor = Color.Maroon;
+            button5.BackgroundImage = (Image)resources.GetObject("button5.BackgroundImage");
+            button5.BackgroundImageLayout = ImageLayout.None;
+            button5.Font = new Font("PMingLiU-ExtB", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button5.ForeColor = SystemColors.ControlLightLight;
+            button5.Location = new Point(1171, 588);
+            button5.Name = "button5";
+            button5.Size = new Size(153, 43);
+            button5.TabIndex = 89;
+            button5.Text = "Cancelar";
+            button5.UseVisualStyleBackColor = false;
             // 
             // Column1
             // 
@@ -684,19 +657,24 @@
             Column5.Name = "Column5";
             Column5.Width = 110;
             // 
-            // button5
+            // label7
             // 
-            button5.BackColor = Color.Maroon;
-            button5.BackgroundImage = (Image)resources.GetObject("button5.BackgroundImage");
-            button5.BackgroundImageLayout = ImageLayout.None;
-            button5.Font = new Font("PMingLiU-ExtB", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button5.ForeColor = SystemColors.ControlLightLight;
-            button5.Location = new Point(1171, 588);
-            button5.Name = "button5";
-            button5.Size = new Size(153, 43);
-            button5.TabIndex = 89;
-            button5.Text = "Cancelar";
-            button5.UseVisualStyleBackColor = false;
+            label7.AutoSize = true;
+            label7.Font = new Font("PMingLiU-ExtB", 10F);
+            label7.ForeColor = Color.FromArgb(64, 0, 0);
+            label7.Location = new Point(33, 150);
+            label7.Name = "label7";
+            label7.Size = new Size(104, 20);
+            label7.TabIndex = 59;
+            label7.Text = "Precio venta:";
+            // 
+            // textBox5
+            // 
+            textBox5.Font = new Font("PMingLiU-ExtB", 10F);
+            textBox5.Location = new Point(167, 150);
+            textBox5.Name = "textBox5";
+            textBox5.Size = new Size(153, 31);
+            textBox5.TabIndex = 60;
             // 
             // Formcompras
             // 
@@ -707,7 +685,6 @@
             Controls.Add(label6);
             Controls.Add(label9);
             Controls.Add(pictureBox1);
-            Controls.Add(button6);
             Controls.Add(button7);
             Controls.Add(label5);
             Controls.Add(textBox4);
@@ -747,7 +724,6 @@
         private Label label6;
         private Label label9;
         private PictureBox pictureBox1;
-        private Button button6;
         private Button button7;
         private Label label5;
         private TextBox textBox4;
@@ -755,19 +731,11 @@
         private GroupBox groupBox1;
         private DateTimePicker dateTimePicker1;
         private Label label4;
-        private ComboBox comboBox1;
         private TextBox textBox1;
         private ComboBox comboBox2;
-        private Label label7;
         private Label label8;
         private Label label10;
         private DataGridView dataGridView1;
-        private DataGridViewTextBoxColumn Column6;
-        private DataGridViewTextBoxColumn Column1;
-        private DataGridViewTextBoxColumn Column2;
-        private DataGridViewTextBoxColumn Column3;
-        private DataGridViewTextBoxColumn Column4;
-        private DataGridViewTextBoxColumn Column5;
         private Button button5;
         private Button btndevolucionventas;
         private Button btncredito;
@@ -781,5 +749,12 @@
         private Button btnusuarios;
         private Button btninventario;
         private Button btnnivelacioninventario;
+        private Label label7;
+        private DataGridViewTextBoxColumn Column1;
+        private DataGridViewTextBoxColumn Column2;
+        private DataGridViewTextBoxColumn Column3;
+        private DataGridViewTextBoxColumn Column4;
+        private DataGridViewTextBoxColumn Column5;
+        private TextBox textBox5;
     }
 }
