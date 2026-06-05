@@ -45,16 +45,13 @@
             label15 = new Label();
             btnclientes = new Button();
             label16 = new Label();
-            pictureBox1 = new PictureBox();
-            button6 = new Button();
             button5 = new Button();
-            dataGridView1 = new DataGridView();
-            Column2 = new DataGridViewTextBoxColumn();
-            Column4 = new DataGridViewTextBoxColumn();
-            Column5 = new DataGridViewTextBoxColumn();
-            Column6 = new DataGridViewTextBoxColumn();
-            Column7 = new DataGridViewTextBoxColumn();
+            button1 = new Button();
+            label5 = new Label();
+            tabControl1 = new TabControl();
+            tabPage1 = new TabPage();
             groupBox1 = new GroupBox();
+            button7 = new Button();
             label3 = new Label();
             textBox4 = new TextBox();
             textBox7 = new TextBox();
@@ -73,12 +70,20 @@
             label9 = new Label();
             label10 = new Label();
             label6 = new Label();
-            label5 = new Label();
-            button7 = new Button();
+            tabPage2 = new TabPage();
+            dataGridView1 = new DataGridView();
+            Column2 = new DataGridViewTextBoxColumn();
+            Column4 = new DataGridViewTextBoxColumn();
+            Column5 = new DataGridViewTextBoxColumn();
+            Column6 = new DataGridViewTextBoxColumn();
+            Column7 = new DataGridViewTextBoxColumn();
+            editar = new DataGridViewTextBoxColumn();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            tabControl1.SuspendLayout();
+            tabPage1.SuspendLayout();
             groupBox1.SuspendLayout();
+            tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -354,30 +359,6 @@
             label16.TabIndex = 45;
             label16.Text = "_____________________";
             // 
-            // pictureBox1
-            // 
-            pictureBox1.BackColor = Color.Transparent;
-            pictureBox1.Image = Properties.Resources.imagen_circular_recortada;
-            pictureBox1.Location = new Point(1239, 12);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(101, 84);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 83;
-            pictureBox1.TabStop = false;
-            // 
-            // button6
-            // 
-            button6.BackColor = Color.FromArgb(64, 0, 0);
-            button6.Font = new Font("PMingLiU-ExtB", 9F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            button6.ForeColor = SystemColors.ControlLightLight;
-            button6.Location = new Point(301, 819);
-            button6.Name = "button6";
-            button6.Size = new Size(163, 38);
-            button6.TabIndex = 82;
-            button6.Text = "Menú principal";
-            button6.UseVisualStyleBackColor = false;
-            button6.Click += button6_Click;
-            // 
             // button5
             // 
             button5.BackColor = Color.FromArgb(64, 0, 0);
@@ -390,53 +371,49 @@
             button5.Text = "Cerrar Sesión ";
             button5.UseVisualStyleBackColor = false;
             // 
-            // dataGridView1
+            // button1
             // 
-            dataGridView1.BackgroundColor = Color.SeaShell;
-            dataGridView1.BorderStyle = BorderStyle.None;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column2, Column4, Column5, Column6, Column7 });
-            dataGridView1.GridColor = Color.Black;
-            dataGridView1.Location = new Point(380, 420);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 62;
-            dataGridView1.Size = new Size(872, 270);
-            dataGridView1.TabIndex = 80;
+            button1.BackColor = Color.FromArgb(64, 0, 0);
+            button1.Font = new Font("PMingLiU-ExtB", 9F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            button1.ForeColor = SystemColors.ControlLightLight;
+            button1.Location = new Point(317, 818);
+            button1.Name = "button1";
+            button1.Size = new Size(124, 34);
+            button1.TabIndex = 84;
+            button1.Text = "Ayuda";
+            button1.UseVisualStyleBackColor = false;
             // 
-            // Column2
+            // label5
             // 
-            Column2.HeaderText = "Nombre Completo";
-            Column2.MinimumWidth = 8;
-            Column2.Name = "Column2";
-            Column2.Width = 250;
+            label5.AutoSize = true;
+            label5.Font = new Font("PMingLiU-ExtB", 16F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label5.ForeColor = Color.FromArgb(64, 0, 0);
+            label5.Location = new Point(328, 44);
+            label5.Name = "label5";
+            label5.Size = new Size(277, 32);
+            label5.TabIndex = 79;
+            label5.Text = "Gestión de Usuarios";
             // 
-            // Column4
+            // tabControl1
             // 
-            Column4.HeaderText = "Rol";
-            Column4.MinimumWidth = 8;
-            Column4.Name = "Column4";
-            Column4.Width = 90;
+            tabControl1.Controls.Add(tabPage1);
+            tabControl1.Controls.Add(tabPage2);
+            tabControl1.Location = new Point(328, 96);
+            tabControl1.Name = "tabControl1";
+            tabControl1.SelectedIndex = 0;
+            tabControl1.Size = new Size(1011, 698);
+            tabControl1.TabIndex = 85;
             // 
-            // Column5
+            // tabPage1
             // 
-            Column5.HeaderText = "Correo electrónico";
-            Column5.MinimumWidth = 8;
-            Column5.Name = "Column5";
-            Column5.Width = 200;
-            // 
-            // Column6
-            // 
-            Column6.HeaderText = "Usuario";
-            Column6.MinimumWidth = 8;
-            Column6.Name = "Column6";
-            Column6.Width = 150;
-            // 
-            // Column7
-            // 
-            Column7.HeaderText = "Estado";
-            Column7.MinimumWidth = 8;
-            Column7.Name = "Column7";
-            Column7.Width = 120;
+            tabPage1.Controls.Add(groupBox1);
+            tabPage1.Location = new Point(4, 34);
+            tabPage1.Name = "tabPage1";
+            tabPage1.Padding = new Padding(3);
+            tabPage1.Size = new Size(1003, 660);
+            tabPage1.TabIndex = 0;
+            tabPage1.Text = "tabPage1";
+            tabPage1.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
@@ -462,18 +439,32 @@
             groupBox1.Controls.Add(label6);
             groupBox1.Font = new Font("PMingLiU-ExtB", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
             groupBox1.ForeColor = Color.FromArgb(64, 0, 0);
-            groupBox1.Location = new Point(317, 108);
+            groupBox1.Location = new Point(6, 30);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(1023, 291);
-            groupBox1.TabIndex = 78;
+            groupBox1.Size = new Size(991, 291);
+            groupBox1.TabIndex = 81;
             groupBox1.TabStop = false;
             groupBox1.Text = "Nuevo Usuario";
+            // 
+            // button7
+            // 
+            button7.BackColor = Color.Transparent;
+            button7.BackgroundImage = (Image)resources.GetObject("button7.BackgroundImage");
+            button7.Font = new Font("PMingLiU-ExtB", 9F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            button7.ForeColor = SystemColors.ControlLightLight;
+            button7.Location = new Point(946, 235);
+            button7.Margin = new Padding(2);
+            button7.Name = "button7";
+            button7.Size = new Size(30, 34);
+            button7.TabIndex = 120;
+            button7.Text = "Cerrar Sesión ";
+            button7.UseVisualStyleBackColor = false;
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Font = new Font("PMingLiU-ExtB", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.Location = new Point(476, 249);
+            label3.Location = new Point(440, 249);
             label3.Name = "label3";
             label3.Size = new Size(94, 20);
             label3.TabIndex = 56;
@@ -490,7 +481,7 @@
             // textBox7
             // 
             textBox7.Font = new Font("PMingLiU-ExtB", 9F);
-            textBox7.Location = new Point(762, 240);
+            textBox7.Location = new Point(724, 238);
             textBox7.Name = "textBox7";
             textBox7.Size = new Size(204, 29);
             textBox7.TabIndex = 58;
@@ -509,7 +500,7 @@
             // 
             comboBox3.Font = new Font("PMingLiU-ExtB", 9F);
             comboBox3.FormattingEnabled = true;
-            comboBox3.Location = new Point(587, 243);
+            comboBox3.Location = new Point(540, 243);
             comboBox3.Name = "comboBox3";
             comboBox3.Size = new Size(159, 26);
             comboBox3.TabIndex = 57;
@@ -542,7 +533,7 @@
             button3.Name = "button3";
             button3.Size = new Size(153, 43);
             button3.TabIndex = 45;
-            button3.Text = "Cancelar";
+            button3.Text = "Limpiar";
             button3.UseVisualStyleBackColor = false;
             // 
             // button4
@@ -643,41 +634,80 @@
             label6.TabIndex = 57;
             label6.Text = "___________________________________________________________________________";
             // 
-            // label5
+            // tabPage2
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("PMingLiU-ExtB", 16F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label5.ForeColor = Color.FromArgb(64, 0, 0);
-            label5.Location = new Point(328, 44);
-            label5.Name = "label5";
-            label5.Size = new Size(277, 32);
-            label5.TabIndex = 79;
-            label5.Text = "Gestión de Usuarios";
+            tabPage2.Controls.Add(dataGridView1);
+            tabPage2.Location = new Point(4, 34);
+            tabPage2.Name = "tabPage2";
+            tabPage2.Padding = new Padding(3);
+            tabPage2.Size = new Size(1003, 660);
+            tabPage2.TabIndex = 1;
+            tabPage2.Text = "tabPage2";
+            tabPage2.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // dataGridView1
             // 
-            button7.BackColor = Color.Transparent;
-            button7.BackgroundImage = (Image)resources.GetObject("button7.BackgroundImage");
-            button7.Font = new Font("PMingLiU-ExtB", 9F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            button7.ForeColor = SystemColors.ControlLightLight;
-            button7.Location = new Point(978, 243);
-            button7.Margin = new Padding(2);
-            button7.Name = "button7";
-            button7.Size = new Size(30, 34);
-            button7.TabIndex = 120;
-            button7.Text = "Cerrar Sesión ";
-            button7.UseVisualStyleBackColor = false;
+            dataGridView1.BackgroundColor = Color.SeaShell;
+            dataGridView1.BorderStyle = BorderStyle.None;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column2, Column4, Column5, Column6, Column7, editar });
+            dataGridView1.GridColor = Color.Black;
+            dataGridView1.Location = new Point(18, 195);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersWidth = 62;
+            dataGridView1.Size = new Size(967, 270);
+            dataGridView1.TabIndex = 83;
+            // 
+            // Column2
+            // 
+            Column2.HeaderText = "Nombre Completo";
+            Column2.MinimumWidth = 8;
+            Column2.Name = "Column2";
+            Column2.Width = 250;
+            // 
+            // Column4
+            // 
+            Column4.HeaderText = "Rol";
+            Column4.MinimumWidth = 8;
+            Column4.Name = "Column4";
+            Column4.Width = 90;
+            // 
+            // Column5
+            // 
+            Column5.HeaderText = "Correo electrónico";
+            Column5.MinimumWidth = 8;
+            Column5.Name = "Column5";
+            Column5.Width = 200;
+            // 
+            // Column6
+            // 
+            Column6.HeaderText = "Usuario";
+            Column6.MinimumWidth = 8;
+            Column6.Name = "Column6";
+            Column6.Width = 150;
+            // 
+            // Column7
+            // 
+            Column7.HeaderText = "Estado";
+            Column7.MinimumWidth = 8;
+            Column7.Name = "Column7";
+            Column7.Width = 120;
+            // 
+            // editar
+            // 
+            editar.HeaderText = "Editar";
+            editar.MinimumWidth = 8;
+            editar.Name = "editar";
+            editar.Width = 150;
             // 
             // Usuarios
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1351, 878);
-            Controls.Add(pictureBox1);
-            Controls.Add(button6);
+            Controls.Add(tabControl1);
+            Controls.Add(button1);
             Controls.Add(button5);
-            Controls.Add(dataGridView1);
-            Controls.Add(groupBox1);
             Controls.Add(label5);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.SizableToolWindow;
@@ -686,10 +716,12 @@
             Load += Usuarios_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            tabControl1.ResumeLayout(false);
+            tabPage1.ResumeLayout(false);
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
+            tabPage2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -710,16 +742,15 @@
         private Label label15;
         private Button btnclientes;
         private Label label16;
-        private PictureBox pictureBox1;
-        private Button button6;
         private Button button5;
-        private DataGridView dataGridView1;
-        private DataGridViewTextBoxColumn Column2;
-        private DataGridViewTextBoxColumn Column4;
-        private DataGridViewTextBoxColumn Column5;
-        private DataGridViewTextBoxColumn Column6;
-        private DataGridViewTextBoxColumn Column7;
+        private Button btninventario;
+        private Button btnnivelacioninventario;
+        private Button button1;
+        private Label label5;
+        private TabControl tabControl1;
+        private TabPage tabPage1;
         private GroupBox groupBox1;
+        private Button button7;
         private Label label3;
         private TextBox textBox4;
         private TextBox textBox7;
@@ -738,9 +769,13 @@
         private Label label9;
         private Label label10;
         private Label label6;
-        private Label label5;
-        private Button btninventario;
-        private Button btnnivelacioninventario;
-        private Button button7;
+        private TabPage tabPage2;
+        private DataGridView dataGridView1;
+        private DataGridViewTextBoxColumn Column2;
+        private DataGridViewTextBoxColumn Column4;
+        private DataGridViewTextBoxColumn Column5;
+        private DataGridViewTextBoxColumn Column6;
+        private DataGridViewTextBoxColumn Column7;
+        private DataGridViewTextBoxColumn editar;
     }
 }

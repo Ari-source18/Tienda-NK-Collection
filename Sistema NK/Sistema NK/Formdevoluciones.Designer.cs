@@ -49,7 +49,6 @@
             groupBoxdatagrid = new GroupBox();
             textBox3 = new TextBox();
             label7 = new Label();
-            textBox2 = new TextBox();
             label4 = new Label();
             dataGridViewdevo = new DataGridView();
             columnaproducto = new DataGridViewTextBoxColumn();
@@ -65,7 +64,6 @@
             precio = new DataGridViewTextBoxColumn();
             total = new DataGridViewTextBoxColumn();
             groupBoxtipodevolucion = new GroupBox();
-            btnnotadecredito = new RadioButton();
             btncambio = new RadioButton();
             btnreembolso = new RadioButton();
             btnimprimir = new Button();
@@ -80,6 +78,7 @@
             pictureBox1 = new PictureBox();
             label5 = new Label();
             label6 = new Label();
+            comboBox1 = new ComboBox();
             panel1.SuspendLayout();
             groupBoxdatagrid.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridViewdevo).BeginInit();
@@ -391,12 +390,12 @@
             // groupBoxdatagrid
             // 
             groupBoxdatagrid.BackColor = Color.SeaShell;
+            groupBoxdatagrid.Controls.Add(comboBox1);
             groupBoxdatagrid.Controls.Add(textBox3);
             groupBoxdatagrid.Controls.Add(label7);
-            groupBoxdatagrid.Controls.Add(textBox2);
             groupBoxdatagrid.Controls.Add(label4);
             groupBoxdatagrid.Controls.Add(dataGridViewdevo);
-            groupBoxdatagrid.Location = new Point(307, 192);
+            groupBoxdatagrid.Location = new Point(302, 234);
             groupBoxdatagrid.Name = "groupBoxdatagrid";
             groupBoxdatagrid.Size = new Size(1038, 165);
             groupBoxdatagrid.TabIndex = 137;
@@ -417,13 +416,6 @@
             label7.Size = new Size(53, 25);
             label7.TabIndex = 94;
             label7.Text = "Total:";
-            // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(15, 47);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(185, 31);
-            textBox2.TabIndex = 93;
             // 
             // label4
             // 
@@ -484,7 +476,7 @@
             // 
             groupBoxnuevoproducto.BackColor = Color.SeaShell;
             groupBoxnuevoproducto.Controls.Add(dataGridViewnuevoproducto);
-            groupBoxnuevoproducto.Location = new Point(302, 446);
+            groupBoxnuevoproducto.Location = new Point(302, 516);
             groupBoxnuevoproducto.Name = "groupBoxnuevoproducto";
             groupBoxnuevoproducto.Size = new Size(1038, 162);
             groupBoxnuevoproducto.TabIndex = 136;
@@ -540,26 +532,14 @@
             // groupBoxtipodevolucion
             // 
             groupBoxtipodevolucion.BackColor = Color.SeaShell;
-            groupBoxtipodevolucion.Controls.Add(btnnotadecredito);
             groupBoxtipodevolucion.Controls.Add(btncambio);
             groupBoxtipodevolucion.Controls.Add(btnreembolso);
-            groupBoxtipodevolucion.Location = new Point(302, 363);
+            groupBoxtipodevolucion.Location = new Point(302, 420);
             groupBoxtipodevolucion.Name = "groupBoxtipodevolucion";
             groupBoxtipodevolucion.Size = new Size(1038, 77);
             groupBoxtipodevolucion.TabIndex = 135;
             groupBoxtipodevolucion.TabStop = false;
             groupBoxtipodevolucion.Text = "Tipo de Devolución";
-            // 
-            // btnnotadecredito
-            // 
-            btnnotadecredito.AutoSize = true;
-            btnnotadecredito.Location = new Point(510, 30);
-            btnnotadecredito.Name = "btnnotadecredito";
-            btnnotadecredito.Size = new Size(161, 29);
-            btnnotadecredito.TabIndex = 99;
-            btnnotadecredito.TabStop = true;
-            btnnotadecredito.Text = "Nota de crédito";
-            btnnotadecredito.UseVisualStyleBackColor = true;
             // 
             // btncambio
             // 
@@ -587,7 +567,7 @@
             // 
             btnimprimir.BackColor = Color.Maroon;
             btnimprimir.ForeColor = SystemColors.ControlLightLight;
-            btnimprimir.Location = new Point(1125, 625);
+            btnimprimir.Location = new Point(1130, 708);
             btnimprimir.Name = "btnimprimir";
             btnimprimir.Size = new Size(215, 34);
             btnimprimir.TabIndex = 134;
@@ -598,11 +578,11 @@
             // 
             btnvalidar.BackColor = Color.Maroon;
             btnvalidar.ForeColor = SystemColors.ControlLightLight;
-            btnvalidar.Location = new Point(935, 625);
+            btnvalidar.Location = new Point(920, 708);
             btnvalidar.Name = "btnvalidar";
             btnvalidar.Size = new Size(184, 34);
             btnvalidar.TabIndex = 133;
-            btnvalidar.Text = "Validar Devolución";
+            btnvalidar.Text = "Guardar";
             btnvalidar.UseVisualStyleBackColor = false;
             // 
             // groupBoxdatos
@@ -616,7 +596,7 @@
             groupBoxdatos.Controls.Add(label1);
             groupBoxdatos.Location = new Point(307, 112);
             groupBoxdatos.Name = "groupBoxdatos";
-            groupBoxdatos.Size = new Size(1042, 74);
+            groupBoxdatos.Size = new Size(1042, 116);
             groupBoxdatos.TabIndex = 132;
             groupBoxdatos.TabStop = false;
             // 
@@ -624,7 +604,7 @@
             // 
             btnbuscarventa.BackColor = Color.Maroon;
             btnbuscarventa.ForeColor = SystemColors.ControlLightLight;
-            btnbuscarventa.Location = new Point(816, 28);
+            btnbuscarventa.Location = new Point(278, 30);
             btnbuscarventa.Name = "btnbuscarventa";
             btnbuscarventa.Size = new Size(156, 34);
             btnbuscarventa.TabIndex = 86;
@@ -634,7 +614,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(543, 33);
+            label3.Location = new Point(282, 72);
             label3.Name = "label3";
             label3.Size = new Size(110, 25);
             label3.TabIndex = 84;
@@ -642,7 +622,7 @@
             // 
             // txtcliente
             // 
-            txtcliente.Location = new Point(364, 27);
+            txtcliente.Location = new Point(114, 66);
             txtcliente.Name = "txtcliente";
             txtcliente.Size = new Size(150, 31);
             txtcliente.TabIndex = 3;
@@ -650,11 +630,12 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(289, 30);
+            label2.Location = new Point(9, 69);
             label2.Name = "label2";
             label2.Size = new Size(69, 25);
             label2.TabIndex = 2;
             label2.Text = "Cliente:";
+            label2.Click += label2_Click;
             // 
             // txtfactura
             // 
@@ -704,6 +685,14 @@
             label6.Size = new Size(942, 32);
             label6.TabIndex = 129;
             label6.Text = "__________________________________________________________";
+            // 
+            // comboBox1
+            // 
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new Point(9, 47);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(182, 33);
+            comboBox1.TabIndex = 96;
             // 
             // Formdevoluciones
             // 
@@ -763,7 +752,6 @@
         private DataGridViewTextBoxColumn precio;
         private DataGridViewTextBoxColumn total;
         private GroupBox groupBoxtipodevolucion;
-        private RadioButton btnnotadecredito;
         private RadioButton btncambio;
         private RadioButton btnreembolso;
         private Button btnimprimir;
@@ -780,7 +768,6 @@
         private Label label6;
         private TextBox textBox3;
         private Label label7;
-        private TextBox textBox2;
         private Label label4;
         private Button btndevolucionventas;
         private Button btncredito;
@@ -794,5 +781,6 @@
         private Button btnclientes;
         private Button btninventario;
         private Button btnnivelacioninventario;
+        private ComboBox comboBox1;
     }
 }
