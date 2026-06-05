@@ -1,3 +1,5 @@
+using Sistema_NK.Formularios;
+
 namespace Sistema_NK
 {
     public partial class Form1 : Form
@@ -21,7 +23,7 @@ namespace Sistema_NK
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Menú_principal menu = new Menú_principal();
+            Main menu = new Main();
             menu.Show();
             this.Hide();
         }

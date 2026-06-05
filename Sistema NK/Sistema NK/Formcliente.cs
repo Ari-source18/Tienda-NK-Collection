@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Sistema_NK.Formularios;
 
 namespace Sistema_NK
 {
@@ -24,7 +25,7 @@ namespace Sistema_NK
 
         private void button6_Click(object sender, EventArgs e)
         {
-            Menú_principal menu = new Menú_principal();
+            Main menu = new Main    ();
             menu.Show();
             this.Hide();
         }

@@ -33,12 +33,7 @@ namespace Sistema_NK
 
         }
 
-        private void button6_Click(object sender, EventArgs e)
-        {
-            Menú_principal menu = new Menú_principal();
-            menu.Show();
-            this.Hide();
-        }
+     
 
         private void btnusuarios_Click(object sender, EventArgs e)
         {

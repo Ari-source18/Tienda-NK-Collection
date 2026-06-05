@@ -17,12 +17,7 @@ namespace Sistema_NK
             InitializeComponent();
         }
 
-        private void button6_Click(object sender, EventArgs e)
-        {
-            Menú_principal menu = new Menú_principal();
-            menu.Show();
-            this.Hide();
-        }
+       
 
         private void btnusuarios_Click_1(object sender, EventArgs e)
         {
