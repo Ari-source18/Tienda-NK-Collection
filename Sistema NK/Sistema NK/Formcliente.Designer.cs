@@ -51,13 +51,6 @@
             textBox7 = new TextBox();
             comboBox3 = new ComboBox();
             button5 = new Button();
-            dataGridView1 = new DataGridView();
-            Id_Cliente = new DataGridViewTextBoxColumn();
-            Nombre = new DataGridViewTextBoxColumn();
-            Column4 = new DataGridViewTextBoxColumn();
-            Column5 = new DataGridViewTextBoxColumn();
-            Column6 = new DataGridViewTextBoxColumn();
-            Editar = new DataGridViewTextBoxColumn();
             groupBox1 = new GroupBox();
             textBox6 = new TextBox();
             label12 = new Label();
@@ -77,13 +70,19 @@
             comboBox2 = new ComboBox();
             label5 = new Label();
             label6 = new Label();
-            label1 = new Label();
             dateTimePicker1 = new DateTimePicker();
             label20 = new Label();
+            dataGridView1 = new DataGridView();
+            Id_Cliente = new DataGridViewTextBoxColumn();
+            Nombre = new DataGridViewTextBoxColumn();
+            Column4 = new DataGridViewTextBoxColumn();
+            Column5 = new DataGridViewTextBoxColumn();
+            Column6 = new DataGridViewTextBoxColumn();
+            Editar = new DataGridViewTextBoxColumn();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -108,7 +107,7 @@
             panel1.Location = new Point(0, 0);
             panel1.Margin = new Padding(2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(237, 713);
+            panel1.Size = new Size(237, 717);
             panel1.TabIndex = 3;
             // 
             // btninventario
@@ -140,10 +139,10 @@
             btnnivelacioninventario.Font = new Font("PMingLiU-ExtB", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnnivelacioninventario.ForeColor = Color.White;
             btnnivelacioninventario.ImageAlign = ContentAlignment.MiddleLeft;
-            btnnivelacioninventario.Location = new Point(2, 617);
+            btnnivelacioninventario.Location = new Point(-8, 617);
             btnnivelacioninventario.Margin = new Padding(2);
             btnnivelacioninventario.Name = "btnnivelacioninventario";
-            btnnivelacioninventario.Size = new Size(232, 30);
+            btnnivelacioninventario.Size = new Size(242, 30);
             btnnivelacioninventario.TabIndex = 65;
             btnnivelacioninventario.Text = "Nivelación de inventario";
             btnnivelacioninventario.UseVisualStyleBackColor = false;
@@ -380,7 +379,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("PMingLiU-ExtB", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.FromArgb(64, 0, 0);
-            label3.Location = new Point(556, 169);
+            label3.Location = new Point(274, 405);
             label3.Margin = new Padding(2, 0, 2, 0);
             label3.Name = "label3";
             label3.Size = new Size(81, 17);
@@ -391,7 +390,7 @@
             // 
             pictureBox1.BackColor = Color.Transparent;
             pictureBox1.Image = Properties.Resources.imagen_circular_recortada;
-            pictureBox1.Location = new Point(1005, 13);
+            pictureBox1.Location = new Point(1044, 11);
             pictureBox1.Margin = new Padding(2);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(74, 67);
@@ -416,7 +415,7 @@
             // textBox7
             // 
             textBox7.Font = new Font("PMingLiU-ExtB", 9F);
-            textBox7.Location = new Point(777, 162);
+            textBox7.Location = new Point(495, 398);
             textBox7.Margin = new Padding(2);
             textBox7.Name = "textBox7";
             textBox7.Size = new Size(164, 25);
@@ -426,7 +425,7 @@
             // 
             comboBox3.Font = new Font("PMingLiU-ExtB", 9F);
             comboBox3.FormattingEnabled = true;
-            comboBox3.Location = new Point(645, 164);
+            comboBox3.Location = new Point(363, 400);
             comboBox3.Margin = new Padding(2);
             comboBox3.Name = "comboBox3";
             comboBox3.Size = new Size(120, 23);
@@ -437,13 +436,260 @@
             button5.BackColor = Color.FromArgb(64, 0, 0);
             button5.Font = new Font("PMingLiU-ExtB", 9F, FontStyle.Italic, GraphicsUnit.Point, 0);
             button5.ForeColor = SystemColors.ControlLightLight;
-            button5.Location = new Point(979, 669);
+            button5.Location = new Point(1019, 673);
             button5.Margin = new Padding(2);
             button5.Name = "button5";
             button5.Size = new Size(99, 27);
             button5.TabIndex = 92;
             button5.Text = "Cerrar Sesión ";
             button5.UseVisualStyleBackColor = false;
+            // 
+            // groupBox1
+            // 
+            groupBox1.BackColor = Color.SeaShell;
+            groupBox1.Controls.Add(textBox6);
+            groupBox1.Controls.Add(label12);
+            groupBox1.Controls.Add(textBox3);
+            groupBox1.Controls.Add(label8);
+            groupBox1.Controls.Add(textBox2);
+            groupBox1.Controls.Add(textBox4);
+            groupBox1.Controls.Add(label4);
+            groupBox1.Controls.Add(button3);
+            groupBox1.Controls.Add(button4);
+            groupBox1.Controls.Add(label7);
+            groupBox1.Controls.Add(label2);
+            groupBox1.Controls.Add(textBox1);
+            groupBox1.Controls.Add(textBox5);
+            groupBox1.Controls.Add(comboBox2);
+            groupBox1.Controls.Add(label9);
+            groupBox1.Controls.Add(label10);
+            groupBox1.Font = new Font("PMingLiU-ExtB", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            groupBox1.ForeColor = Color.FromArgb(64, 0, 0);
+            groupBox1.Location = new Point(264, 174);
+            groupBox1.Margin = new Padding(2);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Padding = new Padding(2);
+            groupBox1.Size = new Size(804, 208);
+            groupBox1.TabIndex = 89;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Nuevo Cliente";
+            groupBox1.Enter += groupBox1_Enter;
+            // 
+            // textBox6
+            // 
+            textBox6.Font = new Font("PMingLiU-ExtB", 10F);
+            textBox6.Location = new Point(512, 102);
+            textBox6.Margin = new Padding(2);
+            textBox6.Name = "textBox6";
+            textBox6.Size = new Size(258, 27);
+            textBox6.TabIndex = 61;
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Font = new Font("PMingLiU-ExtB", 10F);
+            label12.Location = new Point(512, 83);
+            label12.Margin = new Padding(2, 0, 2, 0);
+            label12.Name = "label12";
+            label12.Size = new Size(74, 17);
+            label12.TabIndex = 60;
+            label12.Text = "Dirección:";
+            // 
+            // textBox3
+            // 
+            textBox3.Font = new Font("PMingLiU-ExtB", 10F);
+            textBox3.Location = new Point(512, 55);
+            textBox3.Margin = new Padding(2);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(256, 27);
+            textBox3.TabIndex = 59;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("PMingLiU-ExtB", 10F);
+            label8.Location = new Point(512, 36);
+            label8.Margin = new Padding(2, 0, 2, 0);
+            label8.Name = "label8";
+            label8.Size = new Size(129, 17);
+            label8.TabIndex = 58;
+            label8.Text = "Correo electrónico:";
+            // 
+            // textBox2
+            // 
+            textBox2.Font = new Font("PMingLiU-ExtB", 9F);
+            textBox2.Location = new Point(7, 55);
+            textBox2.Margin = new Padding(2);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(239, 25);
+            textBox2.TabIndex = 57;
+            // 
+            // textBox4
+            // 
+            textBox4.Font = new Font("PMingLiU-ExtB", 10F);
+            textBox4.Location = new Point(291, 55);
+            textBox4.Margin = new Padding(2);
+            textBox4.Name = "textBox4";
+            textBox4.Size = new Size(171, 27);
+            textBox4.TabIndex = 55;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("PMingLiU-ExtB", 10F);
+            label4.Location = new Point(7, 36);
+            label4.Margin = new Padding(2, 0, 2, 0);
+            label4.Name = "label4";
+            label4.Size = new Size(74, 17);
+            label4.TabIndex = 56;
+            label4.Text = "Id Cliente:";
+            // 
+            // button3
+            // 
+            button3.BackColor = Color.FromArgb(64, 0, 0);
+            button3.BackgroundImage = (Image)resources.GetObject("button3.BackgroundImage");
+            button3.BackgroundImageLayout = ImageLayout.None;
+            button3.Font = new Font("PMingLiU-ExtB", 10F);
+            button3.ForeColor = Color.White;
+            button3.Location = new Point(356, 155);
+            button3.Margin = new Padding(2);
+            button3.Name = "button3";
+            button3.Size = new Size(122, 34);
+            button3.TabIndex = 45;
+            button3.Text = "Cancelar";
+            button3.UseVisualStyleBackColor = false;
+            // 
+            // button4
+            // 
+            button4.BackColor = Color.FromArgb(64, 0, 0);
+            button4.BackgroundImage = (Image)resources.GetObject("button4.BackgroundImage");
+            button4.BackgroundImageLayout = ImageLayout.None;
+            button4.Font = new Font("PMingLiU-ExtB", 10F);
+            button4.ForeColor = Color.White;
+            button4.Location = new Point(215, 155);
+            button4.Margin = new Padding(2);
+            button4.Name = "button4";
+            button4.Size = new Size(121, 34);
+            button4.TabIndex = 41;
+            button4.Text = "Guardar";
+            button4.UseVisualStyleBackColor = false;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("PMingLiU-ExtB", 10F);
+            label2.Location = new Point(291, 36);
+            label2.Margin = new Padding(2, 0, 2, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(57, 17);
+            label2.TabIndex = 47;
+            label2.Text = "Cédula:";
+            // 
+            // textBox1
+            // 
+            textBox1.Font = new Font("PMingLiU-ExtB", 9F);
+            textBox1.Location = new Point(10, 104);
+            textBox1.Margin = new Padding(2);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(236, 25);
+            textBox1.TabIndex = 46;
+            // 
+            // textBox5
+            // 
+            textBox5.Font = new Font("PMingLiU-ExtB", 9F);
+            textBox5.Location = new Point(291, 104);
+            textBox5.Margin = new Padding(2);
+            textBox5.Name = "textBox5";
+            textBox5.Size = new Size(171, 25);
+            textBox5.TabIndex = 44;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Font = new Font("PMingLiU-ExtB", 10F);
+            label9.Location = new Point(286, 83);
+            label9.Margin = new Padding(2, 0, 2, 0);
+            label9.Name = "label9";
+            label9.Size = new Size(69, 17);
+            label9.TabIndex = 38;
+            label9.Text = "Teléfono:";
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Font = new Font("PMingLiU-ExtB", 10F);
+            label10.Location = new Point(10, 83);
+            label10.Margin = new Padding(2, 0, 2, 0);
+            label10.Name = "label10";
+            label10.Size = new Size(126, 17);
+            label10.TabIndex = 37;
+            label10.Text = "Nombre completo:";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("PMingLiU-ExtB", 10F);
+            label7.Location = new Point(10, 172);
+            label7.Margin = new Padding(2, 0, 2, 0);
+            label7.Name = "label7";
+            label7.Size = new Size(55, 17);
+            label7.TabIndex = 40;
+            label7.Text = "Estado:";
+            // 
+            // comboBox2
+            // 
+            comboBox2.Font = new Font("PMingLiU-ExtB", 9F);
+            comboBox2.FormattingEnabled = true;
+            comboBox2.Location = new Point(87, 166);
+            comboBox2.Margin = new Padding(2);
+            comboBox2.Name = "comboBox2";
+            comboBox2.Size = new Size(109, 23);
+            comboBox2.TabIndex = 42;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("PMingLiU-ExtB", 16F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label5.ForeColor = Color.FromArgb(64, 0, 0);
+            label5.Location = new Point(264, 38);
+            label5.Margin = new Padding(2, 0, 2, 0);
+            label5.Name = "label5";
+            label5.Size = new Size(231, 27);
+            label5.TabIndex = 90;
+            label5.Text = "Gestión de Clientes";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("PMingLiU-ExtB", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.ForeColor = Color.FromArgb(64, 0, 0);
+            label6.Location = new Point(253, 58);
+            label6.Margin = new Padding(2, 0, 2, 0);
+            label6.Name = "label6";
+            label6.Size = new Size(880, 27);
+            label6.TabIndex = 87;
+            label6.Text = "______________________________________________________________";
+            // 
+            // dateTimePicker1
+            // 
+            dateTimePicker1.Font = new Font("PMingLiU-ExtB", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dateTimePicker1.Location = new Point(332, 109);
+            dateTimePicker1.Margin = new Padding(2);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(254, 27);
+            dateTimePicker1.TabIndex = 108;
+            // 
+            // label20
+            // 
+            label20.AutoSize = true;
+            label20.Font = new Font("PMingLiU-ExtB", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label20.ForeColor = Color.FromArgb(64, 0, 0);
+            label20.Location = new Point(272, 115);
+            label20.Margin = new Padding(2, 0, 2, 0);
+            label20.Name = "label20";
+            label20.Size = new Size(50, 17);
+            label20.TabIndex = 107;
+            label20.Text = "Fecha:";
             // 
             // dataGridView1
             // 
@@ -452,19 +698,19 @@
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Id_Cliente, Nombre, Column4, Column5, Column6, Editar });
             dataGridView1.GridColor = Color.Black;
-            dataGridView1.Location = new Point(526, 247);
+            dataGridView1.Location = new Point(264, 444);
             dataGridView1.Margin = new Padding(2);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 62;
-            dataGridView1.Size = new Size(685, 203);
+            dataGridView1.Size = new Size(864, 203);
             dataGridView1.TabIndex = 91;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
             // Id_Cliente
             // 
             Id_Cliente.HeaderText = "Id Cliente";
             Id_Cliente.MinimumWidth = 8;
             Id_Cliente.Name = "Id_Cliente";
-            Id_Cliente.Width = 140;
             // 
             // Nombre
             // 
@@ -499,271 +745,13 @@
             Editar.HeaderText = "Editar";
             Editar.MinimumWidth = 6;
             Editar.Name = "Editar";
-            Editar.Width = 125;
-            // 
-            // groupBox1
-            // 
-            groupBox1.BackColor = Color.SeaShell;
-            groupBox1.Controls.Add(textBox6);
-            groupBox1.Controls.Add(label12);
-            groupBox1.Controls.Add(textBox3);
-            groupBox1.Controls.Add(label8);
-            groupBox1.Controls.Add(textBox2);
-            groupBox1.Controls.Add(textBox4);
-            groupBox1.Controls.Add(label4);
-            groupBox1.Controls.Add(button3);
-            groupBox1.Controls.Add(button4);
-            groupBox1.Controls.Add(label2);
-            groupBox1.Controls.Add(textBox1);
-            groupBox1.Controls.Add(textBox5);
-            groupBox1.Controls.Add(label9);
-            groupBox1.Controls.Add(label10);
-            groupBox1.Font = new Font("PMingLiU-ExtB", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            groupBox1.ForeColor = Color.FromArgb(64, 0, 0);
-            groupBox1.Location = new Point(243, 106);
-            groupBox1.Margin = new Padding(2);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Padding = new Padding(2);
-            groupBox1.Size = new Size(278, 422);
-            groupBox1.TabIndex = 89;
-            groupBox1.TabStop = false;
-            groupBox1.Text = "Nuevo Cliente";
-            groupBox1.Enter += groupBox1_Enter;
-            // 
-            // textBox6
-            // 
-            textBox6.Font = new Font("PMingLiU-ExtB", 10F);
-            textBox6.Location = new Point(5, 262);
-            textBox6.Margin = new Padding(2);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(258, 27);
-            textBox6.TabIndex = 61;
-            // 
-            // label12
-            // 
-            label12.AutoSize = true;
-            label12.Font = new Font("PMingLiU-ExtB", 10F);
-            label12.Location = new Point(5, 244);
-            label12.Margin = new Padding(2, 0, 2, 0);
-            label12.Name = "label12";
-            label12.Size = new Size(74, 17);
-            label12.TabIndex = 60;
-            label12.Text = "Dirección:";
-            // 
-            // textBox3
-            // 
-            textBox3.Font = new Font("PMingLiU-ExtB", 10F);
-            textBox3.Location = new Point(7, 210);
-            textBox3.Margin = new Padding(2);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(256, 27);
-            textBox3.TabIndex = 59;
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Font = new Font("PMingLiU-ExtB", 10F);
-            label8.Location = new Point(7, 191);
-            label8.Margin = new Padding(2, 0, 2, 0);
-            label8.Name = "label8";
-            label8.Size = new Size(129, 17);
-            label8.TabIndex = 58;
-            label8.Text = "Correo electrónico:";
-            // 
-            // textBox2
-            // 
-            textBox2.Font = new Font("PMingLiU-ExtB", 9F);
-            textBox2.Location = new Point(7, 55);
-            textBox2.Margin = new Padding(2);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(239, 25);
-            textBox2.TabIndex = 57;
-            // 
-            // textBox4
-            // 
-            textBox4.Font = new Font("PMingLiU-ExtB", 10F);
-            textBox4.Location = new Point(10, 156);
-            textBox4.Margin = new Padding(2);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(162, 27);
-            textBox4.TabIndex = 55;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("PMingLiU-ExtB", 10F);
-            label4.Location = new Point(7, 36);
-            label4.Margin = new Padding(2, 0, 2, 0);
-            label4.Name = "label4";
-            label4.Size = new Size(74, 17);
-            label4.TabIndex = 56;
-            label4.Text = "Id Cliente:";
-            // 
-            // button3
-            // 
-            button3.BackColor = Color.FromArgb(64, 0, 0);
-            button3.BackgroundImage = (Image)resources.GetObject("button3.BackgroundImage");
-            button3.BackgroundImageLayout = ImageLayout.None;
-            button3.Font = new Font("PMingLiU-ExtB", 10F);
-            button3.ForeColor = Color.White;
-            button3.Location = new Point(152, 369);
-            button3.Margin = new Padding(2);
-            button3.Name = "button3";
-            button3.Size = new Size(122, 34);
-            button3.TabIndex = 45;
-            button3.Text = "Cancelar";
-            button3.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            button4.BackColor = Color.FromArgb(64, 0, 0);
-            button4.BackgroundImage = (Image)resources.GetObject("button4.BackgroundImage");
-            button4.BackgroundImageLayout = ImageLayout.None;
-            button4.Font = new Font("PMingLiU-ExtB", 10F);
-            button4.ForeColor = Color.White;
-            button4.Location = new Point(7, 369);
-            button4.Margin = new Padding(2);
-            button4.Name = "button4";
-            button4.Size = new Size(121, 34);
-            button4.TabIndex = 41;
-            button4.Text = "Guardar";
-            button4.UseVisualStyleBackColor = false;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("PMingLiU-ExtB", 10F);
-            label2.Location = new Point(10, 138);
-            label2.Margin = new Padding(2, 0, 2, 0);
-            label2.Name = "label2";
-            label2.Size = new Size(57, 17);
-            label2.TabIndex = 47;
-            label2.Text = "Cédula:";
-            // 
-            // textBox1
-            // 
-            textBox1.Font = new Font("PMingLiU-ExtB", 9F);
-            textBox1.Location = new Point(10, 104);
-            textBox1.Margin = new Padding(2);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(239, 25);
-            textBox1.TabIndex = 46;
-            // 
-            // textBox5
-            // 
-            textBox5.Font = new Font("PMingLiU-ExtB", 9F);
-            textBox5.Location = new Point(5, 322);
-            textBox5.Margin = new Padding(2);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(146, 25);
-            textBox5.TabIndex = 44;
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Font = new Font("PMingLiU-ExtB", 10F);
-            label9.Location = new Point(5, 298);
-            label9.Margin = new Padding(2, 0, 2, 0);
-            label9.Name = "label9";
-            label9.Size = new Size(69, 17);
-            label9.TabIndex = 38;
-            label9.Text = "Teléfono:";
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.Font = new Font("PMingLiU-ExtB", 10F);
-            label10.Location = new Point(10, 83);
-            label10.Margin = new Padding(2, 0, 2, 0);
-            label10.Name = "label10";
-            label10.Size = new Size(126, 17);
-            label10.TabIndex = 37;
-            label10.Text = "Nombre completo:";
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Font = new Font("PMingLiU-ExtB", 10F);
-            label7.Location = new Point(903, 206);
-            label7.Margin = new Padding(2, 0, 2, 0);
-            label7.Name = "label7";
-            label7.Size = new Size(55, 17);
-            label7.TabIndex = 40;
-            label7.Text = "Estado:";
-            // 
-            // comboBox2
-            // 
-            comboBox2.Font = new Font("PMingLiU-ExtB", 9F);
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(974, 205);
-            comboBox2.Margin = new Padding(2);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(109, 23);
-            comboBox2.TabIndex = 42;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new Font("PMingLiU-ExtB", 16F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label5.ForeColor = Color.FromArgb(64, 0, 0);
-            label5.Location = new Point(264, 38);
-            label5.Margin = new Padding(2, 0, 2, 0);
-            label5.Name = "label5";
-            label5.Size = new Size(231, 27);
-            label5.TabIndex = 90;
-            label5.Text = "Gestión de Clientes";
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Font = new Font("PMingLiU-ExtB", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.ForeColor = Color.FromArgb(64, 0, 0);
-            label6.Location = new Point(253, 58);
-            label6.Margin = new Padding(2, 0, 2, 0);
-            label6.Name = "label6";
-            label6.Size = new Size(824, 27);
-            label6.TabIndex = 87;
-            label6.Text = "__________________________________________________________";
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("PMingLiU-ExtB", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.FromArgb(64, 0, 0);
-            label1.Location = new Point(538, 212);
-            label1.Margin = new Padding(2, 0, 2, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(600, 27);
-            label1.TabIndex = 95;
-            label1.Text = "__________________________________________";
-            // 
-            // dateTimePicker1
-            // 
-            dateTimePicker1.Font = new Font("PMingLiU-ExtB", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            dateTimePicker1.Location = new Point(826, 99);
-            dateTimePicker1.Margin = new Padding(2);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(254, 27);
-            dateTimePicker1.TabIndex = 108;
-            // 
-            // label20
-            // 
-            label20.AutoSize = true;
-            label20.Font = new Font("PMingLiU-ExtB", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label20.ForeColor = Color.FromArgb(64, 0, 0);
-            label20.Location = new Point(766, 105);
-            label20.Margin = new Padding(2, 0, 2, 0);
-            label20.Name = "label20";
-            label20.Size = new Size(50, 17);
-            label20.TabIndex = 107;
-            label20.Text = "Fecha:";
             // 
             // Formcliente
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(1244, 713);
+            ClientSize = new Size(1145, 717);
             Controls.Add(dateTimePicker1);
             Controls.Add(label20);
             Controls.Add(label3);
@@ -773,12 +761,9 @@
             Controls.Add(comboBox3);
             Controls.Add(button5);
             Controls.Add(dataGridView1);
-            Controls.Add(label7);
             Controls.Add(groupBox1);
             Controls.Add(label5);
-            Controls.Add(comboBox2);
             Controls.Add(label6);
-            Controls.Add(label1);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.SizableToolWindow;
             Margin = new Padding(2);
@@ -786,9 +771,9 @@
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -805,7 +790,6 @@
         private TextBox textBox7;
         private ComboBox comboBox3;
         private Button button5;
-        private DataGridView dataGridView1;
         private GroupBox groupBox1;
         private TextBox textBox4;
         private Button button3;
@@ -819,7 +803,6 @@
         private Label label10;
         private Label label5;
         private Label label6;
-        private Label label1;
         private TextBox textBox6;
         private Label label12;
         private TextBox textBox3;
@@ -840,6 +823,7 @@
         private Button btnnivelacioninventario;
         private Label label4;
         private TextBox textBox2;
+        private DataGridView dataGridView1;
         private DataGridViewTextBoxColumn Id_Cliente;
         private DataGridViewTextBoxColumn Nombre;
         private DataGridViewTextBoxColumn Column4;
