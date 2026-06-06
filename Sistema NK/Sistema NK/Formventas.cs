@@ -17,7 +17,7 @@ namespace Sistema_NK
             InitializeComponent();
         }
 
-       
+
 
         private void btnusuarios_Click_1(object sender, EventArgs e)
         {
@@ -106,7 +106,9 @@ namespace Sistema_NK
         private void textBox7_TextChanged(object sender, EventArgs e)
         {
 
-        }
+        }    
+
+       
     }
 }
  

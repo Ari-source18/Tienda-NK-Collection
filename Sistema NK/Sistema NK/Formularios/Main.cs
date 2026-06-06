@@ -17,6 +17,9 @@ namespace Sistema_NK.Formularios
             InitializeComponent();
         }
 
-        
+        private void lbl_Cerrar_sesion_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -30,14 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             pictureBox1 = new PictureBox();
-            button2 = new Button();
-            linkLabel1 = new LinkLabel();
-            button1 = new Button();
+            lbl_recuperar_contrasena = new LinkLabel();
+            btnAcceder = new Button();
             panel3 = new Panel();
-            textBox2 = new TextBox();
+            txtPassword = new TextBox();
             label2 = new Label();
             panel2 = new Panel();
-            textBox1 = new TextBox();
+            txtUsuario = new TextBox();
             Username = new Label();
             label1 = new Label();
             pictureBox2 = new PictureBox();
@@ -58,68 +57,54 @@
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
             // 
-            // button2
+            // lbl_recuperar_contrasena
             // 
-            button2.BackColor = Color.Black;
-            button2.FlatAppearance.BorderSize = 0;
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("Century Gothic", 11F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            button2.ForeColor = Color.White;
-            button2.Location = new Point(421, 489);
-            button2.Name = "button2";
-            button2.Size = new Size(395, 41);
-            button2.TabIndex = 14;
-            button2.Text = "Recuperar Contraseña";
-            button2.UseVisualStyleBackColor = false;
-            button2.Click += button2_Click;
+            lbl_recuperar_contrasena.ActiveLinkColor = Color.Black;
+            lbl_recuperar_contrasena.AutoSize = true;
+            lbl_recuperar_contrasena.Font = new Font("Century Gothic", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lbl_recuperar_contrasena.LinkBehavior = LinkBehavior.NeverUnderline;
+            lbl_recuperar_contrasena.LinkColor = Color.Gray;
+            lbl_recuperar_contrasena.Location = new Point(509, 461);
+            lbl_recuperar_contrasena.Name = "lbl_recuperar_contrasena";
+            lbl_recuperar_contrasena.Size = new Size(218, 21);
+            lbl_recuperar_contrasena.TabIndex = 13;
+            lbl_recuperar_contrasena.TabStop = true;
+            lbl_recuperar_contrasena.Text = "¿Olvidaste tu contraseña?";
+            lbl_recuperar_contrasena.LinkClicked += linkLabel1_LinkClicked;
             // 
-            // linkLabel1
+            // btnAcceder
             // 
-            linkLabel1.ActiveLinkColor = Color.Black;
-            linkLabel1.AutoSize = true;
-            linkLabel1.Font = new Font("Century Gothic", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            linkLabel1.LinkBehavior = LinkBehavior.NeverUnderline;
-            linkLabel1.LinkColor = Color.Gray;
-            linkLabel1.Location = new Point(516, 455);
-            linkLabel1.Name = "linkLabel1";
-            linkLabel1.Size = new Size(218, 21);
-            linkLabel1.TabIndex = 13;
-            linkLabel1.TabStop = true;
-            linkLabel1.Text = "¿Olvidaste tu contraseña?";
-            // 
-            // button1
-            // 
-            button1.BackColor = Color.Black;
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Century Gothic", 11F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(423, 392);
-            button1.Name = "button1";
-            button1.Size = new Size(395, 41);
-            button1.TabIndex = 12;
-            button1.Text = "Acceder";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
+            btnAcceder.BackColor = Color.Black;
+            btnAcceder.FlatAppearance.BorderSize = 0;
+            btnAcceder.FlatStyle = FlatStyle.Flat;
+            btnAcceder.Font = new Font("Century Gothic", 11F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            btnAcceder.ForeColor = Color.White;
+            btnAcceder.Location = new Point(423, 392);
+            btnAcceder.Name = "btnAcceder";
+            btnAcceder.Size = new Size(395, 41);
+            btnAcceder.TabIndex = 12;
+            btnAcceder.Text = "Acceder";
+            btnAcceder.UseVisualStyleBackColor = false;
+            btnAcceder.Click += button1_Click;
             // 
             // panel3
             // 
             panel3.BorderStyle = BorderStyle.FixedSingle;
-            panel3.Controls.Add(textBox2);
+            panel3.Controls.Add(txtPassword);
             panel3.Controls.Add(label2);
             panel3.Location = new Point(423, 308);
             panel3.Name = "panel3";
             panel3.Size = new Size(394, 59);
             panel3.TabIndex = 11;
             // 
-            // textBox2
+            // txtPassword
             // 
-            textBox2.BorderStyle = BorderStyle.None;
-            textBox2.ForeColor = Color.FromArgb(64, 64, 64);
-            textBox2.Location = new Point(15, 22);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(366, 24);
-            textBox2.TabIndex = 1;
+            txtPassword.BorderStyle = BorderStyle.None;
+            txtPassword.ForeColor = Color.FromArgb(64, 64, 64);
+            txtPassword.Location = new Point(15, 22);
+            txtPassword.Name = "txtPassword";
+            txtPassword.Size = new Size(366, 24);
+            txtPassword.TabIndex = 1;
             // 
             // label2
             // 
@@ -135,22 +120,22 @@
             // panel2
             // 
             panel2.BorderStyle = BorderStyle.FixedSingle;
-            panel2.Controls.Add(textBox1);
+            panel2.Controls.Add(txtUsuario);
             panel2.Controls.Add(Username);
             panel2.Location = new Point(423, 232);
             panel2.Name = "panel2";
             panel2.Size = new Size(394, 59);
             panel2.TabIndex = 10;
             // 
-            // textBox1
+            // txtUsuario
             // 
-            textBox1.BorderStyle = BorderStyle.None;
-            textBox1.ForeColor = Color.FromArgb(64, 64, 64);
-            textBox1.Location = new Point(16, 29);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(366, 24);
-            textBox1.TabIndex = 1;
-            textBox1.TextChanged += textBox1_TextChanged;
+            txtUsuario.BorderStyle = BorderStyle.None;
+            txtUsuario.ForeColor = Color.FromArgb(64, 64, 64);
+            txtUsuario.Location = new Point(16, 29);
+            txtUsuario.Name = "txtUsuario";
+            txtUsuario.Size = new Size(366, 24);
+            txtUsuario.TabIndex = 1;
+            txtUsuario.TextChanged += textBox1_TextChanged;
             // 
             // Username
             // 
@@ -189,9 +174,8 @@
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(907, 560);
-            Controls.Add(button2);
-            Controls.Add(linkLabel1);
-            Controls.Add(button1);
+            Controls.Add(lbl_recuperar_contrasena);
+            Controls.Add(btnAcceder);
             Controls.Add(panel3);
             Controls.Add(panel2);
             Controls.Add(label1);
@@ -214,14 +198,13 @@
         #endregion
 
         private PictureBox pictureBox1;
-        private Button button2;
-        private LinkLabel linkLabel1;
-        private Button button1;
+        private LinkLabel lbl_recuperar_contrasena;
+        private Button btnAcceder;
         private Panel panel3;
-        private TextBox textBox2;
+        private TextBox txtPassword;
         private Label label2;
         private Panel panel2;
-        private TextBox textBox1;
+        private TextBox txtUsuario;
         private Label Username;
         private Label label1;
         private PictureBox pictureBox2;
