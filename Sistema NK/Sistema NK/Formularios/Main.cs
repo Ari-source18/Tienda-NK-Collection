@@ -21,5 +21,36 @@ namespace Sistema_NK.Formularios
         {
             this.Close();
         }
+
+
+
+        private void AbrirFormularioEnPanel(Form formulario)
+        {
+            Panel_Hijo.Controls.Clear();
+
+            formulario.TopLevel = false;
+            formulario.FormBorderStyle = FormBorderStyle.None;
+            formulario.Dock = DockStyle.Fill;
+
+            Panel_Hijo.Controls.Add(formulario);
+            Panel_Hijo.Tag = formulario;
+
+            formulario.Show();
+        }
+
+        private void btn_Ventas_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioEnPanel(new Formventas());
+        }
+
+        private void btn_Mantenimiento_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioEnPanel(new FormMantenimiento());
+        }
+
+        private void btn_Reporte_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioEnPanel(new Frm_Reportes());
+        }
     }
 }

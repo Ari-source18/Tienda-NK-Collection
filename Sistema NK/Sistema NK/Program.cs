@@ -1,3 +1,5 @@
+using Sistema_NK.Formularios;
+
 namespace Sistema_NK
 {
     internal static class Program

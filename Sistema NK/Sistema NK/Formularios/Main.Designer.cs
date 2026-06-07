@@ -30,7 +30,7 @@
         {
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
-            panel1 = new Panel();
+            Panel_Padre = new Panel();
             lbl_Cerrar_sesion = new Label();
             btn_Acerca_de = new Button();
             imageList1 = new ImageList(components);
@@ -47,44 +47,39 @@
             btn_Proveedores = new Button();
             btn_Clientes = new Button();
             btn_Usuario = new Button();
-            panel4 = new Panel();
-            panel3 = new Panel();
-            pictureBox2 = new PictureBox();
-            label1 = new Label();
-            label3 = new Label();
             button1 = new Button();
-            panel1.SuspendLayout();
-            panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            Panel_Hijo = new Panel();
+            Panel_Padre.SuspendLayout();
             SuspendLayout();
             // 
-            // panel1
+            // Panel_Padre
             // 
-            panel1.BackColor = Color.FromArgb(64, 0, 0);
-            panel1.Controls.Add(lbl_Cerrar_sesion);
-            panel1.Controls.Add(btn_Acerca_de);
-            panel1.Controls.Add(btn_Mantenimiento);
-            panel1.Controls.Add(btn_Reporte);
-            panel1.Controls.Add(btn_Nivelacion);
-            panel1.Controls.Add(btn_Inventario);
-            panel1.Controls.Add(btn_Credito);
-            panel1.Controls.Add(btn_Devolucion);
-            panel1.Controls.Add(btn_Ventas);
-            panel1.Controls.Add(btn_Caja);
-            panel1.Controls.Add(btn_Productos);
-            panel1.Controls.Add(btn_Compras);
-            panel1.Controls.Add(btn_Proveedores);
-            panel1.Controls.Add(btn_Clientes);
-            panel1.Controls.Add(btn_Usuario);
-            panel1.Controls.Add(button1);
-            panel1.Dock = DockStyle.Left;
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(299, 824);
-            panel1.TabIndex = 1;
+            Panel_Padre.BackColor = Color.FromArgb(64, 0, 0);
+            Panel_Padre.Controls.Add(lbl_Cerrar_sesion);
+            Panel_Padre.Controls.Add(btn_Acerca_de);
+            Panel_Padre.Controls.Add(btn_Mantenimiento);
+            Panel_Padre.Controls.Add(btn_Reporte);
+            Panel_Padre.Controls.Add(btn_Nivelacion);
+            Panel_Padre.Controls.Add(btn_Inventario);
+            Panel_Padre.Controls.Add(btn_Credito);
+            Panel_Padre.Controls.Add(btn_Devolucion);
+            Panel_Padre.Controls.Add(btn_Ventas);
+            Panel_Padre.Controls.Add(btn_Caja);
+            Panel_Padre.Controls.Add(btn_Productos);
+            Panel_Padre.Controls.Add(btn_Compras);
+            Panel_Padre.Controls.Add(btn_Proveedores);
+            Panel_Padre.Controls.Add(btn_Clientes);
+            Panel_Padre.Controls.Add(btn_Usuario);
+            Panel_Padre.Controls.Add(button1);
+            Panel_Padre.Dock = DockStyle.Left;
+            Panel_Padre.Location = new Point(0, 0);
+            Panel_Padre.Name = "Panel_Padre";
+            Panel_Padre.Size = new Size(299, 824);
+            Panel_Padre.TabIndex = 1;
             // 
             // lbl_Cerrar_sesion
             // 
+            lbl_Cerrar_sesion.Anchor = AnchorStyles.Bottom;
             lbl_Cerrar_sesion.AutoSize = true;
             lbl_Cerrar_sesion.Font = new Font("SimSun", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbl_Cerrar_sesion.ForeColor = SystemColors.ButtonFace;
@@ -97,9 +92,9 @@
             // 
             // btn_Acerca_de
             // 
+            btn_Acerca_de.Anchor = AnchorStyles.Bottom;
             btn_Acerca_de.BackColor = Color.Transparent;
             btn_Acerca_de.Cursor = Cursors.Hand;
-            btn_Acerca_de.Dock = DockStyle.Top;
             btn_Acerca_de.FlatAppearance.BorderColor = Color.White;
             btn_Acerca_de.FlatStyle = FlatStyle.Popup;
             btn_Acerca_de.Font = new Font("Marlett", 14F, FontStyle.Bold);
@@ -134,12 +129,13 @@
             imageList1.Images.SetKeyName(12, "icons8-ventas-50.png");
             imageList1.Images.SetKeyName(13, "icons8-caja-32.png");
             imageList1.Images.SetKeyName(14, "icons8-carrito-de-compras-24.png");
+            imageList1.Images.SetKeyName(15, "imagen_circular_recortada.png");
             // 
             // btn_Mantenimiento
             // 
+            btn_Mantenimiento.Anchor = AnchorStyles.Bottom;
             btn_Mantenimiento.BackColor = Color.Transparent;
             btn_Mantenimiento.Cursor = Cursors.Hand;
-            btn_Mantenimiento.Dock = DockStyle.Top;
             btn_Mantenimiento.FlatAppearance.BorderColor = Color.White;
             btn_Mantenimiento.FlatStyle = FlatStyle.Popup;
             btn_Mantenimiento.Font = new Font("Marlett", 14F, FontStyle.Bold);
@@ -153,12 +149,13 @@
             btn_Mantenimiento.TabIndex = 17;
             btn_Mantenimiento.Text = "Mantenimiento";
             btn_Mantenimiento.UseVisualStyleBackColor = false;
+            btn_Mantenimiento.Click += btn_Mantenimiento_Click;
             // 
             // btn_Reporte
             // 
+            btn_Reporte.Anchor = AnchorStyles.Bottom;
             btn_Reporte.BackColor = Color.Transparent;
             btn_Reporte.Cursor = Cursors.Hand;
-            btn_Reporte.Dock = DockStyle.Top;
             btn_Reporte.FlatAppearance.BorderColor = Color.White;
             btn_Reporte.FlatStyle = FlatStyle.Popup;
             btn_Reporte.Font = new Font("Marlett", 14F, FontStyle.Bold);
@@ -172,12 +169,13 @@
             btn_Reporte.TabIndex = 16;
             btn_Reporte.Text = "Reporte";
             btn_Reporte.UseVisualStyleBackColor = false;
+            btn_Reporte.Click += btn_Reporte_Click;
             // 
             // btn_Nivelacion
             // 
+            btn_Nivelacion.Anchor = AnchorStyles.Bottom;
             btn_Nivelacion.BackColor = Color.Transparent;
             btn_Nivelacion.Cursor = Cursors.Hand;
-            btn_Nivelacion.Dock = DockStyle.Top;
             btn_Nivelacion.FlatAppearance.BorderColor = Color.White;
             btn_Nivelacion.FlatStyle = FlatStyle.Popup;
             btn_Nivelacion.Font = new Font("Marlett", 14F, FontStyle.Bold);
@@ -194,9 +192,9 @@
             // 
             // btn_Inventario
             // 
+            btn_Inventario.Anchor = AnchorStyles.Bottom;
             btn_Inventario.BackColor = Color.Transparent;
             btn_Inventario.Cursor = Cursors.Hand;
-            btn_Inventario.Dock = DockStyle.Top;
             btn_Inventario.FlatAppearance.BorderColor = Color.White;
             btn_Inventario.FlatStyle = FlatStyle.Popup;
             btn_Inventario.Font = new Font("Marlett", 14F, FontStyle.Bold);
@@ -213,9 +211,9 @@
             // 
             // btn_Credito
             // 
+            btn_Credito.Anchor = AnchorStyles.Bottom;
             btn_Credito.BackColor = Color.Transparent;
             btn_Credito.Cursor = Cursors.Hand;
-            btn_Credito.Dock = DockStyle.Top;
             btn_Credito.FlatAppearance.BorderColor = Color.White;
             btn_Credito.FlatStyle = FlatStyle.Popup;
             btn_Credito.Font = new Font("Marlett", 14F, FontStyle.Bold);
@@ -232,9 +230,9 @@
             // 
             // btn_Devolucion
             // 
+            btn_Devolucion.Anchor = AnchorStyles.Bottom;
             btn_Devolucion.BackColor = Color.Transparent;
             btn_Devolucion.Cursor = Cursors.Hand;
-            btn_Devolucion.Dock = DockStyle.Top;
             btn_Devolucion.FlatAppearance.BorderColor = Color.White;
             btn_Devolucion.FlatStyle = FlatStyle.Popup;
             btn_Devolucion.Font = new Font("Marlett", 14F, FontStyle.Bold);
@@ -251,9 +249,9 @@
             // 
             // btn_Ventas
             // 
+            btn_Ventas.Anchor = AnchorStyles.Bottom;
             btn_Ventas.BackColor = Color.Transparent;
             btn_Ventas.Cursor = Cursors.Hand;
-            btn_Ventas.Dock = DockStyle.Top;
             btn_Ventas.FlatAppearance.BorderColor = Color.White;
             btn_Ventas.FlatStyle = FlatStyle.Popup;
             btn_Ventas.Font = new Font("Marlett", 14F, FontStyle.Bold);
@@ -267,11 +265,12 @@
             btn_Ventas.TabIndex = 11;
             btn_Ventas.Text = "Ventas";
             btn_Ventas.UseVisualStyleBackColor = false;
+            btn_Ventas.Click += btn_Ventas_Click;
             // 
             // btn_Caja
             // 
+            btn_Caja.Anchor = AnchorStyles.Bottom;
             btn_Caja.BackColor = Color.Transparent;
-            btn_Caja.Dock = DockStyle.Top;
             btn_Caja.FlatAppearance.BorderColor = Color.White;
             btn_Caja.FlatStyle = FlatStyle.Popup;
             btn_Caja.Font = new Font("Marlett", 14F, FontStyle.Bold);
@@ -288,9 +287,9 @@
             // 
             // btn_Productos
             // 
+            btn_Productos.Anchor = AnchorStyles.Bottom;
             btn_Productos.BackColor = Color.Transparent;
             btn_Productos.Cursor = Cursors.Hand;
-            btn_Productos.Dock = DockStyle.Top;
             btn_Productos.FlatAppearance.BorderColor = Color.White;
             btn_Productos.FlatStyle = FlatStyle.Popup;
             btn_Productos.Font = new Font("Marlett", 14F, FontStyle.Bold);
@@ -307,9 +306,9 @@
             // 
             // btn_Compras
             // 
+            btn_Compras.Anchor = AnchorStyles.Bottom;
             btn_Compras.BackColor = Color.Transparent;
             btn_Compras.Cursor = Cursors.Hand;
-            btn_Compras.Dock = DockStyle.Top;
             btn_Compras.FlatAppearance.BorderColor = Color.White;
             btn_Compras.FlatStyle = FlatStyle.Popup;
             btn_Compras.Font = new Font("Marlett", 14F, FontStyle.Bold);
@@ -326,9 +325,9 @@
             // 
             // btn_Proveedores
             // 
+            btn_Proveedores.Anchor = AnchorStyles.Bottom;
             btn_Proveedores.BackColor = Color.Transparent;
             btn_Proveedores.Cursor = Cursors.Hand;
-            btn_Proveedores.Dock = DockStyle.Top;
             btn_Proveedores.FlatAppearance.BorderColor = Color.White;
             btn_Proveedores.FlatStyle = FlatStyle.Popup;
             btn_Proveedores.Font = new Font("Marlett", 14F, FontStyle.Bold);
@@ -345,9 +344,9 @@
             // 
             // btn_Clientes
             // 
+            btn_Clientes.Anchor = AnchorStyles.Bottom;
             btn_Clientes.BackColor = Color.Transparent;
             btn_Clientes.Cursor = Cursors.Hand;
-            btn_Clientes.Dock = DockStyle.Top;
             btn_Clientes.FlatAppearance.BorderColor = Color.White;
             btn_Clientes.FlatStyle = FlatStyle.Popup;
             btn_Clientes.Font = new Font("Marlett", 14F, FontStyle.Bold);
@@ -364,9 +363,9 @@
             // 
             // btn_Usuario
             // 
+            btn_Usuario.Anchor = AnchorStyles.Bottom;
             btn_Usuario.BackColor = Color.Transparent;
             btn_Usuario.Cursor = Cursors.Hand;
-            btn_Usuario.Dock = DockStyle.Top;
             btn_Usuario.FlatAppearance.BorderColor = Color.White;
             btn_Usuario.FlatStyle = FlatStyle.Popup;
             btn_Usuario.Font = new Font("Marlett", 14F, FontStyle.Bold);
@@ -381,70 +380,11 @@
             btn_Usuario.Text = "Usuarios";
             btn_Usuario.UseVisualStyleBackColor = false;
             // 
-            // panel4
-            // 
-            panel4.BackColor = Color.Tan;
-            panel4.Dock = DockStyle.Left;
-            panel4.Location = new Point(0, 0);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(23, 824);
-            panel4.TabIndex = 11;
-            // 
-            // panel3
-            // 
-            panel3.BackgroundImage = (Image)resources.GetObject("panel3.BackgroundImage");
-            panel3.Controls.Add(pictureBox2);
-            panel3.Controls.Add(panel4);
-            panel3.Controls.Add(label1);
-            panel3.Controls.Add(label3);
-            panel3.Dock = DockStyle.Fill;
-            panel3.Location = new Point(299, 0);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(1199, 824);
-            panel3.TabIndex = 4;
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.BackColor = Color.Transparent;
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(439, 262);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(276, 279);
-            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox2.TabIndex = 9;
-            pictureBox2.TabStop = false;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.BackColor = Color.Transparent;
-            label1.FlatStyle = FlatStyle.Flat;
-            label1.Font = new Font("Pristina", 14F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.Transparent;
-            label1.Location = new Point(373, 778);
-            label1.Name = "label1";
-            label1.Size = new Size(446, 37);
-            label1.TabIndex = 4;
-            label1.Text = "Avenida Jose Dolores Estrada, Matagalpa";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.BackColor = Color.Transparent;
-            label3.FlatStyle = FlatStyle.Flat;
-            label3.Font = new Font("Pristina", 22F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label3.ForeColor = Color.Black;
-            label3.Location = new Point(208, 23);
-            label3.Name = "label3";
-            label3.Size = new Size(714, 58);
-            label3.TabIndex = 3;
-            label3.Text = "Bienvenidos al Sistema Tienda NK Collection";
-            // 
             // button1
             // 
+            button1.Anchor = AnchorStyles.Bottom;
             button1.BackColor = Color.Transparent;
             button1.Cursor = Cursors.Hand;
-            button1.Dock = DockStyle.Top;
             button1.FlatAppearance.BorderColor = Color.White;
             button1.FlatAppearance.BorderSize = 0;
             button1.FlatAppearance.MouseDownBackColor = Color.FromArgb(224, 224, 224);
@@ -452,6 +392,9 @@
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Marlett", 14F, FontStyle.Bold);
             button1.ForeColor = Color.White;
+            button1.ImageAlign = ContentAlignment.MiddleLeft;
+            button1.ImageIndex = 15;
+            button1.ImageList = imageList1;
             button1.Location = new Point(0, 0);
             button1.Name = "button1";
             button1.Size = new Size(299, 62);
@@ -459,31 +402,32 @@
             button1.Text = "NK Collection";
             button1.UseVisualStyleBackColor = false;
             // 
+            // Panel_Hijo
+            // 
+            Panel_Hijo.Dock = DockStyle.Fill;
+            Panel_Hijo.Location = new Point(299, 0);
+            Panel_Hijo.Name = "Panel_Hijo";
+            Panel_Hijo.Size = new Size(1371, 824);
+            Panel_Hijo.TabIndex = 2;
+            // 
             // Main
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1498, 824);
-            Controls.Add(panel3);
-            Controls.Add(panel1);
+            ClientSize = new Size(1670, 824);
+            Controls.Add(Panel_Hijo);
+            Controls.Add(Panel_Padre);
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Name = "Main";
             StartPosition = FormStartPosition.CenterScreen;
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
-            panel3.ResumeLayout(false);
-            panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            Panel_Padre.ResumeLayout(false);
+            Panel_Padre.PerformLayout();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private Panel panel1;
-        private Panel panel4;
-        private Panel panel3;
-        private Label label1;
-        private Label label3;
+        private Panel Panel_Padre;
         private Button btn_Usuario;
         private Button btn_Mantenimiento;
         private Button btn_Reporte;
@@ -500,7 +444,7 @@
         private Button btn_Acerca_de;
         private ImageList imageList1;
         private Label lbl_Cerrar_sesion;
-        private PictureBox pictureBox2;
         private Button button1;
+        private Panel Panel_Hijo;
     }
 }
