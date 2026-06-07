@@ -112,6 +112,11 @@ namespace Sistema_NK
         {
 
         }
+
+        private void Formventas_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
  

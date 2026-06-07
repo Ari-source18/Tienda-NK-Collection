@@ -49,14 +49,10 @@
             button1 = new Button();
             label5 = new Label();
             tabControl1 = new TabControl();
-            tabPage1 = new TabPage();
+            nuevousuario = new TabPage();
             groupBox1 = new GroupBox();
-            button7 = new Button();
-            label3 = new Label();
             textBox4 = new TextBox();
-            textBox7 = new TextBox();
             label4 = new Label();
-            comboBox3 = new ComboBox();
             label1 = new Label();
             textBox2 = new TextBox();
             button3 = new Button();
@@ -70,19 +66,21 @@
             label9 = new Label();
             label10 = new Label();
             label6 = new Label();
-            tabPage2 = new TabPage();
+            listadeusuarios = new TabPage();
             dataGridView1 = new DataGridView();
+            label8 = new Label();
+            textBox3 = new TextBox();
+            button2 = new Button();
             Column2 = new DataGridViewTextBoxColumn();
             Column4 = new DataGridViewTextBoxColumn();
             Column5 = new DataGridViewTextBoxColumn();
-            Column6 = new DataGridViewTextBoxColumn();
             Column7 = new DataGridViewTextBoxColumn();
             editar = new DataGridViewTextBoxColumn();
             panel1.SuspendLayout();
             tabControl1.SuspendLayout();
-            tabPage1.SuspendLayout();
+            nuevousuario.SuspendLayout();
             groupBox1.SuspendLayout();
-            tabPage2.SuspendLayout();
+            listadeusuarios.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -396,38 +394,34 @@
             // 
             // tabControl1
             // 
-            tabControl1.Controls.Add(tabPage1);
-            tabControl1.Controls.Add(tabPage2);
+            tabControl1.Controls.Add(nuevousuario);
+            tabControl1.Controls.Add(listadeusuarios);
             tabControl1.Location = new Point(328, 96);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
             tabControl1.Size = new Size(1011, 698);
             tabControl1.TabIndex = 85;
             // 
-            // tabPage1
+            // nuevousuario
             // 
-            tabPage1.Controls.Add(groupBox1);
-            tabPage1.Location = new Point(4, 34);
-            tabPage1.Name = "tabPage1";
-            tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(1003, 660);
-            tabPage1.TabIndex = 0;
-            tabPage1.Text = "tabPage1";
-            tabPage1.UseVisualStyleBackColor = true;
+            nuevousuario.Controls.Add(groupBox1);
+            nuevousuario.Controls.Add(button4);
+            nuevousuario.Controls.Add(button3);
+            nuevousuario.Location = new Point(4, 34);
+            nuevousuario.Name = "nuevousuario";
+            nuevousuario.Padding = new Padding(3);
+            nuevousuario.Size = new Size(1003, 660);
+            nuevousuario.TabIndex = 0;
+            nuevousuario.Text = "Nuevo Usuario";
+            nuevousuario.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
             groupBox1.BackColor = Color.SeaShell;
-            groupBox1.Controls.Add(button7);
-            groupBox1.Controls.Add(label3);
             groupBox1.Controls.Add(textBox4);
-            groupBox1.Controls.Add(textBox7);
             groupBox1.Controls.Add(label4);
-            groupBox1.Controls.Add(comboBox3);
             groupBox1.Controls.Add(label1);
             groupBox1.Controls.Add(textBox2);
-            groupBox1.Controls.Add(button3);
-            groupBox1.Controls.Add(button4);
             groupBox1.Controls.Add(comboBox1);
             groupBox1.Controls.Add(label7);
             groupBox1.Controls.Add(label2);
@@ -441,75 +435,34 @@
             groupBox1.ForeColor = Color.FromArgb(64, 0, 0);
             groupBox1.Location = new Point(6, 30);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(991, 291);
+            groupBox1.Size = new Size(991, 403);
             groupBox1.TabIndex = 81;
             groupBox1.TabStop = false;
             groupBox1.Text = "Nuevo Usuario";
             // 
-            // button7
-            // 
-            button7.BackColor = Color.Transparent;
-            button7.BackgroundImage = (Image)resources.GetObject("button7.BackgroundImage");
-            button7.Font = new Font("PMingLiU-ExtB", 9F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            button7.ForeColor = SystemColors.ControlLightLight;
-            button7.Location = new Point(946, 235);
-            button7.Margin = new Padding(2);
-            button7.Name = "button7";
-            button7.Size = new Size(30, 34);
-            button7.TabIndex = 120;
-            button7.Text = "Cerrar Sesión ";
-            button7.UseVisualStyleBackColor = false;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("PMingLiU-ExtB", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.Location = new Point(440, 249);
-            label3.Name = "label3";
-            label3.Size = new Size(94, 20);
-            label3.TabIndex = 56;
-            label3.Text = "Buscar por:";
-            // 
             // textBox4
             // 
             textBox4.Font = new Font("PMingLiU-ExtB", 10F);
-            textBox4.Location = new Point(21, 178);
+            textBox4.Location = new Point(21, 355);
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(204, 31);
             textBox4.TabIndex = 55;
-            // 
-            // textBox7
-            // 
-            textBox7.Font = new Font("PMingLiU-ExtB", 9F);
-            textBox7.Location = new Point(724, 238);
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(204, 29);
-            textBox7.TabIndex = 58;
             // 
             // label4
             // 
             label4.AutoSize = true;
             label4.Font = new Font("PMingLiU-ExtB", 10F);
-            label4.Location = new Point(271, 157);
+            label4.Location = new Point(271, 332);
             label4.Name = "label4";
             label4.Size = new Size(97, 20);
             label4.TabIndex = 52;
             label4.Text = "Contraseña:";
             // 
-            // comboBox3
-            // 
-            comboBox3.Font = new Font("PMingLiU-ExtB", 9F);
-            comboBox3.FormattingEnabled = true;
-            comboBox3.Location = new Point(540, 243);
-            comboBox3.Name = "comboBox3";
-            comboBox3.Size = new Size(159, 26);
-            comboBox3.TabIndex = 57;
-            // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("PMingLiU-ExtB", 10F);
-            label1.Location = new Point(21, 157);
+            label1.Location = new Point(21, 324);
             label1.Name = "label1";
             label1.Size = new Size(72, 20);
             label1.TabIndex = 50;
@@ -518,7 +471,7 @@
             // textBox2
             // 
             textBox2.Font = new Font("PMingLiU-ExtB", 10F);
-            textBox2.Location = new Point(271, 178);
+            textBox2.Location = new Point(271, 355);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(204, 31);
             textBox2.TabIndex = 49;
@@ -529,7 +482,7 @@
             button3.BackgroundImage = (Image)resources.GetObject("button3.BackgroundImage");
             button3.BackgroundImageLayout = ImageLayout.None;
             button3.Font = new Font("PMingLiU-ExtB", 10F);
-            button3.Location = new Point(762, 166);
+            button3.Location = new Point(256, 489);
             button3.Name = "button3";
             button3.Size = new Size(153, 43);
             button3.TabIndex = 45;
@@ -542,7 +495,7 @@
             button4.BackgroundImage = (Image)resources.GetObject("button4.BackgroundImage");
             button4.BackgroundImageLayout = ImageLayout.None;
             button4.Font = new Font("PMingLiU-ExtB", 10F);
-            button4.Location = new Point(579, 166);
+            button4.Location = new Point(27, 489);
             button4.Name = "button4";
             button4.Size = new Size(151, 43);
             button4.TabIndex = 41;
@@ -553,7 +506,7 @@
             // 
             comboBox1.Font = new Font("PMingLiU-ExtB", 10F);
             comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(629, 103);
+            comboBox1.Location = new Point(68, 256);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(159, 28);
             comboBox1.TabIndex = 48;
@@ -562,7 +515,7 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("PMingLiU-ExtB", 10F);
-            label7.Location = new Point(852, 80);
+            label7.Location = new Point(271, 264);
             label7.Name = "label7";
             label7.Size = new Size(63, 20);
             label7.TabIndex = 40;
@@ -572,7 +525,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("PMingLiU-ExtB", 10F);
-            label2.Location = new Point(629, 82);
+            label2.Location = new Point(21, 256);
             label2.Name = "label2";
             label2.Size = new Size(41, 20);
             label2.TabIndex = 47;
@@ -582,7 +535,7 @@
             // 
             comboBox2.Font = new Font("PMingLiU-ExtB", 9F);
             comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(841, 103);
+            comboBox2.Location = new Point(340, 264);
             comboBox2.Name = "comboBox2";
             comboBox2.Size = new Size(135, 26);
             comboBox2.TabIndex = 42;
@@ -592,13 +545,13 @@
             textBox1.Font = new Font("PMingLiU-ExtB", 9F);
             textBox1.Location = new Point(21, 105);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(326, 29);
+            textBox1.Size = new Size(695, 29);
             textBox1.TabIndex = 46;
             // 
             // textBox5
             // 
             textBox5.Font = new Font("PMingLiU-ExtB", 9F);
-            textBox5.Location = new Point(384, 105);
+            textBox5.Location = new Point(21, 178);
             textBox5.Name = "textBox5";
             textBox5.Size = new Size(182, 29);
             textBox5.TabIndex = 44;
@@ -607,7 +560,7 @@
             // 
             label9.AutoSize = true;
             label9.Font = new Font("PMingLiU-ExtB", 10F);
-            label9.Location = new Point(384, 75);
+            label9.Location = new Point(21, 155);
             label9.Name = "label9";
             label9.Size = new Size(150, 20);
             label9.TabIndex = 38;
@@ -634,68 +587,96 @@
             label6.TabIndex = 57;
             label6.Text = "___________________________________________________________________________";
             // 
-            // tabPage2
+            // listadeusuarios
             // 
-            tabPage2.Controls.Add(dataGridView1);
-            tabPage2.Location = new Point(4, 34);
-            tabPage2.Name = "tabPage2";
-            tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(1003, 660);
-            tabPage2.TabIndex = 1;
-            tabPage2.Text = "tabPage2";
-            tabPage2.UseVisualStyleBackColor = true;
+            listadeusuarios.Controls.Add(button2);
+            listadeusuarios.Controls.Add(textBox3);
+            listadeusuarios.Controls.Add(label8);
+            listadeusuarios.Controls.Add(dataGridView1);
+            listadeusuarios.Location = new Point(4, 34);
+            listadeusuarios.Name = "listadeusuarios";
+            listadeusuarios.Padding = new Padding(3);
+            listadeusuarios.Size = new Size(1003, 660);
+            listadeusuarios.TabIndex = 1;
+            listadeusuarios.Text = "Listas de Usuarios";
+            listadeusuarios.UseVisualStyleBackColor = true;
             // 
             // dataGridView1
             // 
             dataGridView1.BackgroundColor = Color.SeaShell;
             dataGridView1.BorderStyle = BorderStyle.None;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column2, Column4, Column5, Column6, Column7, editar });
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column2, Column4, Column5, Column7, editar });
             dataGridView1.GridColor = Color.Black;
-            dataGridView1.Location = new Point(18, 195);
+            dataGridView1.Location = new Point(18, 118);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 62;
             dataGridView1.Size = new Size(967, 270);
             dataGridView1.TabIndex = 83;
             // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("PMingLiU-ExtB", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label8.Location = new Point(18, 37);
+            label8.Name = "label8";
+            label8.Size = new Size(65, 20);
+            label8.TabIndex = 84;
+            label8.Text = "Buscar:";
+            // 
+            // textBox3
+            // 
+            textBox3.Font = new Font("PMingLiU-ExtB", 10F);
+            textBox3.Location = new Point(89, 34);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(204, 31);
+            textBox3.TabIndex = 85;
+            // 
+            // button2
+            // 
+            button2.BackColor = Color.Transparent;
+            button2.BackgroundImage = (Image)resources.GetObject("button2.BackgroundImage");
+            button2.Font = new Font("PMingLiU-ExtB", 9F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            button2.ForeColor = SystemColors.ControlLightLight;
+            button2.Location = new Point(298, 34);
+            button2.Margin = new Padding(2);
+            button2.Name = "button2";
+            button2.Size = new Size(30, 34);
+            button2.TabIndex = 121;
+            button2.Text = "Cerrar Sesión ";
+            button2.UseVisualStyleBackColor = false;
+            // 
             // Column2
             // 
-            Column2.HeaderText = "Nombre Completo";
+            Column2.HeaderText = "Nombre";
             Column2.MinimumWidth = 8;
             Column2.Name = "Column2";
             Column2.Width = 250;
             // 
             // Column4
             // 
-            Column4.HeaderText = "Rol";
+            Column4.HeaderText = "Usuario";
             Column4.MinimumWidth = 8;
             Column4.Name = "Column4";
             Column4.Width = 90;
             // 
             // Column5
             // 
-            Column5.HeaderText = "Correo electrónico";
+            Column5.HeaderText = "Rol";
             Column5.MinimumWidth = 8;
             Column5.Name = "Column5";
             Column5.Width = 200;
             // 
-            // Column6
-            // 
-            Column6.HeaderText = "Usuario";
-            Column6.MinimumWidth = 8;
-            Column6.Name = "Column6";
-            Column6.Width = 150;
-            // 
             // Column7
             // 
-            Column7.HeaderText = "Estado";
+            Column7.HeaderText = "Correo electrónico";
             Column7.MinimumWidth = 8;
             Column7.Name = "Column7";
             Column7.Width = 120;
             // 
             // editar
             // 
-            editar.HeaderText = "Editar";
+            editar.HeaderText = "Estado";
             editar.MinimumWidth = 8;
             editar.Name = "editar";
             editar.Width = 150;
@@ -704,7 +685,7 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1351, 878);
+            ClientSize = new Size(1349, 878);
             Controls.Add(tabControl1);
             Controls.Add(button1);
             Controls.Add(button5);
@@ -717,10 +698,11 @@
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             tabControl1.ResumeLayout(false);
-            tabPage1.ResumeLayout(false);
+            nuevousuario.ResumeLayout(false);
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
-            tabPage2.ResumeLayout(false);
+            listadeusuarios.ResumeLayout(false);
+            listadeusuarios.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -748,14 +730,10 @@
         private Button button1;
         private Label label5;
         private TabControl tabControl1;
-        private TabPage tabPage1;
+        private TabPage nuevousuario;
         private GroupBox groupBox1;
-        private Button button7;
-        private Label label3;
         private TextBox textBox4;
-        private TextBox textBox7;
         private Label label4;
-        private ComboBox comboBox3;
         private Label label1;
         private TextBox textBox2;
         private Button button3;
@@ -769,12 +747,14 @@
         private Label label9;
         private Label label10;
         private Label label6;
-        private TabPage tabPage2;
+        private TabPage listadeusuarios;
         private DataGridView dataGridView1;
+        private Label label8;
+        private Button button2;
+        private TextBox textBox3;
         private DataGridViewTextBoxColumn Column2;
         private DataGridViewTextBoxColumn Column4;
         private DataGridViewTextBoxColumn Column5;
-        private DataGridViewTextBoxColumn Column6;
         private DataGridViewTextBoxColumn Column7;
         private DataGridViewTextBoxColumn editar;
     }
