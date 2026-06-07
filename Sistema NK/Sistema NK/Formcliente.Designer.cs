@@ -48,24 +48,24 @@
             label3 = new Label();
             pictureBox1 = new PictureBox();
             button6 = new Button();
-            textBox7 = new TextBox();
-            comboBox3 = new ComboBox();
+            txtBuacarpor = new TextBox();
+            CBbuscarpor = new ComboBox();
             button5 = new Button();
             groupBox1 = new GroupBox();
-            textBox6 = new TextBox();
+            txtDireccion = new TextBox();
             label12 = new Label();
-            textBox3 = new TextBox();
+            txtCorreoelectronico = new TextBox();
             label8 = new Label();
-            textBox2 = new TextBox();
-            textBox4 = new TextBox();
+            txtIdcliente = new TextBox();
+            txtCedula = new TextBox();
             label4 = new Label();
-            button3 = new Button();
-            button4 = new Button();
+            btnLimpiar = new Button();
+            btnGuardar = new Button();
             label7 = new Label();
             label2 = new Label();
-            textBox1 = new TextBox();
-            textBox5 = new TextBox();
-            comboBox2 = new ComboBox();
+            txtNombrecompleto = new TextBox();
+            txtTelefono = new TextBox();
+            CBestado = new ComboBox();
             label9 = new Label();
             label10 = new Label();
             label5 = new Label();
@@ -79,7 +79,7 @@
             Column5 = new DataGridViewTextBoxColumn();
             Column6 = new DataGridViewTextBoxColumn();
             Editar = new DataGridViewTextBoxColumn();
-            button1 = new Button();
+            btnBuscar = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             groupBox1.SuspendLayout();
@@ -413,24 +413,24 @@
             button6.UseVisualStyleBackColor = false;
             button6.Click += button6_Click;
             // 
-            // textBox7
+            // txtBuacarpor
             // 
-            textBox7.Font = new Font("PMingLiU-ExtB", 9F);
-            textBox7.Location = new Point(495, 398);
-            textBox7.Margin = new Padding(2);
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(164, 25);
-            textBox7.TabIndex = 88;
+            txtBuacarpor.Font = new Font("PMingLiU-ExtB", 9F);
+            txtBuacarpor.Location = new Point(495, 398);
+            txtBuacarpor.Margin = new Padding(2);
+            txtBuacarpor.Name = "txtBuacarpor";
+            txtBuacarpor.Size = new Size(164, 25);
+            txtBuacarpor.TabIndex = 88;
             // 
-            // comboBox3
+            // CBbuscarpor
             // 
-            comboBox3.Font = new Font("PMingLiU-ExtB", 9F);
-            comboBox3.FormattingEnabled = true;
-            comboBox3.Location = new Point(363, 400);
-            comboBox3.Margin = new Padding(2);
-            comboBox3.Name = "comboBox3";
-            comboBox3.Size = new Size(120, 23);
-            comboBox3.TabIndex = 86;
+            CBbuscarpor.Font = new Font("PMingLiU-ExtB", 9F);
+            CBbuscarpor.FormattingEnabled = true;
+            CBbuscarpor.Location = new Point(363, 400);
+            CBbuscarpor.Margin = new Padding(2);
+            CBbuscarpor.Name = "CBbuscarpor";
+            CBbuscarpor.Size = new Size(120, 23);
+            CBbuscarpor.TabIndex = 86;
             // 
             // button5
             // 
@@ -449,20 +449,20 @@
             // groupBox1
             // 
             groupBox1.BackColor = Color.SeaShell;
-            groupBox1.Controls.Add(textBox6);
+            groupBox1.Controls.Add(txtDireccion);
             groupBox1.Controls.Add(label12);
-            groupBox1.Controls.Add(textBox3);
+            groupBox1.Controls.Add(txtCorreoelectronico);
             groupBox1.Controls.Add(label8);
-            groupBox1.Controls.Add(textBox2);
-            groupBox1.Controls.Add(textBox4);
+            groupBox1.Controls.Add(txtIdcliente);
+            groupBox1.Controls.Add(txtCedula);
             groupBox1.Controls.Add(label4);
-            groupBox1.Controls.Add(button3);
-            groupBox1.Controls.Add(button4);
+            groupBox1.Controls.Add(btnLimpiar);
+            groupBox1.Controls.Add(btnGuardar);
             groupBox1.Controls.Add(label7);
             groupBox1.Controls.Add(label2);
-            groupBox1.Controls.Add(textBox1);
-            groupBox1.Controls.Add(textBox5);
-            groupBox1.Controls.Add(comboBox2);
+            groupBox1.Controls.Add(txtNombrecompleto);
+            groupBox1.Controls.Add(txtTelefono);
+            groupBox1.Controls.Add(CBestado);
             groupBox1.Controls.Add(label9);
             groupBox1.Controls.Add(label10);
             groupBox1.Font = new Font("PMingLiU-ExtB", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
@@ -477,14 +477,14 @@
             groupBox1.Text = "Nuevo Cliente";
             groupBox1.Enter += groupBox1_Enter;
             // 
-            // textBox6
+            // txtDireccion
             // 
-            textBox6.Font = new Font("PMingLiU-ExtB", 10F);
-            textBox6.Location = new Point(512, 102);
-            textBox6.Margin = new Padding(2);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(342, 27);
-            textBox6.TabIndex = 61;
+            txtDireccion.Font = new Font("PMingLiU-ExtB", 10F);
+            txtDireccion.Location = new Point(512, 102);
+            txtDireccion.Margin = new Padding(2);
+            txtDireccion.Name = "txtDireccion";
+            txtDireccion.Size = new Size(342, 27);
+            txtDireccion.TabIndex = 61;
             // 
             // label12
             // 
@@ -497,14 +497,14 @@
             label12.TabIndex = 60;
             label12.Text = "Dirección:";
             // 
-            // textBox3
+            // txtCorreoelectronico
             // 
-            textBox3.Font = new Font("PMingLiU-ExtB", 10F);
-            textBox3.Location = new Point(512, 55);
-            textBox3.Margin = new Padding(2);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(342, 27);
-            textBox3.TabIndex = 59;
+            txtCorreoelectronico.Font = new Font("PMingLiU-ExtB", 10F);
+            txtCorreoelectronico.Location = new Point(512, 55);
+            txtCorreoelectronico.Margin = new Padding(2);
+            txtCorreoelectronico.Name = "txtCorreoelectronico";
+            txtCorreoelectronico.Size = new Size(342, 27);
+            txtCorreoelectronico.TabIndex = 59;
             // 
             // label8
             // 
@@ -517,23 +517,23 @@
             label8.TabIndex = 58;
             label8.Text = "Correo electrónico:";
             // 
-            // textBox2
+            // txtIdcliente
             // 
-            textBox2.Font = new Font("PMingLiU-ExtB", 9F);
-            textBox2.Location = new Point(7, 55);
-            textBox2.Margin = new Padding(2);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(239, 25);
-            textBox2.TabIndex = 57;
+            txtIdcliente.Font = new Font("PMingLiU-ExtB", 9F);
+            txtIdcliente.Location = new Point(7, 55);
+            txtIdcliente.Margin = new Padding(2);
+            txtIdcliente.Name = "txtIdcliente";
+            txtIdcliente.Size = new Size(239, 25);
+            txtIdcliente.TabIndex = 57;
             // 
-            // textBox4
+            // txtCedula
             // 
-            textBox4.Font = new Font("PMingLiU-ExtB", 10F);
-            textBox4.Location = new Point(291, 55);
-            textBox4.Margin = new Padding(2);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(171, 27);
-            textBox4.TabIndex = 55;
+            txtCedula.Font = new Font("PMingLiU-ExtB", 10F);
+            txtCedula.Location = new Point(291, 55);
+            txtCedula.Margin = new Padding(2);
+            txtCedula.Name = "txtCedula";
+            txtCedula.Size = new Size(171, 27);
+            txtCedula.TabIndex = 55;
             // 
             // label4
             // 
@@ -546,35 +546,35 @@
             label4.TabIndex = 56;
             label4.Text = "Id Cliente:";
             // 
-            // button3
+            // btnLimpiar
             // 
-            button3.BackColor = Color.FromArgb(64, 0, 0);
-            button3.BackgroundImage = (Image)resources.GetObject("button3.BackgroundImage");
-            button3.BackgroundImageLayout = ImageLayout.None;
-            button3.Font = new Font("PMingLiU-ExtB", 10F);
-            button3.ForeColor = Color.White;
-            button3.Location = new Point(356, 155);
-            button3.Margin = new Padding(2);
-            button3.Name = "button3";
-            button3.Size = new Size(122, 34);
-            button3.TabIndex = 45;
-            button3.Text = "Limpiar";
-            button3.UseVisualStyleBackColor = false;
+            btnLimpiar.BackColor = Color.FromArgb(64, 0, 0);
+            btnLimpiar.BackgroundImage = (Image)resources.GetObject("btnLimpiar.BackgroundImage");
+            btnLimpiar.BackgroundImageLayout = ImageLayout.None;
+            btnLimpiar.Font = new Font("PMingLiU-ExtB", 10F);
+            btnLimpiar.ForeColor = Color.White;
+            btnLimpiar.Location = new Point(356, 155);
+            btnLimpiar.Margin = new Padding(2);
+            btnLimpiar.Name = "btnLimpiar";
+            btnLimpiar.Size = new Size(122, 34);
+            btnLimpiar.TabIndex = 45;
+            btnLimpiar.Text = "Limpiar";
+            btnLimpiar.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // btnGuardar
             // 
-            button4.BackColor = Color.FromArgb(64, 0, 0);
-            button4.BackgroundImage = (Image)resources.GetObject("button4.BackgroundImage");
-            button4.BackgroundImageLayout = ImageLayout.None;
-            button4.Font = new Font("PMingLiU-ExtB", 10F);
-            button4.ForeColor = Color.White;
-            button4.Location = new Point(215, 155);
-            button4.Margin = new Padding(2);
-            button4.Name = "button4";
-            button4.Size = new Size(121, 34);
-            button4.TabIndex = 41;
-            button4.Text = "Guardar";
-            button4.UseVisualStyleBackColor = false;
+            btnGuardar.BackColor = Color.FromArgb(64, 0, 0);
+            btnGuardar.BackgroundImage = (Image)resources.GetObject("btnGuardar.BackgroundImage");
+            btnGuardar.BackgroundImageLayout = ImageLayout.None;
+            btnGuardar.Font = new Font("PMingLiU-ExtB", 10F);
+            btnGuardar.ForeColor = Color.White;
+            btnGuardar.Location = new Point(215, 155);
+            btnGuardar.Margin = new Padding(2);
+            btnGuardar.Name = "btnGuardar";
+            btnGuardar.Size = new Size(121, 34);
+            btnGuardar.TabIndex = 41;
+            btnGuardar.Text = "Guardar";
+            btnGuardar.UseVisualStyleBackColor = false;
             // 
             // label7
             // 
@@ -598,33 +598,33 @@
             label2.TabIndex = 47;
             label2.Text = "Cédula:";
             // 
-            // textBox1
+            // txtNombrecompleto
             // 
-            textBox1.Font = new Font("PMingLiU-ExtB", 9F);
-            textBox1.Location = new Point(10, 104);
-            textBox1.Margin = new Padding(2);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(236, 25);
-            textBox1.TabIndex = 46;
+            txtNombrecompleto.Font = new Font("PMingLiU-ExtB", 9F);
+            txtNombrecompleto.Location = new Point(10, 104);
+            txtNombrecompleto.Margin = new Padding(2);
+            txtNombrecompleto.Name = "txtNombrecompleto";
+            txtNombrecompleto.Size = new Size(236, 25);
+            txtNombrecompleto.TabIndex = 46;
             // 
-            // textBox5
+            // txtTelefono
             // 
-            textBox5.Font = new Font("PMingLiU-ExtB", 9F);
-            textBox5.Location = new Point(291, 104);
-            textBox5.Margin = new Padding(2);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(171, 25);
-            textBox5.TabIndex = 44;
+            txtTelefono.Font = new Font("PMingLiU-ExtB", 9F);
+            txtTelefono.Location = new Point(291, 104);
+            txtTelefono.Margin = new Padding(2);
+            txtTelefono.Name = "txtTelefono";
+            txtTelefono.Size = new Size(171, 25);
+            txtTelefono.TabIndex = 44;
             // 
-            // comboBox2
+            // CBestado
             // 
-            comboBox2.Font = new Font("PMingLiU-ExtB", 9F);
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(87, 166);
-            comboBox2.Margin = new Padding(2);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(109, 23);
-            comboBox2.TabIndex = 42;
+            CBestado.Font = new Font("PMingLiU-ExtB", 9F);
+            CBestado.FormattingEnabled = true;
+            CBestado.Location = new Point(87, 166);
+            CBestado.Margin = new Padding(2);
+            CBestado.Name = "CBestado";
+            CBestado.Size = new Size(109, 23);
+            CBestado.TabIndex = 42;
             // 
             // label9
             // 
@@ -750,19 +750,19 @@
             Editar.Name = "Editar";
             Editar.Width = 125;
             // 
-            // button1
+            // btnBuscar
             // 
-            button1.BackColor = Color.FromArgb(64, 0, 0);
-            button1.BackgroundImageLayout = ImageLayout.None;
-            button1.Font = new Font("PMingLiU-ExtB", 10F);
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(678, 392);
-            button1.Margin = new Padding(2);
-            button1.Name = "button1";
-            button1.Size = new Size(121, 34);
-            button1.TabIndex = 109;
-            button1.Text = "Buscar";
-            button1.UseVisualStyleBackColor = false;
+            btnBuscar.BackColor = Color.FromArgb(64, 0, 0);
+            btnBuscar.BackgroundImageLayout = ImageLayout.None;
+            btnBuscar.Font = new Font("PMingLiU-ExtB", 10F);
+            btnBuscar.ForeColor = Color.White;
+            btnBuscar.Location = new Point(678, 392);
+            btnBuscar.Margin = new Padding(2);
+            btnBuscar.Name = "btnBuscar";
+            btnBuscar.Size = new Size(121, 34);
+            btnBuscar.TabIndex = 109;
+            btnBuscar.Text = "Buscar";
+            btnBuscar.UseVisualStyleBackColor = false;
             // 
             // Formcliente
             // 
@@ -770,14 +770,14 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1145, 717);
-            Controls.Add(button1);
+            Controls.Add(btnBuscar);
             Controls.Add(dateTimePicker1);
             Controls.Add(label20);
             Controls.Add(label3);
             Controls.Add(pictureBox1);
             Controls.Add(button6);
-            Controls.Add(textBox7);
-            Controls.Add(comboBox3);
+            Controls.Add(txtBuacarpor);
+            Controls.Add(CBbuscarpor);
             Controls.Add(button5);
             Controls.Add(dataGridView1);
             Controls.Add(groupBox1);
@@ -806,25 +806,25 @@
         private Label label3;
         private PictureBox pictureBox1;
         private Button button6;
-        private TextBox textBox7;
-        private ComboBox comboBox3;
+        private TextBox txtBuacarpor;
+        private ComboBox CBbuscarpor;
         private Button button5;
         private GroupBox groupBox1;
-        private TextBox textBox4;
-        private Button button3;
-        private Button button4;
+        private TextBox txtCedula;
+        private Button btnLimpiar;
+        private Button btnGuardar;
         private Label label7;
         private Label label2;
-        private ComboBox comboBox2;
-        private TextBox textBox1;
-        private TextBox textBox5;
+        private ComboBox CBestado;
+        private TextBox txtNombrecompleto;
+        private TextBox txtTelefono;
         private Label label9;
         private Label label10;
         private Label label5;
         private Label label6;
-        private TextBox textBox6;
+        private TextBox txtDireccion;
         private Label label12;
-        private TextBox textBox3;
+        private TextBox txtCorreoelectronico;
         private Label label8;
         private DateTimePicker dateTimePicker1;
         private Label label20;
@@ -841,7 +841,7 @@
         private Button btninventario;
         private Button btnnivelacioninventario;
         private Label label4;
-        private TextBox textBox2;
+        private TextBox txtIdcliente;
         private DataGridView dataGridView1;
         private DataGridViewTextBoxColumn Id_Cliente;
         private DataGridViewTextBoxColumn Nombre;
@@ -849,6 +849,6 @@
         private DataGridViewTextBoxColumn Column5;
         private DataGridViewTextBoxColumn Column6;
         private DataGridViewTextBoxColumn Editar;
-        private Button button1;
+        private Button btnBuscar;
     }
 }
