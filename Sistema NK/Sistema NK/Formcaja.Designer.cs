@@ -46,10 +46,6 @@
             label16 = new Label();
             button6 = new Button();
             button5 = new Button();
-            groupBoxnuevoproducto = new GroupBox();
-            dataGridView1 = new DataGridView();
-            Conepto = new DataGridViewTextBoxColumn();
-            Monto = new DataGridViewTextBoxColumn();
             groupBox1 = new GroupBox();
             groupBox3 = new GroupBox();
             txtSaldoinicial = new TextBox();
@@ -75,22 +71,16 @@
             lblmonto = new Label();
             lblconcepto = new Label();
             lbltipo = new Label();
-            groupBoxdatos = new GroupBox();
-            CBusuario = new ComboBox();
-            label7 = new Label();
-            txtFecha = new TextBox();
-            label8 = new Label();
             pictureBox1 = new PictureBox();
             label5 = new Label();
             label6 = new Label();
+            dateTimePicker1 = new DateTimePicker();
+            label20 = new Label();
             panel1.SuspendLayout();
-            groupBoxnuevoproducto.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             groupBox1.SuspendLayout();
             groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
             groupBox2.SuspendLayout();
-            groupBoxdatos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -114,7 +104,7 @@
             panel1.Controls.Add(label16);
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
-            panel1.Margin = new Padding(2, 2, 2, 2);
+            panel1.Margin = new Padding(2);
             panel1.Name = "panel1";
             panel1.Size = new Size(237, 696);
             panel1.TabIndex = 5;
@@ -130,7 +120,7 @@
             btninventario.ForeColor = Color.White;
             btninventario.ImageAlign = ContentAlignment.MiddleLeft;
             btninventario.Location = new Point(49, 653);
-            btninventario.Margin = new Padding(2, 2, 2, 2);
+            btninventario.Margin = new Padding(2);
             btninventario.Name = "btninventario";
             btninventario.Size = new Size(134, 30);
             btninventario.TabIndex = 76;
@@ -149,7 +139,7 @@
             btnnivelacioninventario.ForeColor = Color.White;
             btnnivelacioninventario.ImageAlign = ContentAlignment.MiddleLeft;
             btnnivelacioninventario.Location = new Point(5, 605);
-            btnnivelacioninventario.Margin = new Padding(2, 2, 2, 2);
+            btnnivelacioninventario.Margin = new Padding(2);
             btnnivelacioninventario.Name = "btnnivelacioninventario";
             btnnivelacioninventario.Size = new Size(232, 30);
             btnnivelacioninventario.TabIndex = 75;
@@ -168,7 +158,7 @@
             btndevolucionventas.ForeColor = Color.White;
             btndevolucionventas.ImageAlign = ContentAlignment.MiddleLeft;
             btndevolucionventas.Location = new Point(22, 454);
-            btndevolucionventas.Margin = new Padding(2, 2, 2, 2);
+            btndevolucionventas.Margin = new Padding(2);
             btndevolucionventas.Name = "btndevolucionventas";
             btndevolucionventas.Size = new Size(206, 30);
             btndevolucionventas.TabIndex = 74;
@@ -187,7 +177,7 @@
             btncredito.ForeColor = Color.White;
             btncredito.ImageAlign = ContentAlignment.MiddleLeft;
             btncredito.Location = new Point(44, 402);
-            btncredito.Margin = new Padding(2, 2, 2, 2);
+            btncredito.Margin = new Padding(2);
             btncredito.Name = "btncredito";
             btncredito.Size = new Size(134, 30);
             btncredito.TabIndex = 73;
@@ -206,7 +196,7 @@
             btndevolucioncompra.ForeColor = Color.White;
             btndevolucioncompra.ImageAlign = ContentAlignment.MiddleLeft;
             btndevolucioncompra.Location = new Point(10, 505);
-            btndevolucioncompra.Margin = new Padding(2, 2, 2, 2);
+            btndevolucioncompra.Margin = new Padding(2);
             btndevolucioncompra.Name = "btndevolucioncompra";
             btndevolucioncompra.Size = new Size(214, 30);
             btndevolucioncompra.TabIndex = 72;
@@ -225,7 +215,7 @@
             btncaja.ForeColor = Color.White;
             btncaja.ImageAlign = ContentAlignment.MiddleLeft;
             btncaja.Location = new Point(44, 554);
-            btncaja.Margin = new Padding(2, 2, 2, 2);
+            btncaja.Margin = new Padding(2);
             btncaja.Name = "btncaja";
             btncaja.Size = new Size(134, 30);
             btncaja.TabIndex = 71;
@@ -244,7 +234,7 @@
             btnusuarios.ForeColor = Color.White;
             btnusuarios.ImageAlign = ContentAlignment.MiddleLeft;
             btnusuarios.Location = new Point(44, 93);
-            btnusuarios.Margin = new Padding(2, 2, 2, 2);
+            btnusuarios.Margin = new Padding(2);
             btnusuarios.Name = "btnusuarios";
             btnusuarios.Size = new Size(134, 30);
             btnusuarios.TabIndex = 70;
@@ -263,7 +253,7 @@
             btncompras.ForeColor = Color.White;
             btncompras.ImageAlign = ContentAlignment.MiddleLeft;
             btncompras.Location = new Point(44, 202);
-            btncompras.Margin = new Padding(2, 2, 2, 2);
+            btncompras.Margin = new Padding(2);
             btncompras.Name = "btncompras";
             btncompras.Size = new Size(134, 30);
             btncompras.TabIndex = 69;
@@ -282,7 +272,7 @@
             btnproductos.ForeColor = Color.White;
             btnproductos.ImageAlign = ContentAlignment.MiddleLeft;
             btnproductos.Location = new Point(44, 301);
-            btnproductos.Margin = new Padding(2, 2, 2, 2);
+            btnproductos.Margin = new Padding(2);
             btnproductos.Name = "btnproductos";
             btnproductos.Size = new Size(134, 30);
             btnproductos.TabIndex = 68;
@@ -301,7 +291,7 @@
             btnproveedores.ForeColor = Color.White;
             btnproveedores.ImageAlign = ContentAlignment.MiddleLeft;
             btnproveedores.Location = new Point(44, 355);
-            btnproveedores.Margin = new Padding(2, 2, 2, 2);
+            btnproveedores.Margin = new Padding(2);
             btnproveedores.Name = "btnproveedores";
             btnproveedores.Size = new Size(134, 30);
             btnproveedores.TabIndex = 67;
@@ -320,7 +310,7 @@
             btnventas.ForeColor = Color.White;
             btnventas.ImageAlign = ContentAlignment.MiddleLeft;
             btnventas.Location = new Point(44, 253);
-            btnventas.Margin = new Padding(2, 2, 2, 2);
+            btnventas.Margin = new Padding(2);
             btnventas.Name = "btnventas";
             btnventas.Size = new Size(134, 30);
             btnventas.TabIndex = 66;
@@ -339,7 +329,7 @@
             btnclientes.ForeColor = Color.White;
             btnclientes.ImageAlign = ContentAlignment.MiddleLeft;
             btnclientes.Location = new Point(44, 148);
-            btnclientes.Margin = new Padding(2, 2, 2, 2);
+            btnclientes.Margin = new Padding(2);
             btnclientes.Name = "btnclientes";
             btnclientes.Size = new Size(134, 30);
             btnclientes.TabIndex = 65;
@@ -389,7 +379,7 @@
             button6.Font = new Font("PMingLiU-ExtB", 9F, FontStyle.Italic, GraphicsUnit.Point, 0);
             button6.ForeColor = SystemColors.ControlLightLight;
             button6.Location = new Point(254, 655);
-            button6.Margin = new Padding(2, 2, 2, 2);
+            button6.Margin = new Padding(2);
             button6.Name = "button6";
             button6.Size = new Size(130, 30);
             button6.TabIndex = 141;
@@ -403,51 +393,12 @@
             button5.Font = new Font("PMingLiU-ExtB", 9F, FontStyle.Italic, GraphicsUnit.Point, 0);
             button5.ForeColor = SystemColors.ControlLightLight;
             button5.Location = new Point(986, 657);
-            button5.Margin = new Padding(2, 2, 2, 2);
+            button5.Margin = new Padding(2);
             button5.Name = "button5";
             button5.Size = new Size(99, 27);
             button5.TabIndex = 140;
             button5.Text = "Cerrar Sesión ";
             button5.UseVisualStyleBackColor = false;
-            // 
-            // groupBoxnuevoproducto
-            // 
-            groupBoxnuevoproducto.BackColor = Color.SeaShell;
-            groupBoxnuevoproducto.Controls.Add(dataGridView1);
-            groupBoxnuevoproducto.Location = new Point(718, 358);
-            groupBoxnuevoproducto.Margin = new Padding(2, 2, 2, 2);
-            groupBoxnuevoproducto.Name = "groupBoxnuevoproducto";
-            groupBoxnuevoproducto.Padding = new Padding(2, 2, 2, 2);
-            groupBoxnuevoproducto.Size = new Size(358, 129);
-            groupBoxnuevoproducto.TabIndex = 136;
-            groupBoxnuevoproducto.TabStop = false;
-            groupBoxnuevoproducto.Text = "Tipos de caja";
-            // 
-            // dataGridView1
-            // 
-            dataGridView1.BackgroundColor = Color.SeaShell;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Conepto, Monto });
-            dataGridView1.Location = new Point(13, 24);
-            dataGridView1.Margin = new Padding(2, 2, 2, 2);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 62;
-            dataGridView1.Size = new Size(333, 87);
-            dataGridView1.TabIndex = 0;
-            // 
-            // Conepto
-            // 
-            Conepto.HeaderText = "Concepto";
-            Conepto.MinimumWidth = 8;
-            Conepto.Name = "Conepto";
-            Conepto.Width = 200;
-            // 
-            // Monto
-            // 
-            Monto.HeaderText = "Monto";
-            Monto.MinimumWidth = 8;
-            Monto.Name = "Monto";
-            Monto.Width = 150;
             // 
             // groupBox1
             // 
@@ -455,11 +406,11 @@
             groupBox1.Controls.Add(groupBox3);
             groupBox1.Controls.Add(dataGridView2);
             groupBox1.ForeColor = Color.FromArgb(64, 0, 0);
-            groupBox1.Location = new Point(242, 182);
-            groupBox1.Margin = new Padding(2, 2, 2, 2);
+            groupBox1.Location = new Point(248, 148);
+            groupBox1.Margin = new Padding(2);
             groupBox1.Name = "groupBox1";
-            groupBox1.Padding = new Padding(2, 2, 2, 2);
-            groupBox1.Size = new Size(469, 309);
+            groupBox1.Padding = new Padding(2);
+            groupBox1.Size = new Size(555, 355);
             groupBox1.TabIndex = 139;
             groupBox1.TabStop = false;
             // 
@@ -473,10 +424,10 @@
             groupBox3.Controls.Add(label2);
             groupBox3.Controls.Add(label4);
             groupBox3.Controls.Add(label3);
-            groupBox3.Location = new Point(11, 123);
-            groupBox3.Margin = new Padding(2, 2, 2, 2);
+            groupBox3.Location = new Point(21, 156);
+            groupBox3.Margin = new Padding(2);
             groupBox3.Name = "groupBox3";
-            groupBox3.Padding = new Padding(2, 2, 2, 2);
+            groupBox3.Padding = new Padding(2);
             groupBox3.Size = new Size(342, 165);
             groupBox3.TabIndex = 108;
             groupBox3.TabStop = false;
@@ -484,7 +435,7 @@
             // txtSaldoinicial
             // 
             txtSaldoinicial.Location = new Point(132, 17);
-            txtSaldoinicial.Margin = new Padding(2, 2, 2, 2);
+            txtSaldoinicial.Margin = new Padding(2);
             txtSaldoinicial.Name = "txtSaldoinicial";
             txtSaldoinicial.Size = new Size(121, 27);
             txtSaldoinicial.TabIndex = 10;
@@ -492,7 +443,7 @@
             // txtSaldofinal
             // 
             txtSaldofinal.Location = new Point(132, 124);
-            txtSaldofinal.Margin = new Padding(2, 2, 2, 2);
+            txtSaldofinal.Margin = new Padding(2);
             txtSaldofinal.Name = "txtSaldofinal";
             txtSaldofinal.Size = new Size(121, 27);
             txtSaldofinal.TabIndex = 9;
@@ -500,7 +451,7 @@
             // txtTotalingresos
             // 
             txtTotalingresos.Location = new Point(132, 50);
-            txtTotalingresos.Margin = new Padding(2, 2, 2, 2);
+            txtTotalingresos.Margin = new Padding(2);
             txtTotalingresos.Name = "txtTotalingresos";
             txtTotalingresos.Size = new Size(121, 27);
             txtTotalingresos.TabIndex = 8;
@@ -508,7 +459,7 @@
             // txtTotalegresos
             // 
             txtTotalegresos.Location = new Point(132, 88);
-            txtTotalegresos.Margin = new Padding(2, 2, 2, 2);
+            txtTotalegresos.Margin = new Padding(2);
             txtTotalegresos.Name = "txtTotalegresos";
             txtTotalegresos.Size = new Size(121, 27);
             txtTotalegresos.TabIndex = 7;
@@ -559,10 +510,10 @@
             dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView2.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3 });
             dataGridView2.Location = new Point(5, 21);
-            dataGridView2.Margin = new Padding(2, 2, 2, 2);
+            dataGridView2.Margin = new Padding(2);
             dataGridView2.Name = "dataGridView2";
             dataGridView2.RowHeadersWidth = 62;
-            dataGridView2.Size = new Size(451, 98);
+            dataGridView2.Size = new Size(529, 98);
             dataGridView2.TabIndex = 0;
             dataGridView2.CellContentClick += dataGridView2_CellContentClick;
             // 
@@ -591,10 +542,10 @@
             // 
             btnCerrarcaja.BackColor = Color.FromArgb(64, 0, 0);
             btnCerrarcaja.ForeColor = SystemColors.ControlLightLight;
-            btnCerrarcaja.Location = new Point(926, 492);
-            btnCerrarcaja.Margin = new Padding(2, 2, 2, 2);
+            btnCerrarcaja.Location = new Point(979, 326);
+            btnCerrarcaja.Margin = new Padding(2);
             btnCerrarcaja.Name = "btnCerrarcaja";
-            btnCerrarcaja.Size = new Size(132, 27);
+            btnCerrarcaja.Size = new Size(94, 27);
             btnCerrarcaja.TabIndex = 138;
             btnCerrarcaja.Text = "Cerrar caja";
             btnCerrarcaja.UseVisualStyleBackColor = false;
@@ -603,10 +554,10 @@
             // 
             btnGuardarmovimiento.BackColor = Color.FromArgb(64, 0, 0);
             btnGuardarmovimiento.ForeColor = SystemColors.ControlLightLight;
-            btnGuardarmovimiento.Location = new Point(736, 492);
-            btnGuardarmovimiento.Margin = new Padding(2, 2, 2, 2);
+            btnGuardarmovimiento.Location = new Point(807, 326);
+            btnGuardarmovimiento.Margin = new Padding(2);
             btnGuardarmovimiento.Name = "btnGuardarmovimiento";
-            btnGuardarmovimiento.Size = new Size(172, 27);
+            btnGuardarmovimiento.Size = new Size(163, 27);
             btnGuardarmovimiento.TabIndex = 137;
             btnGuardarmovimiento.Text = "Guardar movimiento";
             btnGuardarmovimiento.UseVisualStyleBackColor = false;
@@ -623,10 +574,10 @@
             groupBox2.Controls.Add(lblconcepto);
             groupBox2.Controls.Add(lbltipo);
             groupBox2.ForeColor = Color.FromArgb(64, 0, 0);
-            groupBox2.Location = new Point(782, 192);
-            groupBox2.Margin = new Padding(2, 2, 2, 2);
+            groupBox2.Location = new Point(818, 148);
+            groupBox2.Margin = new Padding(2);
             groupBox2.Name = "groupBox2";
-            groupBox2.Padding = new Padding(2, 2, 2, 2);
+            groupBox2.Padding = new Padding(2);
             groupBox2.Size = new Size(240, 157);
             groupBox2.TabIndex = 135;
             groupBox2.TabStop = false;
@@ -636,7 +587,7 @@
             // 
             CBtipo.FormattingEnabled = true;
             CBtipo.Location = new Point(58, 21);
-            CBtipo.Margin = new Padding(2, 2, 2, 2);
+            CBtipo.Margin = new Padding(2);
             CBtipo.Name = "CBtipo";
             CBtipo.Size = new Size(158, 28);
             CBtipo.TabIndex = 86;
@@ -644,7 +595,7 @@
             // txtReferencia
             // 
             txtReferencia.Location = new Point(89, 124);
-            txtReferencia.Margin = new Padding(2, 2, 2, 2);
+            txtReferencia.Margin = new Padding(2);
             txtReferencia.Name = "txtReferencia";
             txtReferencia.Size = new Size(128, 27);
             txtReferencia.TabIndex = 6;
@@ -652,7 +603,7 @@
             // txtMonto
             // 
             txtMonto.Location = new Point(70, 89);
-            txtMonto.Margin = new Padding(2, 2, 2, 2);
+            txtMonto.Margin = new Padding(2);
             txtMonto.Name = "txtMonto";
             txtMonto.Size = new Size(146, 27);
             txtMonto.TabIndex = 5;
@@ -660,7 +611,7 @@
             // txtConcepto
             // 
             txtConcepto.Location = new Point(89, 52);
-            txtConcepto.Margin = new Padding(2, 2, 2, 2);
+            txtConcepto.Margin = new Padding(2);
             txtConcepto.Name = "txtConcepto";
             txtConcepto.Size = new Size(128, 27);
             txtConcepto.TabIndex = 4;
@@ -705,65 +656,12 @@
             lbltipo.TabIndex = 0;
             lbltipo.Text = "Tipo:";
             // 
-            // groupBoxdatos
-            // 
-            groupBoxdatos.BackColor = Color.SeaShell;
-            groupBoxdatos.Controls.Add(CBusuario);
-            groupBoxdatos.Controls.Add(label7);
-            groupBoxdatos.Controls.Add(txtFecha);
-            groupBoxdatos.Controls.Add(label8);
-            groupBoxdatos.ForeColor = Color.FromArgb(64, 0, 0);
-            groupBoxdatos.Location = new Point(242, 118);
-            groupBoxdatos.Margin = new Padding(2, 2, 2, 2);
-            groupBoxdatos.Name = "groupBoxdatos";
-            groupBoxdatos.Padding = new Padding(2, 2, 2, 2);
-            groupBoxdatos.Size = new Size(833, 59);
-            groupBoxdatos.TabIndex = 134;
-            groupBoxdatos.TabStop = false;
-            // 
-            // CBusuario
-            // 
-            CBusuario.FormattingEnabled = true;
-            CBusuario.Location = new Point(297, 22);
-            CBusuario.Margin = new Padding(2, 2, 2, 2);
-            CBusuario.Name = "CBusuario";
-            CBusuario.Size = new Size(519, 28);
-            CBusuario.TabIndex = 85;
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Location = new Point(224, 22);
-            label7.Margin = new Padding(2, 0, 2, 0);
-            label7.Name = "label7";
-            label7.Size = new Size(62, 20);
-            label7.TabIndex = 2;
-            label7.Text = "Usuario:";
-            // 
-            // txtFecha
-            // 
-            txtFecha.Location = new Point(67, 22);
-            txtFecha.Margin = new Padding(2, 2, 2, 2);
-            txtFecha.Name = "txtFecha";
-            txtFecha.Size = new Size(121, 27);
-            txtFecha.TabIndex = 1;
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Location = new Point(5, 24);
-            label8.Margin = new Padding(2, 0, 2, 0);
-            label8.Name = "label8";
-            label8.Size = new Size(50, 20);
-            label8.TabIndex = 0;
-            label8.Text = "Fecha:";
-            // 
             // pictureBox1
             // 
             pictureBox1.BackColor = Color.Transparent;
             pictureBox1.Image = Properties.Resources.imagen_circular_recortada;
             pictureBox1.Location = new Point(999, 10);
-            pictureBox1.Margin = new Padding(2, 2, 2, 2);
+            pictureBox1.Margin = new Padding(2);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(74, 67);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
@@ -794,38 +692,55 @@
             label6.TabIndex = 131;
             label6.Text = "__________________________________________________________";
             // 
+            // dateTimePicker1
+            // 
+            dateTimePicker1.Font = new Font("PMingLiU-ExtB", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dateTimePicker1.Location = new Point(308, 96);
+            dateTimePicker1.Margin = new Padding(2);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(254, 27);
+            dateTimePicker1.TabIndex = 143;
+            // 
+            // label20
+            // 
+            label20.AutoSize = true;
+            label20.Font = new Font("PMingLiU-ExtB", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label20.ForeColor = Color.FromArgb(64, 0, 0);
+            label20.Location = new Point(248, 102);
+            label20.Margin = new Padding(2, 0, 2, 0);
+            label20.Name = "label20";
+            label20.Size = new Size(50, 17);
+            label20.TabIndex = 142;
+            label20.Text = "Fecha:";
+            // 
             // Formcaja
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1087, 696);
+            Controls.Add(dateTimePicker1);
+            Controls.Add(label20);
             Controls.Add(button6);
             Controls.Add(button5);
-            Controls.Add(groupBoxnuevoproducto);
             Controls.Add(groupBox1);
             Controls.Add(btnCerrarcaja);
             Controls.Add(btnGuardarmovimiento);
             Controls.Add(groupBox2);
-            Controls.Add(groupBoxdatos);
             Controls.Add(pictureBox1);
             Controls.Add(label5);
             Controls.Add(label6);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.SizableToolWindow;
-            Margin = new Padding(2, 2, 2, 2);
+            Margin = new Padding(2);
             Name = "Formcaja";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            groupBoxnuevoproducto.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             groupBox1.ResumeLayout(false);
             groupBox3.ResumeLayout(false);
             groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
-            groupBoxdatos.ResumeLayout(false);
-            groupBoxdatos.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -840,10 +755,6 @@
         private Label label16;
         private Button button6;
         private Button button5;
-        private GroupBox groupBoxnuevoproducto;
-        private DataGridView dataGridView1;
-        private DataGridViewTextBoxColumn Conepto;
-        private DataGridViewTextBoxColumn Monto;
         private GroupBox groupBox1;
         private GroupBox groupBox3;
         private TextBox txtSaldoinicial;
@@ -869,11 +780,6 @@
         private Label lblmonto;
         private Label lblconcepto;
         private Label lbltipo;
-        private GroupBox groupBoxdatos;
-        private ComboBox CBusuario;
-        private Label label7;
-        private TextBox txtFecha;
-        private Label label8;
         private PictureBox pictureBox1;
         private Label label5;
         private Label label6;
@@ -889,5 +795,7 @@
         private Button btnclientes;
         private Button btninventario;
         private Button btnnivelacioninventario;
+        private DateTimePicker dateTimePicker1;
+        private Label label20;
     }
 }
