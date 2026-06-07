@@ -973,6 +973,7 @@
             Controls.Add(label6);
             FormBorderStyle = FormBorderStyle.SizableToolWindow;
             Name = "Formventas";
+            Load += Formventas_Load;
             panel6.ResumeLayout(false);
             panel6.PerformLayout();
             panel5.ResumeLayout(false);
