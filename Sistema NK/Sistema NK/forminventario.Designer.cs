@@ -49,30 +49,29 @@
             label5 = new Label();
             label6 = new Label();
             groupBoxnuevoproducto = new GroupBox();
-            button16 = new Button();
+            btnImprimirreporte = new Button();
             dataGridView2 = new DataGridView();
+            groupBox1 = new GroupBox();
+            checkBoxSolostockbajo = new CheckBox();
+            CBestado1 = new ComboBox();
+            CBcategoria3 = new ComboBox();
+            btnBuscarproducto7 = new Button();
+            label2 = new Label();
+            label13 = new Label();
+            txtBuscarproducto = new TextBox();
+            label17 = new Label();
+            btnLimpiar4 = new Button();
+            button6 = new Button();
+            button5 = new Button();
             Código = new DataGridViewTextBoxColumn();
             Producto = new DataGridViewTextBoxColumn();
             Categoría = new DataGridViewTextBoxColumn();
             Stock_actual = new DataGridViewTextBoxColumn();
             Stock_minimo = new DataGridViewTextBoxColumn();
-            Unidad = new DataGridViewTextBoxColumn();
             Estado = new DataGridViewTextBoxColumn();
             Precio_venta = new DataGridViewTextBoxColumn();
-            Valor_total = new DataGridViewTextBoxColumn();
-            groupBox1 = new GroupBox();
-            checkBox1 = new CheckBox();
-            comboBox1 = new ComboBox();
-            comboBox3 = new ComboBox();
-            button7 = new Button();
-            label2 = new Label();
-            label13 = new Label();
-            textBox12 = new TextBox();
-            label17 = new Label();
-            button3 = new Button();
-            button4 = new Button();
-            button6 = new Button();
-            button5 = new Button();
+            editar = new DataGridViewTextBoxColumn();
+            btnActualizar1 = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             groupBoxnuevoproducto.SuspendLayout();
@@ -100,7 +99,7 @@
             panel1.Controls.Add(label16);
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
-            panel1.Margin = new Padding(2, 2, 2, 2);
+            panel1.Margin = new Padding(2);
             panel1.Name = "panel1";
             panel1.Size = new Size(237, 690);
             panel1.TabIndex = 4;
@@ -116,7 +115,7 @@
             btninventario.ForeColor = Color.White;
             btninventario.ImageAlign = ContentAlignment.MiddleLeft;
             btninventario.Location = new Point(46, 650);
-            btninventario.Margin = new Padding(2, 2, 2, 2);
+            btninventario.Margin = new Padding(2);
             btninventario.Name = "btninventario";
             btninventario.Size = new Size(134, 30);
             btninventario.TabIndex = 56;
@@ -135,7 +134,7 @@
             btnnivelacioninventario.ForeColor = Color.White;
             btnnivelacioninventario.ImageAlign = ContentAlignment.MiddleLeft;
             btnnivelacioninventario.Location = new Point(2, 607);
-            btnnivelacioninventario.Margin = new Padding(2, 2, 2, 2);
+            btnnivelacioninventario.Margin = new Padding(2);
             btnnivelacioninventario.Name = "btnnivelacioninventario";
             btnnivelacioninventario.Size = new Size(232, 30);
             btnnivelacioninventario.TabIndex = 55;
@@ -154,7 +153,7 @@
             btndevolucionventas.ForeColor = Color.White;
             btndevolucionventas.ImageAlign = ContentAlignment.MiddleLeft;
             btndevolucionventas.Location = new Point(25, 458);
-            btndevolucionventas.Margin = new Padding(2, 2, 2, 2);
+            btndevolucionventas.Margin = new Padding(2);
             btndevolucionventas.Name = "btndevolucionventas";
             btndevolucionventas.Size = new Size(206, 30);
             btndevolucionventas.TabIndex = 54;
@@ -173,7 +172,7 @@
             btncredito.ForeColor = Color.White;
             btncredito.ImageAlign = ContentAlignment.MiddleLeft;
             btncredito.Location = new Point(46, 406);
-            btncredito.Margin = new Padding(2, 2, 2, 2);
+            btncredito.Margin = new Padding(2);
             btncredito.Name = "btncredito";
             btncredito.Size = new Size(134, 30);
             btncredito.TabIndex = 53;
@@ -192,7 +191,7 @@
             btndevolucioncompra.ForeColor = Color.White;
             btndevolucioncompra.ImageAlign = ContentAlignment.MiddleLeft;
             btndevolucioncompra.Location = new Point(16, 508);
-            btndevolucioncompra.Margin = new Padding(2, 2, 2, 2);
+            btndevolucioncompra.Margin = new Padding(2);
             btndevolucioncompra.Name = "btndevolucioncompra";
             btndevolucioncompra.Size = new Size(214, 30);
             btndevolucioncompra.TabIndex = 52;
@@ -211,7 +210,7 @@
             btncaja.ForeColor = Color.White;
             btncaja.ImageAlign = ContentAlignment.MiddleLeft;
             btncaja.Location = new Point(46, 558);
-            btncaja.Margin = new Padding(2, 2, 2, 2);
+            btncaja.Margin = new Padding(2);
             btncaja.Name = "btncaja";
             btncaja.Size = new Size(134, 30);
             btncaja.TabIndex = 51;
@@ -230,7 +229,7 @@
             btnusuarios.ForeColor = Color.White;
             btnusuarios.ImageAlign = ContentAlignment.MiddleLeft;
             btnusuarios.Location = new Point(46, 97);
-            btnusuarios.Margin = new Padding(2, 2, 2, 2);
+            btnusuarios.Margin = new Padding(2);
             btnusuarios.Name = "btnusuarios";
             btnusuarios.Size = new Size(134, 30);
             btnusuarios.TabIndex = 50;
@@ -249,7 +248,7 @@
             btncompras.ForeColor = Color.White;
             btncompras.ImageAlign = ContentAlignment.MiddleLeft;
             btncompras.Location = new Point(46, 206);
-            btncompras.Margin = new Padding(2, 2, 2, 2);
+            btncompras.Margin = new Padding(2);
             btncompras.Name = "btncompras";
             btncompras.Size = new Size(134, 30);
             btncompras.TabIndex = 49;
@@ -268,7 +267,7 @@
             btnproductos.ForeColor = Color.White;
             btnproductos.ImageAlign = ContentAlignment.MiddleLeft;
             btnproductos.Location = new Point(46, 305);
-            btnproductos.Margin = new Padding(2, 2, 2, 2);
+            btnproductos.Margin = new Padding(2);
             btnproductos.Name = "btnproductos";
             btnproductos.Size = new Size(134, 30);
             btnproductos.TabIndex = 48;
@@ -287,7 +286,7 @@
             btnproveedores.ForeColor = Color.White;
             btnproveedores.ImageAlign = ContentAlignment.MiddleLeft;
             btnproveedores.Location = new Point(46, 359);
-            btnproveedores.Margin = new Padding(2, 2, 2, 2);
+            btnproveedores.Margin = new Padding(2);
             btnproveedores.Name = "btnproveedores";
             btnproveedores.Size = new Size(134, 30);
             btnproveedores.TabIndex = 47;
@@ -306,7 +305,7 @@
             btnventas.ForeColor = Color.White;
             btnventas.ImageAlign = ContentAlignment.MiddleLeft;
             btnventas.Location = new Point(46, 257);
-            btnventas.Margin = new Padding(2, 2, 2, 2);
+            btnventas.Margin = new Padding(2);
             btnventas.Name = "btnventas";
             btnventas.Size = new Size(134, 30);
             btnventas.TabIndex = 46;
@@ -349,7 +348,7 @@
             btnclientes.ForeColor = Color.White;
             btnclientes.ImageAlign = ContentAlignment.MiddleLeft;
             btnclientes.Location = new Point(46, 152);
-            btnclientes.Margin = new Padding(2, 2, 2, 2);
+            btnclientes.Margin = new Padding(2);
             btnclientes.Name = "btnclientes";
             btnclientes.Size = new Size(134, 30);
             btnclientes.TabIndex = 34;
@@ -374,7 +373,7 @@
             pictureBox1.BackColor = Color.Transparent;
             pictureBox1.Image = Properties.Resources.imagen_circular_recortada;
             pictureBox1.Location = new Point(998, 10);
-            pictureBox1.Margin = new Padding(2, 2, 2, 2);
+            pictureBox1.Margin = new Padding(2);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(74, 67);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
@@ -408,49 +407,200 @@
             // groupBoxnuevoproducto
             // 
             groupBoxnuevoproducto.BackColor = Color.SeaShell;
-            groupBoxnuevoproducto.Controls.Add(button16);
+            groupBoxnuevoproducto.Controls.Add(btnImprimirreporte);
             groupBoxnuevoproducto.Controls.Add(dataGridView2);
             groupBoxnuevoproducto.Location = new Point(252, 277);
             groupBoxnuevoproducto.Margin = new Padding(2);
             groupBoxnuevoproducto.Name = "groupBoxnuevoproducto";
             groupBoxnuevoproducto.Padding = new Padding(2);
-            groupBoxnuevoproducto.Size = new Size(818, 236);
+            groupBoxnuevoproducto.Size = new Size(1016, 236);
             groupBoxnuevoproducto.TabIndex = 146;
             groupBoxnuevoproducto.TabStop = false;
             groupBoxnuevoproducto.Text = "Lista de productos en inventario";
             // 
-            // button16
+            // btnImprimirreporte
             // 
-            button16.BackColor = Color.FromArgb(64, 0, 0);
-            button16.BackgroundImageLayout = ImageLayout.None;
-            button16.Font = new Font("PMingLiU-ExtB", 10F);
-            button16.ForeColor = Color.White;
-            button16.Location = new Point(10, 193);
-            button16.Margin = new Padding(2);
-            button16.Name = "button16";
-            button16.Size = new Size(121, 34);
-            button16.TabIndex = 42;
-            button16.Text = "Imprimir reporte";
-            button16.UseVisualStyleBackColor = false;
+            btnImprimirreporte.BackColor = Color.FromArgb(64, 0, 0);
+            btnImprimirreporte.BackgroundImageLayout = ImageLayout.None;
+            btnImprimirreporte.Font = new Font("PMingLiU-ExtB", 10F);
+            btnImprimirreporte.ForeColor = Color.White;
+            btnImprimirreporte.Location = new Point(10, 193);
+            btnImprimirreporte.Margin = new Padding(2);
+            btnImprimirreporte.Name = "btnImprimirreporte";
+            btnImprimirreporte.Size = new Size(121, 34);
+            btnImprimirreporte.TabIndex = 42;
+            btnImprimirreporte.Text = "Imprimir reporte";
+            btnImprimirreporte.UseVisualStyleBackColor = false;
             // 
             // dataGridView2
             // 
             dataGridView2.BackgroundColor = Color.SeaShell;
             dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView2.Columns.AddRange(new DataGridViewColumn[] { Código, Producto, Categoría, Stock_actual, Stock_minimo, Unidad, Estado, Precio_venta, Valor_total });
+            dataGridView2.Columns.AddRange(new DataGridViewColumn[] { Código, Producto, Categoría, Stock_actual, Stock_minimo, Estado, Precio_venta, editar });
             dataGridView2.Location = new Point(10, 35);
             dataGridView2.Margin = new Padding(2);
             dataGridView2.Name = "dataGridView2";
             dataGridView2.RowHeadersWidth = 62;
-            dataGridView2.Size = new Size(793, 126);
+            dataGridView2.Size = new Size(983, 126);
             dataGridView2.TabIndex = 0;
+            // 
+            // groupBox1
+            // 
+            groupBox1.BackColor = Color.SeaShell;
+            groupBox1.Controls.Add(btnActualizar1);
+            groupBox1.Controls.Add(checkBoxSolostockbajo);
+            groupBox1.Controls.Add(CBestado1);
+            groupBox1.Controls.Add(CBcategoria3);
+            groupBox1.Controls.Add(btnBuscarproducto7);
+            groupBox1.Controls.Add(label2);
+            groupBox1.Controls.Add(label13);
+            groupBox1.Controls.Add(txtBuscarproducto);
+            groupBox1.Controls.Add(label17);
+            groupBox1.Controls.Add(btnLimpiar4);
+            groupBox1.Font = new Font("PMingLiU-ExtB", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            groupBox1.ForeColor = Color.FromArgb(64, 0, 0);
+            groupBox1.Location = new Point(252, 97);
+            groupBox1.Margin = new Padding(2);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Padding = new Padding(2);
+            groupBox1.Size = new Size(818, 160);
+            groupBox1.TabIndex = 145;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Filtros de búsqueda ";
+            // 
+            // checkBoxSolostockbajo
+            // 
+            checkBoxSolostockbajo.AutoSize = true;
+            checkBoxSolostockbajo.Location = new Point(8, 107);
+            checkBoxSolostockbajo.Name = "checkBoxSolostockbajo";
+            checkBoxSolostockbajo.Size = new Size(170, 28);
+            checkBoxSolostockbajo.TabIndex = 43;
+            checkBoxSolostockbajo.Text = "Solo stock bajo";
+            checkBoxSolostockbajo.UseVisualStyleBackColor = true;
+            // 
+            // CBestado1
+            // 
+            CBestado1.Font = new Font("PMingLiU-ExtB", 9F);
+            CBestado1.FormattingEnabled = true;
+            CBestado1.Location = new Point(524, 57);
+            CBestado1.Margin = new Padding(2);
+            CBestado1.Name = "CBestado1";
+            CBestado1.Size = new Size(246, 23);
+            CBestado1.TabIndex = 121;
+            // 
+            // CBcategoria3
+            // 
+            CBcategoria3.Font = new Font("PMingLiU-ExtB", 9F);
+            CBcategoria3.FormattingEnabled = true;
+            CBcategoria3.Location = new Point(292, 56);
+            CBcategoria3.Margin = new Padding(2);
+            CBcategoria3.Name = "CBcategoria3";
+            CBcategoria3.Size = new Size(197, 23);
+            CBcategoria3.TabIndex = 120;
+            // 
+            // btnBuscarproducto7
+            // 
+            btnBuscarproducto7.BackColor = Color.Transparent;
+            btnBuscarproducto7.BackgroundImage = (Image)resources.GetObject("btnBuscarproducto7.BackgroundImage");
+            btnBuscarproducto7.Font = new Font("PMingLiU-ExtB", 9F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            btnBuscarproducto7.ForeColor = SystemColors.ControlLightLight;
+            btnBuscarproducto7.Location = new Point(219, 54);
+            btnBuscarproducto7.Margin = new Padding(2);
+            btnBuscarproducto7.Name = "btnBuscarproducto7";
+            btnBuscarproducto7.Size = new Size(30, 27);
+            btnBuscarproducto7.TabIndex = 119;
+            btnBuscarproducto7.Text = "Cerrar Sesión ";
+            btnBuscarproducto7.UseVisualStyleBackColor = false;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("PMingLiU-ExtB", 10F);
+            label2.Location = new Point(522, 32);
+            label2.Margin = new Padding(2, 0, 2, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(55, 17);
+            label2.TabIndex = 60;
+            label2.Text = "Estado:";
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.Font = new Font("PMingLiU-ExtB", 10F);
+            label13.Location = new Point(290, 32);
+            label13.Margin = new Padding(2, 0, 2, 0);
+            label13.Name = "label13";
+            label13.Size = new Size(74, 17);
+            label13.TabIndex = 47;
+            label13.Text = "Categoría:";
+            // 
+            // txtBuscarproducto
+            // 
+            txtBuscarproducto.Font = new Font("PMingLiU-ExtB", 9F);
+            txtBuscarproducto.Location = new Point(10, 56);
+            txtBuscarproducto.Margin = new Padding(2);
+            txtBuscarproducto.Name = "txtBuscarproducto";
+            txtBuscarproducto.Size = new Size(205, 25);
+            txtBuscarproducto.TabIndex = 46;
+            // 
+            // label17
+            // 
+            label17.AutoSize = true;
+            label17.Font = new Font("PMingLiU-ExtB", 10F);
+            label17.Location = new Point(6, 31);
+            label17.Margin = new Padding(2, 0, 2, 0);
+            label17.Name = "label17";
+            label17.Size = new Size(116, 17);
+            label17.TabIndex = 37;
+            label17.Text = "Buscar producto:";
+            // 
+            // btnLimpiar4
+            // 
+            btnLimpiar4.BackColor = Color.FromArgb(64, 0, 0);
+            btnLimpiar4.BackgroundImageLayout = ImageLayout.None;
+            btnLimpiar4.Font = new Font("PMingLiU-ExtB", 10F);
+            btnLimpiar4.ForeColor = Color.White;
+            btnLimpiar4.Location = new Point(230, 103);
+            btnLimpiar4.Margin = new Padding(2);
+            btnLimpiar4.Name = "btnLimpiar4";
+            btnLimpiar4.Size = new Size(121, 34);
+            btnLimpiar4.TabIndex = 41;
+            btnLimpiar4.Text = "Limpiar";
+            btnLimpiar4.UseVisualStyleBackColor = false;
+            // 
+            // button6
+            // 
+            button6.BackColor = Color.FromArgb(64, 0, 0);
+            button6.Font = new Font("PMingLiU-ExtB", 9F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            button6.ForeColor = SystemColors.ControlLightLight;
+            button6.Location = new Point(252, 650);
+            button6.Margin = new Padding(2);
+            button6.Name = "button6";
+            button6.Size = new Size(130, 30);
+            button6.TabIndex = 144;
+            button6.Text = "Menú principal";
+            button6.UseVisualStyleBackColor = false;
+            button6.Click += button6_Click;
+            // 
+            // button5
+            // 
+            button5.BackColor = Color.FromArgb(64, 0, 0);
+            button5.Font = new Font("PMingLiU-ExtB", 9F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            button5.ForeColor = SystemColors.ControlLightLight;
+            button5.Location = new Point(955, 650);
+            button5.Margin = new Padding(2);
+            button5.Name = "button5";
+            button5.Size = new Size(99, 27);
+            button5.TabIndex = 143;
+            button5.Text = "Cerrar Sesión ";
+            button5.UseVisualStyleBackColor = false;
+            button5.Click += button5_Click;
             // 
             // Código
             // 
             Código.HeaderText = "Código";
             Código.MinimumWidth = 8;
             Código.Name = "Código";
-            Código.Width = 125;
             // 
             // Producto
             // 
@@ -480,13 +630,6 @@
             Stock_minimo.Name = "Stock_minimo";
             Stock_minimo.Width = 125;
             // 
-            // Unidad
-            // 
-            Unidad.HeaderText = "Unidad";
-            Unidad.MinimumWidth = 6;
-            Unidad.Name = "Unidad";
-            Unidad.Width = 125;
-            // 
             // Estado
             // 
             Estado.HeaderText = "Estado";
@@ -501,183 +644,32 @@
             Precio_venta.Name = "Precio_venta";
             Precio_venta.Width = 125;
             // 
-            // Valor_total
+            // editar
             // 
-            Valor_total.HeaderText = "Valor Total";
-            Valor_total.MinimumWidth = 6;
-            Valor_total.Name = "Valor_total";
-            Valor_total.Width = 125;
+            editar.HeaderText = "Editar";
+            editar.MinimumWidth = 6;
+            editar.Name = "editar";
+            editar.Width = 125;
             // 
-            // groupBox1
+            // btnActualizar1
             // 
-            groupBox1.BackColor = Color.SeaShell;
-            groupBox1.Controls.Add(checkBox1);
-            groupBox1.Controls.Add(comboBox1);
-            groupBox1.Controls.Add(comboBox3);
-            groupBox1.Controls.Add(button7);
-            groupBox1.Controls.Add(label2);
-            groupBox1.Controls.Add(label13);
-            groupBox1.Controls.Add(textBox12);
-            groupBox1.Controls.Add(label17);
-            groupBox1.Controls.Add(button3);
-            groupBox1.Controls.Add(button4);
-            groupBox1.Font = new Font("PMingLiU-ExtB", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            groupBox1.ForeColor = Color.FromArgb(64, 0, 0);
-            groupBox1.Location = new Point(252, 97);
-            groupBox1.Margin = new Padding(2);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Padding = new Padding(2);
-            groupBox1.Size = new Size(818, 160);
-            groupBox1.TabIndex = 145;
-            groupBox1.TabStop = false;
-            groupBox1.Text = "Filtros de búsqueda ";
-            // 
-            // checkBox1
-            // 
-            checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(8, 107);
-            checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(170, 28);
-            checkBox1.TabIndex = 43;
-            checkBox1.Text = "Solo stock bajo";
-            checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // comboBox1
-            // 
-            comboBox1.Font = new Font("PMingLiU-ExtB", 9F);
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(524, 57);
-            comboBox1.Margin = new Padding(2);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(246, 23);
-            comboBox1.TabIndex = 121;
-            // 
-            // comboBox3
-            // 
-            comboBox3.Font = new Font("PMingLiU-ExtB", 9F);
-            comboBox3.FormattingEnabled = true;
-            comboBox3.Location = new Point(292, 56);
-            comboBox3.Margin = new Padding(2);
-            comboBox3.Name = "comboBox3";
-            comboBox3.Size = new Size(197, 23);
-            comboBox3.TabIndex = 120;
-            // 
-            // button7
-            // 
-            button7.BackColor = Color.Transparent;
-            button7.BackgroundImage = (Image)resources.GetObject("button7.BackgroundImage");
-            button7.Font = new Font("PMingLiU-ExtB", 9F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            button7.ForeColor = SystemColors.ControlLightLight;
-            button7.Location = new Point(219, 54);
-            button7.Margin = new Padding(2);
-            button7.Name = "button7";
-            button7.Size = new Size(30, 27);
-            button7.TabIndex = 119;
-            button7.Text = "Cerrar Sesión ";
-            button7.UseVisualStyleBackColor = false;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("PMingLiU-ExtB", 10F);
-            label2.Location = new Point(522, 32);
-            label2.Margin = new Padding(2, 0, 2, 0);
-            label2.Name = "label2";
-            label2.Size = new Size(55, 17);
-            label2.TabIndex = 60;
-            label2.Text = "Estado:";
-            // 
-            // label13
-            // 
-            label13.AutoSize = true;
-            label13.Font = new Font("PMingLiU-ExtB", 10F);
-            label13.Location = new Point(290, 32);
-            label13.Margin = new Padding(2, 0, 2, 0);
-            label13.Name = "label13";
-            label13.Size = new Size(74, 17);
-            label13.TabIndex = 47;
-            label13.Text = "Categoría:";
-            // 
-            // textBox12
-            // 
-            textBox12.Font = new Font("PMingLiU-ExtB", 9F);
-            textBox12.Location = new Point(10, 56);
-            textBox12.Margin = new Padding(2);
-            textBox12.Name = "textBox12";
-            textBox12.Size = new Size(205, 25);
-            textBox12.TabIndex = 46;
-            // 
-            // label17
-            // 
-            label17.AutoSize = true;
-            label17.Font = new Font("PMingLiU-ExtB", 10F);
-            label17.Location = new Point(6, 31);
-            label17.Margin = new Padding(2, 0, 2, 0);
-            label17.Name = "label17";
-            label17.Size = new Size(116, 17);
-            label17.TabIndex = 37;
-            label17.Text = "Buscar producto:";
-            // 
-            // button3
-            // 
-            button3.BackColor = Color.FromArgb(64, 0, 0);
-            button3.BackgroundImageLayout = ImageLayout.None;
-            button3.Font = new Font("PMingLiU-ExtB", 10F);
-            button3.ForeColor = Color.White;
-            button3.Location = new Point(398, 103);
-            button3.Margin = new Padding(2);
-            button3.Name = "button3";
-            button3.Size = new Size(122, 34);
-            button3.TabIndex = 45;
-            button3.Text = "Actualizar";
-            button3.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            button4.BackColor = Color.FromArgb(64, 0, 0);
-            button4.BackgroundImageLayout = ImageLayout.None;
-            button4.Font = new Font("PMingLiU-ExtB", 10F);
-            button4.ForeColor = Color.White;
-            button4.Location = new Point(230, 103);
-            button4.Margin = new Padding(2);
-            button4.Name = "button4";
-            button4.Size = new Size(121, 34);
-            button4.TabIndex = 41;
-            button4.Text = "Limpiar";
-            button4.UseVisualStyleBackColor = false;
-            // 
-            // button6
-            // 
-            button6.BackColor = Color.FromArgb(64, 0, 0);
-            button6.Font = new Font("PMingLiU-ExtB", 9F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            button6.ForeColor = SystemColors.ControlLightLight;
-            button6.Location = new Point(252, 650);
-            button6.Margin = new Padding(2);
-            button6.Name = "button6";
-            button6.Size = new Size(130, 30);
-            button6.TabIndex = 144;
-            button6.Text = "Menú principal";
-            button6.UseVisualStyleBackColor = false;
-            button6.Click += button6_Click;
-            // 
-            // button5
-            // 
-            button5.BackColor = Color.FromArgb(64, 0, 0);
-            button5.Font = new Font("PMingLiU-ExtB", 9F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            button5.ForeColor = SystemColors.ControlLightLight;
-            button5.Location = new Point(955, 650);
-            button5.Margin = new Padding(2);
-            button5.Name = "button5";
-            button5.Size = new Size(99, 27);
-            button5.TabIndex = 143;
-            button5.Text = "Cerrar Sesión ";
-            button5.UseVisualStyleBackColor = false;
+            btnActualizar1.BackColor = Color.FromArgb(64, 0, 0);
+            btnActualizar1.BackgroundImageLayout = ImageLayout.None;
+            btnActualizar1.Font = new Font("PMingLiU-ExtB", 10F);
+            btnActualizar1.ForeColor = Color.White;
+            btnActualizar1.Location = new Point(368, 101);
+            btnActualizar1.Margin = new Padding(2);
+            btnActualizar1.Name = "btnActualizar1";
+            btnActualizar1.Size = new Size(121, 34);
+            btnActualizar1.TabIndex = 122;
+            btnActualizar1.Text = "Actualizar";
+            btnActualizar1.UseVisualStyleBackColor = false;
             // 
             // forminventario
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1081, 690);
+            ClientSize = new Size(1303, 690);
             Controls.Add(groupBoxnuevoproducto);
             Controls.Add(groupBox1);
             Controls.Add(button6);
@@ -687,7 +679,7 @@
             Controls.Add(label6);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.SizableToolWindow;
-            Margin = new Padding(2, 2, 2, 2);
+            Margin = new Padding(2);
             Name = "forminventario";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
@@ -722,29 +714,28 @@
         private Label label5;
         private Label label6;
         private GroupBox groupBoxnuevoproducto;
-        private Button button16;
+        private Button btnImprimirreporte;
         private DataGridView dataGridView2;
+        private GroupBox groupBox1;
+        private CheckBox checkBoxSolostockbajo;
+        private ComboBox CBestado1;
+        private ComboBox CBcategoria3;
+        private Button btnBuscarproducto7;
+        private Label label2;
+        private Label label13;
+        private TextBox txtBuscarproducto;
+        private Label label17;
+        private Button btnLimpiar4;
+        private Button button6;
+        private Button button5;
         private DataGridViewTextBoxColumn Código;
         private DataGridViewTextBoxColumn Producto;
         private DataGridViewTextBoxColumn Categoría;
         private DataGridViewTextBoxColumn Stock_actual;
         private DataGridViewTextBoxColumn Stock_minimo;
-        private DataGridViewTextBoxColumn Unidad;
         private DataGridViewTextBoxColumn Estado;
         private DataGridViewTextBoxColumn Precio_venta;
-        private DataGridViewTextBoxColumn Valor_total;
-        private GroupBox groupBox1;
-        private CheckBox checkBox1;
-        private ComboBox comboBox1;
-        private ComboBox comboBox3;
-        private Button button7;
-        private Label label2;
-        private Label label13;
-        private TextBox textBox12;
-        private Label label17;
-        private Button button3;
-        private Button button4;
-        private Button button6;
-        private Button button5;
+        private DataGridViewTextBoxColumn editar;
+        private Button btnActualizar1;
     }
 }
