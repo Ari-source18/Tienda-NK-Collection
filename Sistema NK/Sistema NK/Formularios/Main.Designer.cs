@@ -189,6 +189,7 @@
             btn_Nivelacion.TabIndex = 15;
             btn_Nivelacion.Text = "Nivelación \r\nde Inventario";
             btn_Nivelacion.UseVisualStyleBackColor = false;
+            btn_Nivelacion.Click += btn_Nivelacion_Click;
             // 
             // btn_Inventario
             // 
@@ -208,6 +209,7 @@
             btn_Inventario.TabIndex = 14;
             btn_Inventario.Text = "Inventario";
             btn_Inventario.UseVisualStyleBackColor = false;
+            btn_Inventario.Click += btn_Inventario_Click;
             // 
             // btn_Credito
             // 
@@ -227,6 +229,7 @@
             btn_Credito.TabIndex = 13;
             btn_Credito.Text = "Crédito";
             btn_Credito.UseVisualStyleBackColor = false;
+            btn_Credito.Click += btn_Credito_Click;
             // 
             // btn_Devolucion
             // 
@@ -246,6 +249,7 @@
             btn_Devolucion.TabIndex = 12;
             btn_Devolucion.Text = "Devolución";
             btn_Devolucion.UseVisualStyleBackColor = false;
+            btn_Devolucion.Click += btn_Devolucion_Click;
             // 
             // btn_Ventas
             // 
@@ -284,6 +288,7 @@
             btn_Caja.TabIndex = 10;
             btn_Caja.Text = "Caja";
             btn_Caja.UseVisualStyleBackColor = false;
+            btn_Caja.Click += btn_Caja_Click;
             // 
             // btn_Productos
             // 
@@ -303,6 +308,7 @@
             btn_Productos.TabIndex = 9;
             btn_Productos.Text = "Productos";
             btn_Productos.UseVisualStyleBackColor = false;
+            btn_Productos.Click += btn_Productos_Click;
             // 
             // btn_Compras
             // 
@@ -322,6 +328,7 @@
             btn_Compras.TabIndex = 8;
             btn_Compras.Text = "Compras";
             btn_Compras.UseVisualStyleBackColor = false;
+            btn_Compras.Click += btn_Compras_Click;
             // 
             // btn_Proveedores
             // 
@@ -341,6 +348,7 @@
             btn_Proveedores.TabIndex = 7;
             btn_Proveedores.Text = "Proveedores";
             btn_Proveedores.UseVisualStyleBackColor = false;
+            btn_Proveedores.Click += btn_Proveedores_Click;
             // 
             // btn_Clientes
             // 
@@ -360,6 +368,7 @@
             btn_Clientes.TabIndex = 6;
             btn_Clientes.Text = "Clientes";
             btn_Clientes.UseVisualStyleBackColor = false;
+            btn_Clientes.Click += btn_Clientes_Click;
             // 
             // btn_Usuario
             // 
@@ -379,6 +388,7 @@
             btn_Usuario.TabIndex = 5;
             btn_Usuario.Text = "Usuarios";
             btn_Usuario.UseVisualStyleBackColor = false;
+            btn_Usuario.Click += btn_Usuario_Click;
             // 
             // button1
             // 
@@ -404,6 +414,8 @@
             // 
             // Panel_Hijo
             // 
+            Panel_Hijo.BackgroundImage = (Image)resources.GetObject("Panel_Hijo.BackgroundImage");
+            Panel_Hijo.BackgroundImageLayout = ImageLayout.Stretch;
             Panel_Hijo.Dock = DockStyle.Fill;
             Panel_Hijo.Location = new Point(299, 0);
             Panel_Hijo.Name = "Panel_Hijo";

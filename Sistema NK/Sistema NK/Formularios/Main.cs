@@ -52,5 +52,55 @@ namespace Sistema_NK.Formularios
         {
             AbrirFormularioEnPanel(new Frm_Reportes());
         }
+
+        private void btn_Usuario_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioEnPanel(new Usuarios());
+        }
+
+        private void btn_Clientes_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioEnPanel(new Formcliente());
+        }
+
+        private void btn_Proveedores_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioEnPanel(new Formproveedores());
+        }
+
+        private void btn_Compras_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioEnPanel(new Formcompras());
+        }
+
+        private void btn_Productos_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioEnPanel(new Formproductos());
+        }
+
+        private void btn_Caja_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioEnPanel(new Formcaja());
+        }
+
+        private void btn_Devolucion_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioEnPanel(new Formdevoluciones());
+        }
+
+        private void btn_Credito_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioEnPanel(new Formcredito());
+        }
+
+        private void btn_Inventario_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioEnPanel(new forminventario());
+        }
+
+        private void btn_Nivelacion_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioEnPanel(new Formnivelacioninventario());
+        }
     }
 }

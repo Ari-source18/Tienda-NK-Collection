@@ -71,7 +71,7 @@
             button1.BackColor = Color.FromArgb(64, 0, 0);
             button1.Font = new Font("PMingLiU-ExtB", 9F, FontStyle.Italic, GraphicsUnit.Point, 0);
             button1.ForeColor = SystemColors.ControlLightLight;
-            button1.Location = new Point(889, 64);
+            button1.Location = new Point(909, 44);
             button1.Name = "button1";
             button1.Size = new Size(124, 34);
             button1.TabIndex = 84;
@@ -93,10 +93,10 @@
             // 
             tabControl1.Controls.Add(nuevousuario);
             tabControl1.Controls.Add(listadeusuarios);
-            tabControl1.Location = new Point(12, 104);
+            tabControl1.Location = new Point(22, 79);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(1011, 698);
+            tabControl1.Size = new Size(1011, 604);
             tabControl1.TabIndex = 85;
             // 
             // nuevousuario
@@ -107,7 +107,7 @@
             nuevousuario.Location = new Point(4, 34);
             nuevousuario.Name = "nuevousuario";
             nuevousuario.Padding = new Padding(3);
-            nuevousuario.Size = new Size(1003, 660);
+            nuevousuario.Size = new Size(1003, 566);
             nuevousuario.TabIndex = 0;
             nuevousuario.Text = "Nuevo Usuario";
             nuevousuario.UseVisualStyleBackColor = true;
@@ -382,7 +382,7 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1045, 878);
+            ClientSize = new Size(1349, 768);
             Controls.Add(tabControl1);
             Controls.Add(button1);
             Controls.Add(label5);

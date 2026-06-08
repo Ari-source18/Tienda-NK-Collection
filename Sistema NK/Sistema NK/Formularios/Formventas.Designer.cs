@@ -30,7 +30,7 @@
         {
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Formventas));
-            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             pictureBox1 = new PictureBox();
             label5 = new Label();
             label6 = new Label();
@@ -95,7 +95,6 @@
             lbl_interes = new Label();
             txt_interes = new TextBox();
             button4 = new Button();
-            label11 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dtgw_ventas).BeginInit();
             SuspendLayout();
@@ -381,10 +380,10 @@
             // 
             // dtgw_ventas
             // 
-            dataGridViewCellStyle3.ForeColor = Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = Color.White;
-            dataGridViewCellStyle3.SelectionForeColor = Color.White;
-            dtgw_ventas.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.ForeColor = Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = Color.White;
+            dataGridViewCellStyle1.SelectionForeColor = Color.White;
+            dtgw_ventas.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             dtgw_ventas.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             dtgw_ventas.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dtgw_ventas.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.DisplayedHeaders;
@@ -757,24 +756,11 @@
             button4.Text = "Registrar";
             button4.UseVisualStyleBackColor = false;
             // 
-            // label11
-            // 
-            label11.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            label11.AutoSize = true;
-            label11.Font = new Font("PMingLiU-ExtB", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label11.ForeColor = Color.FromArgb(64, 0, 0);
-            label11.Location = new Point(347, 201);
-            label11.Name = "label11";
-            label11.Size = new Size(174, 32);
-            label11.TabIndex = 171;
-            label11.Text = "__________";
-            // 
             // Formventas
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1371, 824);
-            Controls.Add(label11);
             Controls.Add(button4);
             Controls.Add(txt_interes);
             Controls.Add(lbl_interes);
@@ -905,6 +891,5 @@
         private Label lbl_interes;
         private TextBox txt_interes;
         private Button button4;
-        private Label label11;
     }
 }

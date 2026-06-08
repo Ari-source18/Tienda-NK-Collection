@@ -33,7 +33,6 @@
             pictureBox1 = new PictureBox();
             textBox7 = new TextBox();
             comboBox3 = new ComboBox();
-            button5 = new Button();
             groupBox1 = new GroupBox();
             textBox6 = new TextBox();
             label12 = new Label();
@@ -73,7 +72,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("PMingLiU-ExtB", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.FromArgb(64, 0, 0);
-            label3.Location = new Point(342, 506);
+            label3.Location = new Point(39, 441);
             label3.Margin = new Padding(2, 0, 2, 0);
             label3.Name = "label3";
             label3.Size = new Size(94, 20);
@@ -84,7 +83,7 @@
             // 
             pictureBox1.BackColor = Color.Transparent;
             pictureBox1.Image = Properties.Resources.imagen_circular_recortada;
-            pictureBox1.Location = new Point(1305, 14);
+            pictureBox1.Location = new Point(1027, 11);
             pictureBox1.Margin = new Padding(2);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(92, 84);
@@ -95,7 +94,7 @@
             // textBox7
             // 
             textBox7.Font = new Font("PMingLiU-ExtB", 9F);
-            textBox7.Location = new Point(619, 498);
+            textBox7.Location = new Point(316, 433);
             textBox7.Margin = new Padding(2);
             textBox7.Name = "textBox7";
             textBox7.Size = new Size(204, 29);
@@ -105,25 +104,11 @@
             // 
             comboBox3.Font = new Font("PMingLiU-ExtB", 9F);
             comboBox3.FormattingEnabled = true;
-            comboBox3.Location = new Point(454, 500);
+            comboBox3.Location = new Point(151, 435);
             comboBox3.Margin = new Padding(2);
             comboBox3.Name = "comboBox3";
             comboBox3.Size = new Size(149, 26);
             comboBox3.TabIndex = 86;
-            // 
-            // button5
-            // 
-            button5.BackColor = Color.FromArgb(64, 0, 0);
-            button5.Font = new Font("PMingLiU-ExtB", 9F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            button5.ForeColor = SystemColors.ControlLightLight;
-            button5.Location = new Point(1274, 841);
-            button5.Margin = new Padding(2);
-            button5.Name = "button5";
-            button5.Size = new Size(124, 34);
-            button5.TabIndex = 92;
-            button5.Text = "Cerrar Sesión ";
-            button5.UseVisualStyleBackColor = false;
-            button5.Click += button5_Click;
             // 
             // groupBox1
             // 
@@ -146,7 +131,7 @@
             groupBox1.Controls.Add(label10);
             groupBox1.Font = new Font("PMingLiU-ExtB", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
             groupBox1.ForeColor = Color.FromArgb(64, 0, 0);
-            groupBox1.Location = new Point(330, 218);
+            groupBox1.Location = new Point(31, 161);
             groupBox1.Margin = new Padding(2);
             groupBox1.Name = "groupBox1";
             groupBox1.Padding = new Padding(2);
@@ -332,7 +317,7 @@
             label5.AutoSize = true;
             label5.Font = new Font("PMingLiU-ExtB", 16F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label5.ForeColor = Color.FromArgb(64, 0, 0);
-            label5.Location = new Point(330, 48);
+            label5.Location = new Point(31, 48);
             label5.Margin = new Padding(2, 0, 2, 0);
             label5.Name = "label5";
             label5.Size = new Size(267, 32);
@@ -344,7 +329,7 @@
             label6.AutoSize = true;
             label6.Font = new Font("PMingLiU-ExtB", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label6.ForeColor = Color.FromArgb(64, 0, 0);
-            label6.Location = new Point(316, 72);
+            label6.Location = new Point(17, 72);
             label6.Margin = new Padding(2, 0, 2, 0);
             label6.Name = "label6";
             label6.Size = new Size(1006, 32);
@@ -354,7 +339,7 @@
             // dateTimePicker1
             // 
             dateTimePicker1.Font = new Font("PMingLiU-ExtB", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            dateTimePicker1.Location = new Point(415, 136);
+            dateTimePicker1.Location = new Point(105, 116);
             dateTimePicker1.Margin = new Padding(2);
             dateTimePicker1.Name = "dateTimePicker1";
             dateTimePicker1.Size = new Size(316, 31);
@@ -365,7 +350,7 @@
             label20.AutoSize = true;
             label20.Font = new Font("PMingLiU-ExtB", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label20.ForeColor = Color.FromArgb(64, 0, 0);
-            label20.Location = new Point(340, 144);
+            label20.Location = new Point(30, 124);
             label20.Margin = new Padding(2, 0, 2, 0);
             label20.Name = "label20";
             label20.Size = new Size(57, 20);
@@ -379,7 +364,7 @@
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Id_Cliente, Nombre, Column4, Column5, Column6, Editar });
             dataGridView1.GridColor = Color.Black;
-            dataGridView1.Location = new Point(330, 555);
+            dataGridView1.Location = new Point(30, 490);
             dataGridView1.Margin = new Padding(2);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 62;
@@ -435,7 +420,7 @@
             button1.BackgroundImageLayout = ImageLayout.None;
             button1.Font = new Font("PMingLiU-ExtB", 10F);
             button1.ForeColor = Color.White;
-            button1.Location = new Point(848, 490);
+            button1.Location = new Point(545, 425);
             button1.Margin = new Padding(2);
             button1.Name = "button1";
             button1.Size = new Size(151, 42);
@@ -448,7 +433,7 @@
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(1431, 896);
+            ClientSize = new Size(1349, 768);
             Controls.Add(button1);
             Controls.Add(dateTimePicker1);
             Controls.Add(label20);
@@ -456,7 +441,6 @@
             Controls.Add(pictureBox1);
             Controls.Add(textBox7);
             Controls.Add(comboBox3);
-            Controls.Add(button5);
             Controls.Add(dataGridView1);
             Controls.Add(groupBox1);
             Controls.Add(label5);
@@ -477,7 +461,6 @@
         private PictureBox pictureBox1;
         private TextBox textBox7;
         private ComboBox comboBox3;
-        private Button button5;
         private GroupBox groupBox1;
         private TextBox textBox4;
         private Button button3;

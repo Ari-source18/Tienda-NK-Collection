@@ -103,7 +103,7 @@
             btn_Restaurar.FlatStyle = FlatStyle.Flat;
             btn_Restaurar.Font = new Font("PMingLiU-ExtB", 10F, FontStyle.Bold | FontStyle.Italic);
             btn_Restaurar.ForeColor = SystemColors.ControlLightLight;
-            btn_Restaurar.Location = new Point(906, 539);
+            btn_Restaurar.Location = new Point(893, 551);
             btn_Restaurar.Name = "btn_Restaurar";
             btn_Restaurar.Size = new Size(112, 34);
             btn_Restaurar.TabIndex = 105;

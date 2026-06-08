@@ -17,7 +17,8 @@ namespace Sistema_NK
             InitializeComponent();
         }
 
-        private void label3_Click(object sender, EventArgs e)
+
+        private void label3_Click_1(object sender, EventArgs e)
         {
             Form1 login = new Form1();
             login.Show();

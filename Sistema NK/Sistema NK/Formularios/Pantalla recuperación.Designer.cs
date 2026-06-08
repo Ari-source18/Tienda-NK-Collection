@@ -29,140 +29,158 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pantalla_recuperación));
-            textBox1 = new TextBox();
-            btncancelar = new Button();
+            panel1 = new Panel();
+            label4 = new Label();
+            pictureBox1 = new PictureBox();
             btncontinuar = new Button();
+            label3 = new Label();
+            btncancelar = new Button();
+            pictureBox2 = new PictureBox();
             label1 = new Label();
             label2 = new Label();
-            label3 = new Label();
-            pictureBox1 = new PictureBox();
-            button1 = new Button();
-            button2 = new Button();
+            textBox1 = new TextBox();
+            panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
-            // textBox1
+            // panel1
             // 
-            textBox1.Location = new Point(175, 298);
-            textBox1.Margin = new Padding(2);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(428, 31);
-            textBox1.TabIndex = 0;
+            panel1.BackColor = SystemColors.Control;
+            panel1.Controls.Add(label4);
+            panel1.Controls.Add(pictureBox1);
+            panel1.Controls.Add(btncontinuar);
+            panel1.Controls.Add(label3);
+            panel1.Controls.Add(btncancelar);
+            panel1.Controls.Add(pictureBox2);
+            panel1.Controls.Add(label1);
+            panel1.Controls.Add(label2);
+            panel1.Controls.Add(textBox1);
+            panel1.Location = new Point(18, 17);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(828, 508);
+            panel1.TabIndex = 8;
             // 
-            // btncancelar
+            // label4
             // 
-            btncancelar.Location = new Point(148, 381);
-            btncancelar.Margin = new Padding(2);
-            btncancelar.Name = "btncancelar";
-            btncancelar.Size = new Size(112, 34);
-            btncancelar.TabIndex = 1;
-            btncancelar.Text = "Cancelar";
-            btncancelar.UseVisualStyleBackColor = true;
+            label4.AutoSize = true;
+            label4.Location = new Point(324, 430);
+            label4.Name = "label4";
+            label4.Size = new Size(191, 25);
+            label4.TabIndex = 11;
+            label4.Text = "- - - - - - - o - - - - - - -";
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(202, 315);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(43, 31);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 10;
+            pictureBox1.TabStop = false;
             // 
             // btncontinuar
             // 
-            btncontinuar.Location = new Point(512, 381);
-            btncontinuar.Margin = new Padding(2);
+            btncontinuar.BackColor = Color.Maroon;
+            btncontinuar.ForeColor = Color.White;
+            btncontinuar.Location = new Point(479, 382);
             btncontinuar.Name = "btncontinuar";
             btncontinuar.Size = new Size(112, 34);
             btncontinuar.TabIndex = 2;
             btncontinuar.Text = "Continuar";
-            btncontinuar.UseVisualStyleBackColor = true;
+            btncontinuar.UseVisualStyleBackColor = false;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.BackColor = Color.Transparent;
+            label3.ForeColor = Color.Peru;
+            label3.Location = new Point(307, 469);
+            label3.Name = "label3";
+            label3.Size = new Size(230, 25);
+            label3.TabIndex = 5;
+            label3.Text = "Volver a la pantalla anterior.";
+            label3.Click += label3_Click_1;
+            // 
+            // btncancelar
+            // 
+            btncancelar.ForeColor = Color.Maroon;
+            btncancelar.Location = new Point(238, 382);
+            btncancelar.Name = "btncancelar";
+            btncancelar.Size = new Size(123, 34);
+            btncancelar.TabIndex = 1;
+            btncancelar.Text = "Cancelar";
+            btncancelar.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = Properties.Resources.imagen_circular_recortada;
+            pictureBox2.Location = new Point(339, 34);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(139, 129);
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox2.TabIndex = 9;
+            pictureBox2.TabStop = false;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(310, 211);
-            label1.Margin = new Padding(2, 0, 2, 0);
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Segoe UI Black", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.Maroon;
+            label1.Location = new Point(282, 184);
             label1.Name = "label1";
-            label1.Size = new Size(181, 25);
+            label1.Size = new Size(266, 32);
             label1.TabIndex = 3;
             label1.Text = "Recuperar contraseña";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(68, 252);
-            label2.Margin = new Padding(2, 0, 2, 0);
+            label2.BackColor = Color.Transparent;
+            label2.Location = new Point(238, 233);
             label2.Name = "label2";
-            label2.Size = new Size(677, 25);
+            label2.Size = new Size(375, 50);
             label2.TabIndex = 4;
-            label2.Text = "Ingrese su dirección de correo electrónico y enviaremos un enlace para restablecerla.";
+            label2.Text = "Ingrese su dirección de correo electrónico y te\r\n enviaremos un enlace para restablecerla.";
             // 
-            // label3
+            // textBox1
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(282, 447);
-            label3.Margin = new Padding(2, 0, 2, 0);
-            label3.Name = "label3";
-            label3.Size = new Size(230, 25);
-            label3.TabIndex = 5;
-            label3.Text = "Volver a la pantalla anterior.";
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(310, 28);
-            pictureBox1.Margin = new Padding(2);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(231, 160);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 6;
-            pictureBox1.TabStop = false;
-            // 
-            // button1
-            // 
-            button1.Location = new Point(558, 442);
-            button1.Margin = new Padding(2);
-            button1.Name = "button1";
-            button1.Size = new Size(112, 34);
-            button1.TabIndex = 7;
-            button1.Text = "Salir";
-            button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            button2.Location = new Point(662, 379);
-            button2.Margin = new Padding(4, 4, 4, 4);
-            button2.Name = "button2";
-            button2.Size = new Size(118, 36);
-            button2.TabIndex = 8;
-            button2.Text = "Guardar";
-            button2.UseVisualStyleBackColor = true;
+            textBox1.Location = new Point(260, 315);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(353, 31);
+            textBox1.TabIndex = 0;
             // 
             // Pantalla_recuperación
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(64, 0, 0);
             ClientSize = new Size(864, 542);
-            Controls.Add(button2);
-            Controls.Add(button1);
-            Controls.Add(pictureBox1);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(label1);
-            Controls.Add(btncontinuar);
-            Controls.Add(btncancelar);
-            Controls.Add(textBox1);
+            Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(2);
             Name = "Pantalla_recuperación";
             Text = "Pantalla_recuperación";
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
 
-        private TextBox textBox1;
-        private Button btncancelar;
+        private Panel panel1;
+        private Label label4;
+        private PictureBox pictureBox1;
         private Button btncontinuar;
+        private Label label3;
+        private Button btncancelar;
+        private PictureBox pictureBox2;
         private Label label1;
         private Label label2;
-        private Label label3;
-        private PictureBox pictureBox1;
-        private Button button1;
-        private Button button2;
+        private TextBox textBox1;
     }
 }
