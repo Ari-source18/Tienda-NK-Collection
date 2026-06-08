@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Sistema_NK
 {
-    public partial class Categoría : Form
+    public partial class Formcontroldeegresos : Form
     {
-        public Categoría()
+        public Formcontroldeegresos()
         {
             InitializeComponent();
         }
