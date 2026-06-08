@@ -19,94 +19,70 @@ namespace Sistema_NK
 
 
 
-        private void btnusuarios_Click_1(object sender, EventArgs e)
+        private void rdb_Tarjeta_CheckedChanged(object sender, EventArgs e)
         {
-            Usuarios Usuario = new Usuarios();
-            Usuario.Show();
-            this.Hide();
+            txt_efectivo_cordobas.Visible = false;
+            txt_efectivo_dolares.Visible = false;
+            txt_interes.Visible = false;
+            txtnumerodereferencia.Visible = true;
+            txtcantidadT.Visible = true;
+            date_credito.Visible = false;
+            lbl_numero_referencia.Visible = true;
+            lbl_cantidad.Visible = true;
+            lbl_interes.Visible = false;
+            lbl_efectivo_cordobas.Visible = false;
+            lbl_efectivo_dolares.Visible = false;
         }
 
-        private void btnclientes_Click_1(object sender, EventArgs e)
+        private void rdb_Credito_CheckedChanged(object sender, EventArgs e)
         {
-            Formcliente cliente = new Formcliente();
-            cliente.Show();
-            this.Hide();
+            txt_efectivo_cordobas.Visible = false;
+            txt_efectivo_dolares.Visible = false;
+            txt_interes.Visible = true;
+            txtnumerodereferencia.Visible = false;
+            txtcantidadT.Visible = false;
+            date_credito.Visible = true;
+            lbl_numero_referencia.Visible = false;
+            lbl_cantidad.Visible = false;
+            lbl_interes.Visible = true;
+            lbl_efectivo_cordobas.Visible = false;
+            lbl_efectivo_dolares.Visible = false;
         }
 
-        private void btncompras_Click_1(object sender, EventArgs e)
+        private void rdb_Efectivo_CheckedChanged(object sender, EventArgs e)
         {
-            Formcompras compras = new Formcompras();
-            compras.Show();
-            this.Hide();
+            txt_efectivo_cordobas.Visible = true;
+            txt_efectivo_dolares.Visible = true;
+            txt_interes.Visible = false;
+            txtnumerodereferencia.Visible = false;
+            txtcantidadT.Visible = false;
+            date_credito.Visible = false;
+            lbl_numero_referencia.Visible = false;
+            lbl_cantidad.Visible = false;
+            lbl_interes.Visible = false;
+            lbl_efectivo_cordobas.Visible = true;
+            lbl_efectivo_dolares.Visible = true;
         }
 
-        private void btnventas_Click_1(object sender, EventArgs e)
+        private void date_credito_ValueChanged(object sender, EventArgs e)
         {
-            Formventas ventas = new Formventas();
-            ventas.Show();
-            this.Hide();
+
         }
 
-        private void btnproductos_Click_1(object sender, EventArgs e)
+        private void Formventas_Load(object sender, EventArgs e)
         {
-            Formproductos productos = new Formproductos();
-            productos.Show();
-            this.Hide();
+            txt_efectivo_cordobas.Visible = false;
+            txt_efectivo_dolares.Visible = false;
+            txt_interes.Visible = false;
+            txtnumerodereferencia.Visible = false;
+            txtcantidadT.Visible = false;
+            date_credito.Visible = false;
+            lbl_numero_referencia.Visible = false;
+            lbl_cantidad.Visible = false;
+            lbl_interes.Visible = false;
+            lbl_efectivo_cordobas.Visible = false;
+            lbl_efectivo_dolares.Visible = false;
         }
-
-        private void btnproveedores_Click_1(object sender, EventArgs e)
-        {
-            Formproveedores proveedores = new Formproveedores();
-            proveedores.Show();
-            this.Hide();
-        }
-
-        private void btncredito_Click_1(object sender, EventArgs e)
-        {
-            Formcredito credito = new Formcredito();
-            credito.Show();
-            this.Hide();
-        }
-
-        private void btndevolucionventas_Click_1(object sender, EventArgs e)
-        {
-            Formdevoluciones devoluciones = new Formdevoluciones();
-            devoluciones.Show();
-            this.Hide();
-        }
-
-        private void btndevolucioncompra_Click_1(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void btncaja_Click_1(object sender, EventArgs e)
-        {
-            Formcaja caja = new Formcaja();
-            caja.Show();
-            this.Hide();
-        }
-
-        private void btnnivelacioninventario_Click_1(object sender, EventArgs e)
-        {
-            Formnivelacioninventario nivelacioninventario = new Formnivelacioninventario();
-            nivelacioninventario.Show();
-            this.Hide();
-        }
-
-        private void btninventario_Click_1(object sender, EventArgs e)
-        {
-            forminventario inventario = new forminventario();
-            inventario.Show();
-            this.Hide();
-        }
-
-        private void textBox7_TextChanged(object sender, EventArgs e)
-        {
-
-        }    
-
-       
     }
 }
  

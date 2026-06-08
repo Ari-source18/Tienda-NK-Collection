@@ -89,8 +89,8 @@
             txt_efectivo_dolares = new TextBox();
             lbl_numero_referencia = new Label();
             lbl_cantidad = new Label();
-            textBox14 = new TextBox();
-            textBox15 = new TextBox();
+            txtcantidadT = new TextBox();
+            txtnumerodereferencia = new TextBox();
             date_credito = new DateTimePicker();
             lbl_interes = new Label();
             txt_interes = new TextBox();
@@ -546,6 +546,7 @@
             rdb_Tarjeta.TabStop = true;
             rdb_Tarjeta.Text = "Tarjeta";
             rdb_Tarjeta.UseVisualStyleBackColor = true;
+            rdb_Tarjeta.CheckedChanged += rdb_Tarjeta_CheckedChanged;
             // 
             // rdb_Credito
             // 
@@ -560,6 +561,7 @@
             rdb_Credito.TabStop = true;
             rdb_Credito.Text = "Crédito";
             rdb_Credito.UseVisualStyleBackColor = true;
+            rdb_Credito.CheckedChanged += rdb_Credito_CheckedChanged;
             // 
             // rdb_Efectivo
             // 
@@ -574,6 +576,7 @@
             rdb_Efectivo.TabStop = true;
             rdb_Efectivo.Text = "Efectivo";
             rdb_Efectivo.UseVisualStyleBackColor = true;
+            rdb_Efectivo.CheckedChanged += rdb_Efectivo_CheckedChanged;
             // 
             // textBox13
             // 
@@ -698,21 +701,21 @@
             lbl_cantidad.TabIndex = 162;
             lbl_cantidad.Text = "Cantidad:";
             // 
-            // textBox14
+            // txtcantidadT
             // 
-            textBox14.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            textBox14.Location = new Point(565, 757);
-            textBox14.Name = "textBox14";
-            textBox14.Size = new Size(109, 31);
-            textBox14.TabIndex = 163;
+            txtcantidadT.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            txtcantidadT.Location = new Point(565, 757);
+            txtcantidadT.Name = "txtcantidadT";
+            txtcantidadT.Size = new Size(109, 31);
+            txtcantidadT.TabIndex = 163;
             // 
-            // textBox15
+            // txtnumerodereferencia
             // 
-            textBox15.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            textBox15.Location = new Point(269, 757);
-            textBox15.Name = "textBox15";
-            textBox15.Size = new Size(204, 31);
-            textBox15.TabIndex = 164;
+            txtnumerodereferencia.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            txtnumerodereferencia.Location = new Point(269, 757);
+            txtnumerodereferencia.Name = "txtnumerodereferencia";
+            txtnumerodereferencia.Size = new Size(204, 31);
+            txtnumerodereferencia.TabIndex = 164;
             // 
             // date_credito
             // 
@@ -765,8 +768,8 @@
             Controls.Add(txt_interes);
             Controls.Add(lbl_interes);
             Controls.Add(date_credito);
-            Controls.Add(textBox15);
-            Controls.Add(textBox14);
+            Controls.Add(txtnumerodereferencia);
+            Controls.Add(txtcantidadT);
             Controls.Add(lbl_cantidad);
             Controls.Add(lbl_numero_referencia);
             Controls.Add(txt_efectivo_dolares);
@@ -820,6 +823,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "Formventas";
             StartPosition = FormStartPosition.CenterScreen;
+            Load += Formventas_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)dtgw_ventas).EndInit();
             ResumeLayout(false);
@@ -885,8 +889,8 @@
         private TextBox txt_efectivo_dolares;
         private Label lbl_numero_referencia;
         private Label lbl_cantidad;
-        private TextBox textBox14;
-        private TextBox textBox15;
+        private TextBox txtcantidadT;
+        private TextBox txtnumerodereferencia;
         private DateTimePicker date_credito;
         private Label lbl_interes;
         private TextBox txt_interes;
