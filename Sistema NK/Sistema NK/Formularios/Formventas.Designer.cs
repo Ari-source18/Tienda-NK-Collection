@@ -35,28 +35,27 @@
             label5 = new Label();
             label6 = new Label();
             label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
+            lbl_telefono = new Label();
+            lbl_cedula = new Label();
+            lbl_nombre_cliente = new Label();
             btn_agregar_cliente = new Button();
             imageList1 = new ImageList(components);
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
+            txt_telefono = new TextBox();
+            txt_cedula = new TextBox();
             label7 = new Label();
-            label8 = new Label();
-            textBox4 = new TextBox();
+            lbl_direccion = new Label();
+            txt_direccion = new TextBox();
             label9 = new Label();
-            label10 = new Label();
-            label13 = new Label();
-            label14 = new Label();
-            label17 = new Label();
-            comboBox1 = new ComboBox();
-            textBox5 = new TextBox();
-            textBox6 = new TextBox();
-            textBox7 = new TextBox();
-            textBox8 = new TextBox();
-            button1 = new Button();
+            lbl_codigo = new Label();
+            lbl_cantidad_producto = new Label();
+            lbl_precio = new Label();
+            lbl_categoria = new Label();
+            cmb_producto = new ComboBox();
+            txt_codigo = new TextBox();
+            txt_cantidad_producto = new TextBox();
+            txt_precio = new TextBox();
+            txt_porc_descuento = new TextBox();
+            btn_agregar = new Button();
             dtgw_ventas = new DataGridView();
             Clm_producto = new DataGridViewTextBoxColumn();
             Clm_Cantidad = new DataGridViewTextBoxColumn();
@@ -65,24 +64,19 @@
             Clm_Descuento = new DataGridViewTextBoxColumn();
             Clm_Subtotal = new DataGridViewTextBoxColumn();
             Clm_Editar = new DataGridViewTextBoxColumn();
-            label18 = new Label();
-            label19 = new Label();
-            label20 = new Label();
-            label21 = new Label();
-            textBox9 = new TextBox();
-            textBox10 = new TextBox();
-            textBox11 = new TextBox();
-            textBox12 = new TextBox();
-            label12 = new Label();
+            lbl_subtotal = new Label();
+            lbl_cambio = new Label();
+            lbl_total = new Label();
+            lbl_descuento = new Label();
+            lbl_porc_descuento = new Label();
             rdb_Tarjeta = new RadioButton();
             rdb_Credito = new RadioButton();
             rdb_Efectivo = new RadioButton();
-            textBox13 = new TextBox();
             panel1 = new Panel();
             panel2 = new Panel();
             panel3 = new Panel();
             panel4 = new Panel();
-            button2 = new Button();
+            btn_cancelar = new Button();
             lbl_efectivo_cordobas = new Label();
             lbl_efectivo_dolares = new Label();
             txt_efectivo_cordobas = new TextBox();
@@ -95,6 +89,16 @@
             lbl_interes = new Label();
             txt_interes = new TextBox();
             button4 = new Button();
+            cmb_nombre_cliente = new ComboBox();
+            lblFecha = new Label();
+            txt_categoria = new TextBox();
+            btn_ayuda = new Button();
+            imageList2 = new ImageList(components);
+            lbl_subtotalF = new Label();
+            lbl_descuentoF = new Label();
+            lbl_totalF = new Label();
+            lbl_cambioF = new Label();
+            lbl_usuario = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dtgw_ventas).BeginInit();
             SuspendLayout();
@@ -146,41 +150,41 @@
             label1.TabIndex = 108;
             label1.Text = "Datos del Cliente:";
             // 
-            // label2
+            // lbl_telefono
             // 
-            label2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            label2.AutoSize = true;
-            label2.Font = new Font("PMingLiU-ExtB", 10F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            label2.ForeColor = Color.FromArgb(64, 0, 0);
-            label2.Location = new Point(45, 135);
-            label2.Name = "label2";
-            label2.Size = new Size(80, 20);
-            label2.TabIndex = 109;
-            label2.Text = "Teléfono:";
+            lbl_telefono.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            lbl_telefono.AutoSize = true;
+            lbl_telefono.Font = new Font("PMingLiU-ExtB", 10F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            lbl_telefono.ForeColor = Color.FromArgb(64, 0, 0);
+            lbl_telefono.Location = new Point(542, 137);
+            lbl_telefono.Name = "lbl_telefono";
+            lbl_telefono.Size = new Size(80, 20);
+            lbl_telefono.TabIndex = 109;
+            lbl_telefono.Text = "Teléfono:";
             // 
-            // label3
+            // lbl_cedula
             // 
-            label3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            label3.AutoSize = true;
-            label3.Font = new Font("PMingLiU-ExtB", 10F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            label3.ForeColor = Color.FromArgb(64, 0, 0);
-            label3.Location = new Point(491, 135);
-            label3.Name = "label3";
-            label3.Size = new Size(67, 20);
-            label3.TabIndex = 110;
-            label3.Text = "Cédula:";
+            lbl_cedula.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            lbl_cedula.AutoSize = true;
+            lbl_cedula.Font = new Font("PMingLiU-ExtB", 10F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            lbl_cedula.ForeColor = Color.FromArgb(64, 0, 0);
+            lbl_cedula.Location = new Point(311, 135);
+            lbl_cedula.Name = "lbl_cedula";
+            lbl_cedula.Size = new Size(67, 20);
+            lbl_cedula.TabIndex = 110;
+            lbl_cedula.Text = "Cédula:";
             // 
-            // label4
+            // lbl_nombre_cliente
             // 
-            label4.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            label4.AutoSize = true;
-            label4.Font = new Font("PMingLiU-ExtB", 10F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            label4.ForeColor = Color.FromArgb(64, 0, 0);
-            label4.Location = new Point(224, 135);
-            label4.Name = "label4";
-            label4.Size = new Size(155, 20);
-            label4.TabIndex = 111;
-            label4.Text = "Nombre del cliente:";
+            lbl_nombre_cliente.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            lbl_nombre_cliente.AutoSize = true;
+            lbl_nombre_cliente.Font = new Font("PMingLiU-ExtB", 10F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            lbl_nombre_cliente.ForeColor = Color.FromArgb(64, 0, 0);
+            lbl_nombre_cliente.Location = new Point(45, 137);
+            lbl_nombre_cliente.Name = "lbl_nombre_cliente";
+            lbl_nombre_cliente.Size = new Size(155, 20);
+            lbl_nombre_cliente.TabIndex = 111;
+            lbl_nombre_cliente.Text = "Nombre del cliente:";
             // 
             // btn_agregar_cliente
             // 
@@ -207,29 +211,21 @@
             imageList1.Images.SetKeyName(2, "icons8-cancelar-30.png");
             imageList1.Images.SetKeyName(3, "icons8-documento-67.png");
             // 
-            // textBox1
+            // txt_telefono
             // 
-            textBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            textBox1.Location = new Point(45, 160);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(151, 31);
-            textBox1.TabIndex = 113;
+            txt_telefono.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            txt_telefono.Location = new Point(542, 160);
+            txt_telefono.Name = "txt_telefono";
+            txt_telefono.Size = new Size(151, 31);
+            txt_telefono.TabIndex = 113;
             // 
-            // textBox2
+            // txt_cedula
             // 
-            textBox2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            textBox2.Location = new Point(224, 160);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(240, 31);
-            textBox2.TabIndex = 114;
-            // 
-            // textBox3
-            // 
-            textBox3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            textBox3.Location = new Point(491, 158);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(219, 31);
-            textBox3.TabIndex = 115;
+            txt_cedula.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            txt_cedula.Location = new Point(302, 158);
+            txt_cedula.Name = "txt_cedula";
+            txt_cedula.Size = new Size(219, 31);
+            txt_cedula.TabIndex = 115;
             // 
             // label7
             // 
@@ -243,25 +239,25 @@
             label7.TabIndex = 116;
             label7.Text = "Datos del producto:";
             // 
-            // label8
+            // lbl_direccion
             // 
-            label8.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            label8.AutoSize = true;
-            label8.Font = new Font("PMingLiU-ExtB", 10F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            label8.ForeColor = Color.FromArgb(64, 0, 0);
-            label8.Location = new Point(730, 135);
-            label8.Name = "label8";
-            label8.Size = new Size(86, 20);
-            label8.TabIndex = 117;
-            label8.Text = "Dirección:";
+            lbl_direccion.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            lbl_direccion.AutoSize = true;
+            lbl_direccion.Font = new Font("PMingLiU-ExtB", 10F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            lbl_direccion.ForeColor = Color.FromArgb(64, 0, 0);
+            lbl_direccion.Location = new Point(730, 135);
+            lbl_direccion.Name = "lbl_direccion";
+            lbl_direccion.Size = new Size(86, 20);
+            lbl_direccion.TabIndex = 117;
+            lbl_direccion.Text = "Dirección:";
             // 
-            // textBox4
+            // txt_direccion
             // 
-            textBox4.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            textBox4.Location = new Point(730, 158);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(320, 31);
-            textBox4.TabIndex = 118;
+            txt_direccion.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            txt_direccion.Location = new Point(730, 158);
+            txt_direccion.Name = "txt_direccion";
+            txt_direccion.Size = new Size(320, 31);
+            txt_direccion.TabIndex = 118;
             // 
             // label9
             // 
@@ -275,108 +271,111 @@
             label9.TabIndex = 119;
             label9.Text = "Producto:";
             // 
-            // label10
+            // lbl_codigo
             // 
-            label10.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            label10.AutoSize = true;
-            label10.Font = new Font("PMingLiU-ExtB", 10F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            label10.ForeColor = Color.FromArgb(64, 0, 0);
-            label10.Location = new Point(299, 250);
-            label10.Name = "label10";
-            label10.Size = new Size(68, 20);
-            label10.TabIndex = 120;
-            label10.Text = "Código:";
+            lbl_codigo.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            lbl_codigo.AutoSize = true;
+            lbl_codigo.Font = new Font("PMingLiU-ExtB", 10F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            lbl_codigo.ForeColor = Color.FromArgb(64, 0, 0);
+            lbl_codigo.Location = new Point(299, 250);
+            lbl_codigo.Name = "lbl_codigo";
+            lbl_codigo.Size = new Size(68, 20);
+            lbl_codigo.TabIndex = 120;
+            lbl_codigo.Text = "Código:";
             // 
-            // label13
+            // lbl_cantidad_producto
             // 
-            label13.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            label13.AutoSize = true;
-            label13.Font = new Font("PMingLiU-ExtB", 10F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            label13.ForeColor = Color.FromArgb(64, 0, 0);
-            label13.Location = new Point(850, 250);
-            label13.Name = "label13";
-            label13.Size = new Size(80, 20);
-            label13.TabIndex = 122;
-            label13.Text = "Cantidad:";
+            lbl_cantidad_producto.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            lbl_cantidad_producto.AutoSize = true;
+            lbl_cantidad_producto.Font = new Font("PMingLiU-ExtB", 10F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            lbl_cantidad_producto.ForeColor = Color.FromArgb(64, 0, 0);
+            lbl_cantidad_producto.Location = new Point(850, 250);
+            lbl_cantidad_producto.Name = "lbl_cantidad_producto";
+            lbl_cantidad_producto.Size = new Size(80, 20);
+            lbl_cantidad_producto.TabIndex = 122;
+            lbl_cantidad_producto.Text = "Cantidad:";
             // 
-            // label14
+            // lbl_precio
             // 
-            label14.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            label14.AutoSize = true;
-            label14.Font = new Font("PMingLiU-ExtB", 10F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            label14.ForeColor = Color.FromArgb(64, 0, 0);
-            label14.Location = new Point(1029, 250);
-            label14.Name = "label14";
-            label14.Size = new Size(60, 20);
-            label14.TabIndex = 123;
-            label14.Text = "Precio:";
+            lbl_precio.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            lbl_precio.AutoSize = true;
+            lbl_precio.Font = new Font("PMingLiU-ExtB", 10F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            lbl_precio.ForeColor = Color.FromArgb(64, 0, 0);
+            lbl_precio.Location = new Point(681, 250);
+            lbl_precio.Name = "lbl_precio";
+            lbl_precio.Size = new Size(60, 20);
+            lbl_precio.TabIndex = 123;
+            lbl_precio.Text = "Precio:";
             // 
-            // label17
+            // lbl_categoria
             // 
-            label17.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            label17.AutoSize = true;
-            label17.Font = new Font("PMingLiU-ExtB", 10F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            label17.ForeColor = Color.FromArgb(64, 0, 0);
-            label17.Location = new Point(491, 250);
-            label17.Name = "label17";
-            label17.Size = new Size(86, 20);
-            label17.TabIndex = 124;
-            label17.Text = "Categoría:";
+            lbl_categoria.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            lbl_categoria.AutoSize = true;
+            lbl_categoria.Font = new Font("PMingLiU-ExtB", 10F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            lbl_categoria.ForeColor = Color.FromArgb(64, 0, 0);
+            lbl_categoria.Location = new Point(491, 250);
+            lbl_categoria.Name = "lbl_categoria";
+            lbl_categoria.Size = new Size(86, 20);
+            lbl_categoria.TabIndex = 124;
+            lbl_categoria.Text = "Categoría:";
             // 
-            // comboBox1
+            // cmb_producto
             // 
-            comboBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            comboBox1.Location = new Point(45, 280);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(233, 33);
-            comboBox1.TabIndex = 143;
+            cmb_producto.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            cmb_producto.Items.AddRange(new object[] { "Camisa Polo", "Pantalón Jeans", "Zapatos Deportivos", "Vestido Casual", "Chaqueta de Cuero", "Blusa Elegante", "Falda Plisada", "Suéter de Lana", "Traje de Baño", "Accesorios de Moda" });
+            cmb_producto.Location = new Point(45, 280);
+            cmb_producto.Name = "cmb_producto";
+            cmb_producto.Size = new Size(233, 33);
+            cmb_producto.TabIndex = 143;
+            cmb_producto.SelectedIndexChanged += cmb_producto_SelectedIndexChanged;
             // 
-            // textBox5
+            // txt_codigo
             // 
-            textBox5.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            textBox5.Location = new Point(299, 280);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(165, 31);
-            textBox5.TabIndex = 126;
+            txt_codigo.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            txt_codigo.Location = new Point(299, 280);
+            txt_codigo.Name = "txt_codigo";
+            txt_codigo.Size = new Size(165, 31);
+            txt_codigo.TabIndex = 126;
             // 
-            // textBox6
+            // txt_cantidad_producto
             // 
-            textBox6.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            textBox6.Location = new Point(850, 276);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(165, 31);
-            textBox6.TabIndex = 127;
+            txt_cantidad_producto.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            txt_cantidad_producto.Location = new Point(850, 276);
+            txt_cantidad_producto.Name = "txt_cantidad_producto";
+            txt_cantidad_producto.Size = new Size(165, 31);
+            txt_cantidad_producto.TabIndex = 127;
             // 
-            // textBox7
+            // txt_precio
             // 
-            textBox7.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            textBox7.Location = new Point(681, 278);
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(135, 31);
-            textBox7.TabIndex = 128;
+            txt_precio.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            txt_precio.Location = new Point(681, 278);
+            txt_precio.Name = "txt_precio";
+            txt_precio.Size = new Size(135, 31);
+            txt_precio.TabIndex = 128;
             // 
-            // textBox8
+            // txt_porc_descuento
             // 
-            textBox8.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            textBox8.Location = new Point(1029, 276);
-            textBox8.Name = "textBox8";
-            textBox8.Size = new Size(124, 31);
-            textBox8.TabIndex = 130;
+            txt_porc_descuento.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            txt_porc_descuento.Location = new Point(1029, 276);
+            txt_porc_descuento.Name = "txt_porc_descuento";
+            txt_porc_descuento.Size = new Size(124, 31);
+            txt_porc_descuento.TabIndex = 130;
             // 
-            // button1
+            // btn_agregar
             // 
-            button1.BackColor = Color.Maroon;
-            button1.Font = new Font("PMingLiU-ExtB", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.ForeColor = SystemColors.ControlLightLight;
-            button1.ImageAlign = ContentAlignment.MiddleLeft;
-            button1.ImageIndex = 1;
-            button1.ImageList = imageList1;
-            button1.Location = new Point(45, 323);
-            button1.Name = "button1";
-            button1.Size = new Size(113, 41);
-            button1.TabIndex = 131;
-            button1.Text = "Agregar";
-            button1.UseVisualStyleBackColor = false;
+            btn_agregar.BackColor = Color.Maroon;
+            btn_agregar.Font = new Font("PMingLiU-ExtB", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_agregar.ForeColor = SystemColors.ControlLightLight;
+            btn_agregar.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_agregar.ImageIndex = 1;
+            btn_agregar.ImageList = imageList1;
+            btn_agregar.Location = new Point(45, 323);
+            btn_agregar.Name = "btn_agregar";
+            btn_agregar.Size = new Size(113, 41);
+            btn_agregar.TabIndex = 131;
+            btn_agregar.Text = "Agregar";
+            btn_agregar.UseVisualStyleBackColor = false;
+            btn_agregar.Click += btn_agregar_Click;
             // 
             // dtgw_ventas
             // 
@@ -441,97 +440,65 @@
             Clm_Editar.MinimumWidth = 8;
             Clm_Editar.Name = "Clm_Editar";
             // 
-            // label18
+            // lbl_subtotal
             // 
-            label18.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            label18.AutoSize = true;
-            label18.Font = new Font("PMingLiU-ExtB", 10F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            label18.ForeColor = Color.FromArgb(64, 0, 0);
-            label18.Location = new Point(1171, 395);
-            label18.Name = "label18";
-            label18.Size = new Size(69, 20);
-            label18.TabIndex = 133;
-            label18.Text = "Subtotal";
+            lbl_subtotal.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            lbl_subtotal.AutoSize = true;
+            lbl_subtotal.Font = new Font("PMingLiU-ExtB", 10F, FontStyle.Bold | FontStyle.Italic);
+            lbl_subtotal.ForeColor = Color.FromArgb(64, 0, 0);
+            lbl_subtotal.Location = new Point(1171, 395);
+            lbl_subtotal.Name = "lbl_subtotal";
+            lbl_subtotal.Size = new Size(77, 20);
+            lbl_subtotal.TabIndex = 133;
+            lbl_subtotal.Text = "Subtotal";
             // 
-            // label19
+            // lbl_cambio
             // 
-            label19.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            label19.AutoSize = true;
-            label19.Font = new Font("PMingLiU-ExtB", 10F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            label19.ForeColor = Color.FromArgb(64, 0, 0);
-            label19.Location = new Point(1172, 574);
-            label19.Name = "label19";
-            label19.Size = new Size(68, 20);
-            label19.TabIndex = 134;
-            label19.Text = "Cambio";
+            lbl_cambio.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            lbl_cambio.AutoSize = true;
+            lbl_cambio.Font = new Font("PMingLiU-ExtB", 10F, FontStyle.Bold | FontStyle.Italic);
+            lbl_cambio.ForeColor = Color.FromArgb(64, 0, 0);
+            lbl_cambio.Location = new Point(1174, 580);
+            lbl_cambio.Name = "lbl_cambio";
+            lbl_cambio.Size = new Size(74, 20);
+            lbl_cambio.TabIndex = 134;
+            lbl_cambio.Text = "Cambio";
             // 
-            // label20
+            // lbl_total
             // 
-            label20.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            label20.AutoSize = true;
-            label20.Font = new Font("PMingLiU-ExtB", 10F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            label20.ForeColor = Color.FromArgb(64, 0, 0);
-            label20.Location = new Point(1171, 517);
-            label20.Name = "label20";
-            label20.Size = new Size(47, 20);
-            label20.TabIndex = 135;
-            label20.Text = "Total";
+            lbl_total.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            lbl_total.AutoSize = true;
+            lbl_total.Font = new Font("PMingLiU-ExtB", 10F, FontStyle.Bold | FontStyle.Italic);
+            lbl_total.ForeColor = Color.FromArgb(64, 0, 0);
+            lbl_total.Location = new Point(1173, 517);
+            lbl_total.Name = "lbl_total";
+            lbl_total.Size = new Size(52, 20);
+            lbl_total.TabIndex = 135;
+            lbl_total.Text = "Total";
             // 
-            // label21
+            // lbl_descuento
             // 
-            label21.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            label21.AutoSize = true;
-            label21.Font = new Font("PMingLiU-ExtB", 10F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            label21.ForeColor = Color.FromArgb(64, 0, 0);
-            label21.Location = new Point(1171, 452);
-            label21.Name = "label21";
-            label21.Size = new Size(86, 20);
-            label21.TabIndex = 136;
-            label21.Text = "Descuento";
+            lbl_descuento.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            lbl_descuento.AutoSize = true;
+            lbl_descuento.Font = new Font("PMingLiU-ExtB", 10F, FontStyle.Bold | FontStyle.Italic);
+            lbl_descuento.ForeColor = Color.FromArgb(64, 0, 0);
+            lbl_descuento.Location = new Point(1171, 456);
+            lbl_descuento.Name = "lbl_descuento";
+            lbl_descuento.Size = new Size(95, 20);
+            lbl_descuento.TabIndex = 136;
+            lbl_descuento.Text = "Descuento";
             // 
-            // textBox9
+            // lbl_porc_descuento
             // 
-            textBox9.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            textBox9.Location = new Point(1171, 599);
-            textBox9.Name = "textBox9";
-            textBox9.Size = new Size(135, 31);
-            textBox9.TabIndex = 137;
-            // 
-            // textBox10
-            // 
-            textBox10.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            textBox10.Location = new Point(1172, 540);
-            textBox10.Name = "textBox10";
-            textBox10.Size = new Size(134, 31);
-            textBox10.TabIndex = 141;
-            // 
-            // textBox11
-            // 
-            textBox11.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            textBox11.Location = new Point(1171, 475);
-            textBox11.Name = "textBox11";
-            textBox11.Size = new Size(135, 31);
-            textBox11.TabIndex = 139;
-            // 
-            // textBox12
-            // 
-            textBox12.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            textBox12.Location = new Point(1171, 418);
-            textBox12.Name = "textBox12";
-            textBox12.Size = new Size(135, 31);
-            textBox12.TabIndex = 140;
-            // 
-            // label12
-            // 
-            label12.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            label12.AutoSize = true;
-            label12.Font = new Font("PMingLiU-ExtB", 10F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            label12.ForeColor = Color.FromArgb(64, 0, 0);
-            label12.Location = new Point(681, 250);
-            label12.Name = "label12";
-            label12.Size = new Size(91, 20);
-            label12.TabIndex = 146;
-            label12.Text = "Descuento:";
+            lbl_porc_descuento.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            lbl_porc_descuento.AutoSize = true;
+            lbl_porc_descuento.Font = new Font("PMingLiU-ExtB", 10F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            lbl_porc_descuento.ForeColor = Color.FromArgb(64, 0, 0);
+            lbl_porc_descuento.Location = new Point(1029, 250);
+            lbl_porc_descuento.Name = "lbl_porc_descuento";
+            lbl_porc_descuento.Size = new Size(91, 20);
+            lbl_porc_descuento.TabIndex = 146;
+            lbl_porc_descuento.Text = "Descuento:";
             // 
             // rdb_Tarjeta
             // 
@@ -578,14 +545,6 @@
             rdb_Efectivo.UseVisualStyleBackColor = true;
             rdb_Efectivo.CheckedChanged += rdb_Efectivo_CheckedChanged;
             // 
-            // textBox13
-            // 
-            textBox13.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            textBox13.Location = new Point(491, 280);
-            textBox13.Name = "textBox13";
-            textBox13.Size = new Size(165, 31);
-            textBox13.TabIndex = 150;
-            // 
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(64, 0, 0);
@@ -622,20 +581,20 @@
             panel4.Size = new Size(1319, 26);
             panel4.TabIndex = 154;
             // 
-            // button2
+            // btn_cancelar
             // 
-            button2.BackColor = Color.Maroon;
-            button2.Font = new Font("PMingLiU-ExtB", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.ForeColor = SystemColors.ControlLightLight;
-            button2.ImageAlign = ContentAlignment.MiddleLeft;
-            button2.ImageIndex = 2;
-            button2.ImageList = imageList1;
-            button2.Location = new Point(172, 323);
-            button2.Name = "button2";
-            button2.Size = new Size(113, 41);
-            button2.TabIndex = 155;
-            button2.Text = "Cancelar";
-            button2.UseVisualStyleBackColor = false;
+            btn_cancelar.BackColor = Color.Maroon;
+            btn_cancelar.Font = new Font("PMingLiU-ExtB", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_cancelar.ForeColor = SystemColors.ControlLightLight;
+            btn_cancelar.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_cancelar.ImageIndex = 2;
+            btn_cancelar.ImageList = imageList1;
+            btn_cancelar.Location = new Point(172, 323);
+            btn_cancelar.Name = "btn_cancelar";
+            btn_cancelar.Size = new Size(113, 41);
+            btn_cancelar.TabIndex = 155;
+            btn_cancelar.Text = "Cancelar";
+            btn_cancelar.UseVisualStyleBackColor = false;
             // 
             // lbl_efectivo_cordobas
             // 
@@ -759,11 +718,128 @@
             button4.Text = "Registrar";
             button4.UseVisualStyleBackColor = false;
             // 
+            // cmb_nombre_cliente
+            // 
+            cmb_nombre_cliente.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            cmb_nombre_cliente.Items.AddRange(new object[] { "Ariana Gaitán" });
+            cmb_nombre_cliente.Location = new Point(45, 160);
+            cmb_nombre_cliente.Name = "cmb_nombre_cliente";
+            cmb_nombre_cliente.Size = new Size(233, 33);
+            cmb_nombre_cliente.TabIndex = 171;
+            cmb_nombre_cliente.SelectedIndexChanged += cmb_nombre_cliente_SelectedIndexChanged;
+            // 
+            // lblFecha
+            // 
+            lblFecha.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            lblFecha.AutoSize = true;
+            lblFecha.Font = new Font("PMingLiU-ExtB", 10F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            lblFecha.ForeColor = Color.FromArgb(64, 0, 0);
+            lblFecha.Location = new Point(1141, 53);
+            lblFecha.Name = "lblFecha";
+            lblFecha.Size = new Size(57, 20);
+            lblFecha.TabIndex = 172;
+            lblFecha.Text = "Fecha:";
+            lblFecha.Click += lblFecha_Click;
+            // 
+            // txt_categoria
+            // 
+            txt_categoria.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            txt_categoria.Location = new Point(479, 280);
+            txt_categoria.Name = "txt_categoria";
+            txt_categoria.Size = new Size(183, 31);
+            txt_categoria.TabIndex = 173;
+            // 
+            // btn_ayuda
+            // 
+            btn_ayuda.ImageIndex = 0;
+            btn_ayuda.ImageList = imageList2;
+            btn_ayuda.Location = new Point(1292, 117);
+            btn_ayuda.Name = "btn_ayuda";
+            btn_ayuda.Size = new Size(47, 43);
+            btn_ayuda.TabIndex = 174;
+            btn_ayuda.UseVisualStyleBackColor = true;
+            // 
+            // imageList2
+            // 
+            imageList2.ColorDepth = ColorDepth.Depth32Bit;
+            imageList2.ImageStream = (ImageListStreamer)resources.GetObject("imageList2.ImageStream");
+            imageList2.TransparentColor = Color.Transparent;
+            imageList2.Images.SetKeyName(0, "boton-de-informacion.png");
+            // 
+            // lbl_subtotalF
+            // 
+            lbl_subtotalF.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            lbl_subtotalF.AutoSize = true;
+            lbl_subtotalF.Font = new Font("PMingLiU-ExtB", 10F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            lbl_subtotalF.ForeColor = Color.FromArgb(64, 0, 0);
+            lbl_subtotalF.Location = new Point(1173, 425);
+            lbl_subtotalF.Name = "lbl_subtotalF";
+            lbl_subtotalF.Size = new Size(50, 20);
+            lbl_subtotalF.TabIndex = 175;
+            lbl_subtotalF.Text = "00.00";
+            // 
+            // lbl_descuentoF
+            // 
+            lbl_descuentoF.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            lbl_descuentoF.AutoSize = true;
+            lbl_descuentoF.Font = new Font("PMingLiU-ExtB", 10F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            lbl_descuentoF.ForeColor = Color.FromArgb(64, 0, 0);
+            lbl_descuentoF.Location = new Point(1173, 485);
+            lbl_descuentoF.Name = "lbl_descuentoF";
+            lbl_descuentoF.Size = new Size(50, 20);
+            lbl_descuentoF.TabIndex = 176;
+            lbl_descuentoF.Text = "00.00";
+            // 
+            // lbl_totalF
+            // 
+            lbl_totalF.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            lbl_totalF.AutoSize = true;
+            lbl_totalF.Font = new Font("PMingLiU-ExtB", 10F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            lbl_totalF.ForeColor = Color.FromArgb(64, 0, 0);
+            lbl_totalF.Location = new Point(1175, 548);
+            lbl_totalF.Name = "lbl_totalF";
+            lbl_totalF.Size = new Size(50, 20);
+            lbl_totalF.TabIndex = 177;
+            lbl_totalF.Text = "00.00";
+            // 
+            // lbl_cambioF
+            // 
+            lbl_cambioF.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            lbl_cambioF.AutoSize = true;
+            lbl_cambioF.Font = new Font("PMingLiU-ExtB", 10F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            lbl_cambioF.ForeColor = Color.FromArgb(64, 0, 0);
+            lbl_cambioF.Location = new Point(1175, 612);
+            lbl_cambioF.Name = "lbl_cambioF";
+            lbl_cambioF.Size = new Size(50, 20);
+            lbl_cambioF.TabIndex = 178;
+            lbl_cambioF.Text = "00.00";
+            // 
+            // lbl_usuario
+            // 
+            lbl_usuario.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            lbl_usuario.AutoSize = true;
+            lbl_usuario.Font = new Font("PMingLiU-ExtB", 10F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            lbl_usuario.ForeColor = Color.FromArgb(64, 0, 0);
+            lbl_usuario.Location = new Point(1044, 53);
+            lbl_usuario.Name = "lbl_usuario";
+            lbl_usuario.Size = new Size(67, 20);
+            lbl_usuario.TabIndex = 179;
+            lbl_usuario.Text = "Usuario";
+            // 
             // Formventas
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1371, 824);
+            Controls.Add(lbl_usuario);
+            Controls.Add(lbl_cambioF);
+            Controls.Add(lbl_totalF);
+            Controls.Add(lbl_descuentoF);
+            Controls.Add(lbl_subtotalF);
+            Controls.Add(btn_ayuda);
+            Controls.Add(txt_categoria);
+            Controls.Add(lblFecha);
+            Controls.Add(cmb_nombre_cliente);
             Controls.Add(button4);
             Controls.Add(txt_interes);
             Controls.Add(lbl_interes);
@@ -776,46 +852,40 @@
             Controls.Add(txt_efectivo_cordobas);
             Controls.Add(lbl_efectivo_dolares);
             Controls.Add(lbl_efectivo_cordobas);
-            Controls.Add(button2);
+            Controls.Add(btn_cancelar);
             Controls.Add(panel4);
             Controls.Add(panel3);
             Controls.Add(panel2);
             Controls.Add(panel1);
-            Controls.Add(textBox13);
             Controls.Add(rdb_Efectivo);
             Controls.Add(rdb_Credito);
             Controls.Add(rdb_Tarjeta);
-            Controls.Add(label12);
-            Controls.Add(textBox12);
-            Controls.Add(textBox11);
-            Controls.Add(textBox10);
-            Controls.Add(textBox9);
-            Controls.Add(label21);
-            Controls.Add(label20);
-            Controls.Add(label19);
-            Controls.Add(label18);
+            Controls.Add(lbl_porc_descuento);
+            Controls.Add(lbl_descuento);
+            Controls.Add(lbl_total);
+            Controls.Add(lbl_cambio);
+            Controls.Add(lbl_subtotal);
             Controls.Add(dtgw_ventas);
-            Controls.Add(button1);
-            Controls.Add(textBox8);
-            Controls.Add(textBox7);
-            Controls.Add(textBox6);
-            Controls.Add(textBox5);
-            Controls.Add(comboBox1);
-            Controls.Add(label17);
-            Controls.Add(label14);
-            Controls.Add(label13);
-            Controls.Add(label10);
+            Controls.Add(btn_agregar);
+            Controls.Add(txt_porc_descuento);
+            Controls.Add(txt_precio);
+            Controls.Add(txt_cantidad_producto);
+            Controls.Add(txt_codigo);
+            Controls.Add(cmb_producto);
+            Controls.Add(lbl_categoria);
+            Controls.Add(lbl_precio);
+            Controls.Add(lbl_cantidad_producto);
+            Controls.Add(lbl_codigo);
             Controls.Add(label9);
-            Controls.Add(textBox4);
-            Controls.Add(label8);
+            Controls.Add(txt_direccion);
+            Controls.Add(lbl_direccion);
             Controls.Add(label7);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(txt_cedula);
+            Controls.Add(txt_telefono);
             Controls.Add(btn_agregar_cliente);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(label2);
+            Controls.Add(lbl_nombre_cliente);
+            Controls.Add(lbl_cedula);
+            Controls.Add(lbl_telefono);
             Controls.Add(label1);
             Controls.Add(pictureBox1);
             Controls.Add(label5);
@@ -835,28 +905,27 @@
         private Label label5;
         private Label label6;
         private Label label1;
-        private Label label2;
-        private Label label3;
-        private Label label4;
+        private Label lbl_telefono;
+        private Label lbl_cedula;
+        private Label lbl_nombre_cliente;
         private Button btn_agregar_cliente;
         private ImageList imageList1;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
+        private TextBox txt_telefono;
+        private TextBox txt_cedula;
         private Label label7;
-        private Label label8;
-        private TextBox textBox4;
+        private Label lbl_direccion;
+        private TextBox txt_direccion;
         private Label label9;
-        private Label label10;
-        private Label label13;
-        private Label label14;
-        private Label label17;
-        private ComboBox comboBox1;
-        private TextBox textBox5;
-        private TextBox textBox6;
-        private TextBox textBox7;
-        private TextBox textBox8;
-        private Button button1;
+        private Label lbl_codigo;
+        private Label lbl_cantidad_producto;
+        private Label lbl_precio;
+        private Label lbl_categoria;
+        private ComboBox cmb_producto;
+        private TextBox txt_codigo;
+        private TextBox txt_cantidad_producto;
+        private TextBox txt_precio;
+        private TextBox txt_porc_descuento;
+        private Button btn_agregar;
         private DataGridView dtgw_ventas;
         private DataGridViewTextBoxColumn Clm_producto;
         private DataGridViewTextBoxColumn Clm_Cantidad;
@@ -865,24 +934,19 @@
         private DataGridViewTextBoxColumn Clm_Descuento;
         private DataGridViewTextBoxColumn Clm_Subtotal;
         private DataGridViewTextBoxColumn Clm_Editar;
-        private Label label18;
-        private Label label19;
-        private Label label20;
-        private Label label21;
-        private TextBox textBox9;
-        private TextBox textBox10;
-        private TextBox textBox11;
-        private TextBox textBox12;
-        private Label label12;
+        private Label lbl_subtotal;
+        private Label lbl_cambio;
+        private Label lbl_total;
+        private Label lbl_descuento;
+        private Label lbl_porc_descuento;
         private RadioButton rdb_Tarjeta;
         private RadioButton rdb_Credito;
         private RadioButton rdb_Efectivo;
-        private TextBox textBox13;
         private Panel panel1;
         private Panel panel2;
         private Panel panel3;
         private Panel panel4;
-        private Button button2;
+        private Button btn_cancelar;
         private Label lbl_efectivo_cordobas;
         private Label lbl_efectivo_dolares;
         private TextBox txt_efectivo_cordobas;
@@ -895,5 +959,15 @@
         private Label lbl_interes;
         private TextBox txt_interes;
         private Button button4;
+        private ComboBox cmb_nombre_cliente;
+        private Label lblFecha;
+        private TextBox txt_categoria;
+        private Button btn_ayuda;
+        private ImageList imageList2;
+        private Label lbl_subtotalF;
+        private Label lbl_descuentoF;
+        private Label lbl_totalF;
+        private Label lbl_cambioF;
+        private Label lbl_usuario;
     }
 }

@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Formcredito));
             groupBoxdatos = new GroupBox();
             btnbuscarcliente = new Button();
             cmbclientes = new ComboBox();
@@ -74,6 +76,12 @@
             pictureBox1 = new PictureBox();
             label5 = new Label();
             label6 = new Label();
+            panel1 = new Panel();
+            panel2 = new Panel();
+            panel3 = new Panel();
+            panel4 = new Panel();
+            btn_ayuda = new Button();
+            imageList1 = new ImageList(components);
             groupBoxdatos.SuspendLayout();
             groupBoxdatagrid.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridViewcredito).BeginInit();
@@ -93,7 +101,7 @@
             groupBoxdatos.Controls.Add(txtfactura);
             groupBoxdatos.Controls.Add(label4);
             groupBoxdatos.ForeColor = Color.FromArgb(64, 0, 0);
-            groupBoxdatos.Location = new Point(19, 114);
+            groupBoxdatos.Location = new Point(133, 130);
             groupBoxdatos.Name = "groupBoxdatos";
             groupBoxdatos.Size = new Size(1023, 74);
             groupBoxdatos.TabIndex = 112;
@@ -174,7 +182,7 @@
             groupBoxdatagrid.Controls.Add(txtsubtotal);
             groupBoxdatagrid.Controls.Add(label14);
             groupBoxdatagrid.Controls.Add(label1);
-            groupBoxdatagrid.Location = new Point(13, 187);
+            groupBoxdatagrid.Location = new Point(133, 241);
             groupBoxdatagrid.Name = "groupBoxdatagrid";
             groupBoxdatagrid.Size = new Size(1023, 438);
             groupBoxdatagrid.TabIndex = 113;
@@ -484,7 +492,7 @@
             // 
             pictureBox1.BackColor = Color.Transparent;
             pictureBox1.Image = Properties.Resources.imagen_circular_recortada;
-            pictureBox1.Location = new Point(958, 17);
+            pictureBox1.Location = new Point(1225, 32);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(92, 84);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
@@ -496,7 +504,7 @@
             label5.AutoSize = true;
             label5.Font = new Font("PMingLiU-ExtB", 16F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label5.ForeColor = Color.FromArgb(64, 0, 0);
-            label5.Location = new Point(26, 53);
+            label5.Location = new Point(78, 56);
             label5.Name = "label5";
             label5.Size = new Size(259, 32);
             label5.TabIndex = 110;
@@ -507,23 +515,82 @@
             label6.AutoSize = true;
             label6.Font = new Font("PMingLiU-ExtB", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label6.ForeColor = Color.FromArgb(64, 0, 0);
-            label6.Location = new Point(12, 77);
+            label6.Location = new Point(37, 68);
             label6.Name = "label6";
-            label6.Size = new Size(942, 32);
+            label6.Size = new Size(1182, 32);
             label6.TabIndex = 109;
-            label6.Text = "__________________________________________________________";
+            label6.Text = "_________________________________________________________________________";
+            label6.Click += label6_Click;
+            // 
+            // panel1
+            // 
+            panel1.BackColor = Color.FromArgb(64, 0, 0);
+            panel1.Dock = DockStyle.Top;
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(1349, 26);
+            panel1.TabIndex = 152;
+            // 
+            // panel2
+            // 
+            panel2.BackColor = Color.FromArgb(64, 0, 0);
+            panel2.Dock = DockStyle.Right;
+            panel2.Location = new Point(1323, 26);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(26, 742);
+            panel2.TabIndex = 153;
+            // 
+            // panel3
+            // 
+            panel3.BackColor = Color.FromArgb(64, 0, 0);
+            panel3.Dock = DockStyle.Left;
+            panel3.Location = new Point(0, 26);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(26, 742);
+            panel3.TabIndex = 154;
+            // 
+            // panel4
+            // 
+            panel4.BackColor = Color.FromArgb(64, 0, 0);
+            panel4.Dock = DockStyle.Bottom;
+            panel4.Location = new Point(26, 742);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(1297, 26);
+            panel4.TabIndex = 155;
+            // 
+            // btn_ayuda
+            // 
+            btn_ayuda.ImageIndex = 0;
+            btn_ayuda.ImageList = imageList1;
+            btn_ayuda.Location = new Point(1270, 122);
+            btn_ayuda.Name = "btn_ayuda";
+            btn_ayuda.Size = new Size(47, 43);
+            btn_ayuda.TabIndex = 156;
+            btn_ayuda.UseVisualStyleBackColor = true;
+            // 
+            // imageList1
+            // 
+            imageList1.ColorDepth = ColorDepth.Depth32Bit;
+            imageList1.ImageStream = (ImageListStreamer)resources.GetObject("imageList1.ImageStream");
+            imageList1.TransparentColor = Color.Transparent;
+            imageList1.Images.SetKeyName(0, "boton-de-informacion.png");
             // 
             // Formcredito
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1349, 768);
+            Controls.Add(btn_ayuda);
+            Controls.Add(panel4);
+            Controls.Add(panel3);
+            Controls.Add(panel2);
+            Controls.Add(panel1);
             Controls.Add(groupBoxdatos);
             Controls.Add(groupBoxdatagrid);
             Controls.Add(pictureBox1);
             Controls.Add(label5);
             Controls.Add(label6);
-            FormBorderStyle = FormBorderStyle.SizableToolWindow;
+            FormBorderStyle = FormBorderStyle.None;
             Name = "Formcredito";
             groupBoxdatos.ResumeLayout(false);
             groupBoxdatos.PerformLayout();
@@ -586,5 +653,11 @@
         private Label label7;
         private TextBox textBox5;
         private Label label9;
+        private Panel panel1;
+        private Panel panel2;
+        private Panel panel3;
+        private Panel panel4;
+        private Button btn_ayuda;
+        private ImageList imageList1;
     }
 }

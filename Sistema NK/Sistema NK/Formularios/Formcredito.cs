@@ -93,7 +93,7 @@ namespace Sistema_NK
 
         private void btndevolucioncompra_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void btncaja_Click(object sender, EventArgs e)
@@ -115,6 +115,11 @@ namespace Sistema_NK
             forminventario inventario = new forminventario();
             inventario.Show();
             this.Hide();
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
